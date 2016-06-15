@@ -1,4 +1,5 @@
 $(document).ready(function(){	
+    var myWidth,myHeight;
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -11,6 +12,13 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+        $(".b-main").css({
+            height: myHeight,
+            maxHeight: myHeight,
+            minHeight: 640
+        });
+        $(".b-main .main-woman").height(myWidth*0.487/1.27);
+        // $(".b-main .main-woman").width(myWidth*0.487);
     }
     $(window).resize(resize);
     resize();
@@ -41,22 +49,22 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
- //    var myOptions = {
- //        zoom: 16,
- //        center: myPlace,
- //        mapTypeId: google.maps.MapTypeId.ROADMAP,
- //        disableDefaultUI: true,
- //        scrollwheel: false,
- //        zoomControl: true
- //    }
- //    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+	var myPlace = new google.maps.LatLng(56.503487, 85.018815);
+    var myOptions = {
+        zoom: 16,
+        center: myPlace,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        zoomControl: true
+    }
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
 
- //    var marker = new google.maps.Marker({
-	//     position: myPlace,
-	//     map: map,
-	//     title: "Ярмарка вакансий и стажировок"
-	// });
+    var marker = new google.maps.Marker({
+	    position: myPlace,
+	    map: map,
+	    title: "1"
+	});
 
     //  var options = {
     //     $AutoPlay: true,                                
@@ -76,4 +84,25 @@ $(document).ready(function(){
 
     // var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
+
+    $('.slider-cont').slick({
+        dots: true,
+        fade: true,
+        cssEase: 'linear',
+        prevArrow: "<span class='arrow left-arrow'></span>",
+        nextArrow: "<span class='arrow right-arrow'></span>"
+    });
+    $('.reviews-slider').slick({
+        prevArrow: "<span class='arrow left-arrow'></span>",
+        nextArrow: "<span class='arrow right-arrow'></span>",
+        slidesToShow: 2,
+        slidesToScroll: 2
+    });
+    
+    $('.articles-slider').slick({
+        prevArrow: "<span class='arrow left-arrow'></span>",
+        nextArrow: "<span class='arrow right-arrow'></span>",
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
 });
