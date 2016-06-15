@@ -97,8 +97,8 @@ label.error{
 	display: none !important;
 }
 input.error,textarea.error{
-	border: 1px solid #F00 !important;
-	box-shadow: 0 0px 0px 1px #F00;
+	border-bottom: 1px solid #F00 !important;
+	/*box-shadow: 0 0px 0px 1px #F00;*/
 }
 .ps-lines{
 
