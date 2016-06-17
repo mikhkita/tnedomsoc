@@ -496,7 +496,17 @@ a.link {
 							text-decoration: underline;
 						}
 			.b-main .b-block .b-header .search {
-
+				width: 34px;
+				height: 34px;
+				background-color: #c8c3bb;
+				background-image: url("../i/search.png");
+				background-position: 50%;
+				background-repeat: no-repeat;
+				background-size: 17px;
+				border-radius: 50%;
+				position: relative;
+				top: -5px;
+				left: -22px;
 			}
 			.b-main .b-block .b-header .phone-cont {
 				text-align: right;
@@ -599,6 +609,7 @@ a.link {
 			margin-top: 67px;
 			background-image: url("../i/search-black.png");
 			background-position: 100% 50%;
+			background-size: 15px;
 			background-repeat: no-repeat;
 		}	
 

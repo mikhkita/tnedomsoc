@@ -20,7 +20,8 @@ $(document).ready(function(){
         $(".b-main .main-woman").height(myHeight*0.9);
         $(".b-main .main-woman").width(myHeight*0.9*1.27);
         $(".b-header").css("padding-top",myHeight*0.06);
-        $(" .b-main .b-block h1").css("margin-top",myHeight*0.35-($(".b-header").height()+myHeight*0.06));
+        var margin = (myHeight*0.35-($(".b-header").height()+myHeight*0.06) > 0) ? myHeight*0.35-($(".b-header").height()+myHeight*0.06) : 0;
+        $(" .b-main .b-block h1").css("margin-top",margin);
        
 
     }
