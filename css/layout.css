@@ -263,21 +263,201 @@ a.link {
 		background-color: #dfc480;
 		cursor: default;
 	}
+
+.gm-style-iw{
+		overflow: visible !important;
+	}
+	.gmap-bubble-marker-cont{
+		position: absolute;
+		/*	position: fixed;
+		z-index: 9999;*/
+		top: 16px;
+		width: 400px;
+		left: 80px;
+		height: 0px;
+	}
+	.gmap-bubble-marker{
+		position: absolute;
+		/* left: 60px; */
+		/* margin-top: -6px; */
+		background-color: #51402f;
+		/*width: 30px;*/
+		color: #fff;
+	}
+		.gmap-bubble-marker:before{
+			z-index: -1;
+			top: 10%;
+			position: absolute;
+			content: ",";
+			font-size: 0;
+			height: 80%;
+			width: 90%;
+			left: 5%;
+			border-radius: 10px;
+			box-shadow: 0 0 30px rgba(0,0,0,0.5);
+		}
+		.gmap-bubble-marker:after{
+			background-image: url("../i/triangle.png");
+			background-position: 0 0;
+			background-size: 37px 100%;
+			content: ".";
+			font-size: 0;
+			position: absolute;
+			height: 100%;
+			width: 37px;
+			left: -37px;
+			top: 0;
+			bottom: 0;
+		}
+		.gmap-oval{
+			cursor: pointer;
+			position: absolute;
+			top: 39px;
+			left: 10px;
+			background-color: #FFF;
+			border-radius: 15px;
+			padding: 2px 8px 4px 8px;
+		}
+			.gmap-oval:after{
+				background-image: url("../i/pipka.png");
+				content: ".";
+				font-size: 0;
+				position: absolute;
+				height: 6px;
+				width: 7px;
+				left: 153px;
+				top: -6px;
+			}
+			.gmap-oval p{
+				border-bottom: 1px dotted rgba(0,0,0,.3);
+			}
+			.gmap-oval:hover p{
+				border-bottom: 1px solid transparent;
+			}
+		.gmap-cont{
+			margin-left: 10px;
+			margin-right: 25px;
+			margin-top: 8px;
+			margin-bottom: 13px;
+		}
+		.gmap-cont-1{
+			margin-top: 13px;
+			font-size: 12px;
+			text-align: left;
+			font-family: "Circe-Regular";
+			line-height: 1.7;
+		}
+			.gmap-cont strong{
+				/*float: left;*/
+				font-family: "Circe-Light";
+				font-size: 12px;
+			}
+			.gmap-addr{
+				display: inline-block;
+				font-size: 13px;
+				/* vertical-align: top; */
+			}
+			.gmap-button{
+				font-family: 'pt_sansregular';
+				display: inline-block;
+				position: relative;
+				font-size: 13px;
+				border-bottom: 1px dotted rgba(0,0,0,.3) !important;
+				margin-left: 23px;
+				margin-right: 22px;
+			}
+				.gmap-button:hover{
+					border-bottom: none !important;
+					cursor: pointer;
+				}
+				.gmap-button:before
+				{
+					content: ".";
+					font-size: 0;
+					position: absolute;
+					top: 2px;
+					left: -23px;
+					width: 23px;
+					height: 13px;
+					background-image: url('../i/gmap_bubble_icons.png');
+					background-repeat: no-repeat;
+				}
+				.gmap-callback:before{
+					margin-top: 1px;
+					background-position: 0px 0px;
+				}
+				.gmap-feedback:before{
+					margin-top: 2px;
+					background-position: 0px -13px;
+				}
+		.gmap-close-button{
+			width: 9px;
+			height: 9px;
+			background-image: url('../i/map-close.png');
+			background-repeat: no-repeat;
+			background-position: 50%;
+			background-size: contain;
+			position: absolute;
+			right: 9px;
+			top: 9px;
+		}
+			.gmap-close-button:hover{
+				cursor: pointer;
+			}
+		.gmap-bubble-marker-cont-pink{
+			position: absolute;
+			top: 21px;
+			right: 3px;
+			padding: 3px 3px 4px 6px;
+			background-color: #fedcc2;
+		}
+			.gmap-bubble-marker-cont-pink:after{
+				background-image: url("../i/small_pink_triangle.png");
+				content: ".";
+				font-size: 0;
+				position: absolute;
+				height: 26px;
+				width: 6px;
+				right: -6px;
+				top: 0px;
+			}
+		.gmap-bubble-marker-cont-metro{
+			position: absolute;
+			top: 20px;
+			left: 30px;
+			padding: 4px 6px 4px 3px;
+			background-color: #bfe38c;
+		}
+			.gmap-bubble-marker-cont-metro:after{
+				background-image: url("../i/small_triangle.png");
+				content: ".";
+				font-size: 0;
+				position: absolute;
+				height: 26px;
+				width: 6px;
+				left: -6px;
+				top: 0px;
+			}
+		.gmnoprint img{
+			display: none !important;
+		}
+
+
 .b-main{
 	background-image: url("../i/main-back.jpg");
 	background-size: cover;
 	background-position: 50%;
 	color: #fff;
-	padding-top: 3%;
+	/*padding-top: 3%;*/
 	box-sizing: border-box;
 }
 	
 	.b-main .main-woman {
 		position: absolute;
 		background-size: contain;
-		background-position: 50% 100%;
+		background-position: 0% 100%;
 		background-repeat: no-repeat;
-		width: 48.7%;
+		/*width: 48.7%;*/
 		bottom: 0;
 		left: 50%;
 		background-image: url("../i/main-woman.png");
@@ -334,7 +514,7 @@ a.link {
 			text-transform: uppercase;
 			text-align: left;
 			margin-left: 200px;
-			margin-top: 8%;
+			/*margin-top: 8%;*/
 			position: relative;
 			z-index: 100;
 		}
@@ -417,7 +597,11 @@ a.link {
 		.b-services .b-block .input {
 			width: 385px;
 			margin-top: 67px;
+			background-image: url("../i/search-black.png");
+			background-position: 100% 50%;
+			background-repeat: no-repeat;
 		}	
+
 		.b-services .b-block ul {
 			margin-top: 100px;
 		}
@@ -506,7 +690,7 @@ a.link {
 		}
 		.b-doctors .b-block .filter {
 			display: inline-block;
-			margin-top: 15px;
+			margin-top: 28px;
 		}
 			.b-doctors .b-block .filter li {
 				float: left;
@@ -528,8 +712,7 @@ a.link {
 				}
 		.b-doctors .b-block .doctors {
 
-margin-top: 47px;
-
+margin-top: 40px;
 }
 			.b-doctors .b-block .doctors li {
 				float: left;
@@ -630,9 +813,10 @@ margin-top: 47px;
 					background-image: url("../i/doctor-10.jpg");
 				}
 .b-reviews {
-	background-image: url("../i/reviews-back.jpg");
-	background-size: cover;
-	background-position: 0% 50%;
+	background-image: url("../i/reviews-back.png");
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
 	padding-bottom: 55px;
 }
 	.b-reviews .b-block {
@@ -766,6 +950,12 @@ margin-top: 47px;
 	background-size: cover;
 	background-position: 50%;
 	padding-bottom: 80px;
+	/*background: rgb(89,71,52);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(89,71,52,1) 30%, rgba(63,45,29,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(89,71,52,1) 30%,rgba(63,45,29,1) 100%);
+	background: radial-gradient(ellipse at center,  rgba(89,71,52,1) 30%,rgba(63,45,29,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#594734', endColorstr='#3f2d1d',GradientType=1 );
+*/
 
 }
 	.b-callback .b-block {
