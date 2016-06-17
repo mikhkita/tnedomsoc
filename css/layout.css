@@ -458,6 +458,8 @@ a.link {
 		background-position: 0% 100%;
 		background-repeat: no-repeat;
 		/*width: 48.7%;*/
+		min-height: 576px;
+    	min-width: 731.52px;
 		bottom: 0;
 		left: 50%;
 		background-image: url("../i/main-woman.png");
@@ -611,6 +613,7 @@ a.link {
 			background-position: 100% 50%;
 			background-size: 15px;
 			background-repeat: no-repeat;
+			padding-right: 25px;
 		}	
 
 		.b-services .b-block ul {
