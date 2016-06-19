@@ -518,11 +518,10 @@ a.link {
 					.b-main .b-block .b-header ul li a {
 						color: #fff;
 						font-size: 16px;
-						font-family: "Circe-Bold";
 						text-transform: uppercase;
 					}
 						.b-main .b-block .b-header ul li a:hover {
-							text-decoration: underline;
+							border-bottom: 4px solid #fff;
 						}
 			.b-main .b-block .b-header .search {
 				width: 34px;
