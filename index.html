@@ -31,6 +31,7 @@
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
@@ -79,29 +80,33 @@
 		</div>
 	</div>
 	<div class="b b-slider">
+		<div class="slider-back">
+			<div style='background-image: url("i/slider-back.jpg");'></div>
+			<div style='background-image: url("i/slider-back.jpg");'></div>
+		</div>
 		<div class="b-block slider-cont">
-			<div class="slide">
+			<div>
 				<h3>передовые технологии<br>в нашей клинике</h3>
 				<p>Лучшее стоматологиеческое оборудование из&nbsp;Европы.</p>
 				<p>Лечение зубов пациентам по&nbsp;самым современным мировым стандартам.</p>
 				<p class="last">Лечение кариеса и&nbsp;пульпита с&nbsp;использованием микроскопа, точнейшее протезирование и&nbsp;реставрация лучшими материалами.</p>
 				<button class="btn">Узнать подробнее</button>
 			</div>
-			<div class="slide">
+			<div>
 				<h3>передовые технологии<br>в нашей клинике</h3>
 				<p>Лучшее стоматологиеческое оборудование из&nbsp;Европы.</p>
 				<p>Лечение зубов пациентам по&nbsp;самым современным мировым стандартам.</p>
 				<p class="last">Лечение кариеса и&nbsp;пульпита с&nbsp;использованием микроскопа, точнейшее протезирование и&nbsp;реставрация лучшими материалами.</p>
 				<button class="btn">Узнать подробнее</button>
 			</div>
-			<div class="slide">
+			<div>
 				<h3>передовые технологии<br>в нашей клинике</h3>
 				<p>Лучшее стоматологиеческое оборудование из&nbsp;Европы.</p>
 				<p>Лечение зубов пациентам по&nbsp;самым современным мировым стандартам.</p>
 				<p class="last">Лечение кариеса и&nbsp;пульпита с&nbsp;использованием микроскопа, точнейшее протезирование и&nbsp;реставрация лучшими материалами.</p>
 				<button class="btn">Узнать подробнее</button>
 			</div>
-			<div class="slide">
+			<div>
 				<h3>передовые технологии<br>в нашей клинике</h3>
 				<p>Лучшее стоматологиеческое оборудование из&nbsp;Европы.</p>
 				<p>Лечение зубов пациентам по&nbsp;самым современным мировым стандартам.</p>
@@ -209,15 +214,15 @@
 		<div class="b-block">
 			<h2 class="title">Наши врачи</h2>
 			<ul class="clearfix filter">
-				<li class="active">Все</li>
-				<li>Гигиенист стоматологический</li>
-				<li>Ортодонт</li>
-				<li>Ортопед</li>
-				<li>Стоматолог-терапевт</li>
-				<li>Хирург-имплантолог</li>
+				<li class="active" data-filter="*">Все</li>
+				<li data-filter=".gigienist">Гигиенист стоматологический</li>
+				<li data-filter=".ortodont">Ортодонт</li>
+				<li data-filter=".ortoped">Ортопед</li>
+				<li data-filter=".stomatolog">Стоматолог-терапевт</li>
+				<li data-filter=".hiryrg">Хирург-имплантолог</li>
 			</ul>
 			<ul class="doctors clearfix">
-				<li>
+				<li class="gigienist">
 					<a class="desc-cont" href="#">
 						<h3>Куркина Алена Евгеньевна</h3>
 						<h4>
@@ -228,7 +233,7 @@
 						<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
 					</a>
 				</li>
-				<li>
+				<li class="gigienist">
 					<a class="desc-cont" href="#">
 						<h3>Куркина Алена Евгеньевна</h3>
 						<h4>
@@ -239,7 +244,7 @@
 						<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
 					</a>
 				</li>
-				<li>
+				<li class="ortodont">
 					<a class="desc-cont" href="#">
 						<h3>Куркина Алена Евгеньевна</h3>
 						<h4>
@@ -363,7 +368,7 @@
 					<p>В&nbsp;очередной раз спасибо. Хожу раз в&nbsp;полгода на&nbsp;профессиональную гигиену. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.</p>
 				</div>
 			</div>
-			<button class="btn">Оставить отзыв</button>
+			<button class="btn btn-brown">Оставить отзыв</button>
 		</div>
 	</div>
 	<div class="b b-articles">

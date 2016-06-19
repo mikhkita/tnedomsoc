@@ -129,19 +129,42 @@ $(document).ready(function(){
     $('.slider-cont').slick({
         dots: true,
         prevArrow: "<span class='arrow left-arrow'></span>",
-        nextArrow: "<span class='arrow right-arrow'></span>"
-    });
-    $('.reviews-slider').slick({
-        prevArrow: "<span class='arrow left-arrow'></span>",
         nextArrow: "<span class='arrow right-arrow'></span>",
+        fade: true
+    });
+    $('.slider-back').slick({
+        arrows: false
+        
+    });
+     $('.slider-cont').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log(nextSlide - currentSlide);
+        if( nextSlide - currentSlide == 1 || (currentSlide - nextSlide) > 1) {
+            $('.slider-back').slick('slickNext');
+        } else $('.slider-back').slick('slickPrev');
+    });
+
+    $('.reviews-slider').slick({
+        prevArrow: "<span class='arrow left-arrow black'></span>",
+        nextArrow: "<span class='arrow right-arrow black'></span>",
         slidesToShow: 2,
         slidesToScroll: 1
     });
     
     $('.articles-slider').slick({
-        prevArrow: "<span class='arrow left-arrow'></span>",
-        nextArrow: "<span class='arrow right-arrow'></span>",
+        prevArrow: "<span class='arrow left-arrow black'></span>",
+        nextArrow: "<span class='arrow right-arrow black'></span>",
         slidesToShow: 3,
         slidesToScroll: 1
+    });
+
+    var $grid = $('.doctors').isotope({
+        itemSelector: '.doctors li',
+    });
+    // filter items on button click
+    $('ul.filter').on( 'click', 'li', function() {
+        $('ul.filter li.active').removeClass("active");
+        $(this).addClass("active");
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
     });
 });

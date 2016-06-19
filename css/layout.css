@@ -214,6 +214,15 @@ a.link {
 		background-color: #fff;		
 		color: #383838;
 	}
+	.btn.btn-brown {
+		border-color: #a3a3a3;
+		color: #9a9a9a;
+	}
+	.btn.btn-brown:hover {
+		background-color: #dfc480;
+		color: #fff;
+		border-color: #dfc480;
+	}
 .slick-slider .arrow {
 	width: 13px;
 	height: 24px;
@@ -222,7 +231,7 @@ a.link {
 	margin-top: -12px;
 	cursor: pointer;
 	background-image: url("../i/arrows.png");
-	background-size: 52px 24px;
+	background-size: 78px 24px;
 	background-repeat: no-repeat;
 	opacity: 0.5;
 	z-index: 100;
@@ -230,6 +239,7 @@ a.link {
 .slick-slider .arrow:hover {
 	opacity: 1;
 }
+
 .slick-slider .left-arrow {
 	background-position: 0px 50%;
 	left: 0px;
@@ -237,6 +247,23 @@ a.link {
 .slick-slider .right-arrow {
 	background-position: -13px 50%;
 	right: 0px;
+}
+
+
+.slick-slider .arrow.black {
+	opacity: 1;
+}
+	.slick-slider .left-arrow.black {
+		background-position: -26px 50%;
+	}
+	.slick-slider .right-arrow.black {
+		background-position: -39px 50%;
+	}
+.slick-slider .left-arrow.black:hover {
+	background-position: -52px 50%;
+}
+.slick-slider .right-arrow.black:hover {
+	background-position: -65px 50%;
 }
 .slick-slider .slick-dots {
 	font-size: 0;
@@ -574,30 +601,47 @@ a.link {
 			}
 			
 .b-slider {
-	background-image: url("../i/slider-back.jpg");
-	background-size: cover;
-	background-position: 50%;
 	color: #fff;
 }
+	.b-slider .slider-back {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+	}
+		.b-slider .slider-back .slick-list{
+			width: inherit;
+			height: inherit;
+		}
+		.b-slider .slider-back .slick-track {
+			height: inherit;
+		}
+		.b-slider .slider-back .slick-slide {
+			height: inherit;
+			background-size: cover;
+			background-position: 50%;
+		}
 	.b-slider .b-block {
 
 	}
-		.b-slider .b-block .slide {
+		.b-slider .b-block .slick-slide {
 			padding: 105px 220px 80px;
 			text-align: left;
 		}
-			.b-slider .b-block .slide h3 {
+			.b-slider .b-block .slick-slide h3 {
 				font-size: 36px;
 				font-family: "Circe-Bold";
 				text-transform: uppercase;
 				line-height: 1.35;
 				margin-bottom: 42px;
 			}
-			.b-slider .b-block .slide p {
+			.b-slider .b-block .slick-slide p {
 				font-size: 18px;
 				margin-bottom: 21px;
 			}
-				.b-slider .b-block .slide p.last {
+				.b-slider .b-block .slick-slide p.last {
 					margin-bottom: 57px;
 				}
 .b-services {
@@ -840,14 +884,7 @@ margin-top: 40px;
 			padding: 0 85px;
 			margin-top: 47px;
 		}
-			.b-reviews .b-block .reviews-slider .left-arrow {
-				background-position: -26px 50%;
-				margin-top: -7px;
-			}
-			.b-reviews .b-block .reviews-slider .right-arrow {
-				background-position: -39px 50%;
-				margin-top: -7px;
-			}
+
 			.b-reviews .b-block .reviews-slider .slick-slide {
 				text-align: left;
 				margin-left: 30px;
@@ -880,15 +917,9 @@ margin-top: 40px;
 				}
 		.b-reviews .b-block .btn {
 			margin-top: 62px;
-			border-color: #a3a3a3;
 			display: inline-block;
-			color: #9a9a9a;
 		}
-			.b-reviews .b-block .btn:hover {
-				background-color: #383838;
-				color: #fff;
-				border-color: #383838;
-			}
+
 .b-articles { 
 	background-color: #f8f8f8;
 	padding-bottom: 80px;
@@ -900,14 +931,6 @@ margin-top: 40px;
 			margin-top: 45px;
 			padding: 0 58px;
 		}
-			.b-articles .b-block .articles-slider .left-arrow {
-				background-position: -26px 50%;
-				margin-top: -7px;
-			}
-			.b-articles .b-block .articles-slider .right-arrow {
-				background-position: -39px 50%;
-				margin-top: -7px;
-			}
 			.b-articles .b-block .articles-slider .slick-slide {
 				width: 327px;
 				height: 463px;
