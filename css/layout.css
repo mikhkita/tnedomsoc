@@ -389,6 +389,7 @@ a.link {
 	padding: 55px 70px;
 	box-sizing: border-box;
 	color: #2f2f2f;
+	margin-bottom: 30px;
 }
 	.b-popup h3 {
 		line-height: 1.222;
@@ -449,6 +450,7 @@ a.link {
 	background-image: url("../i/main-back.jpg");
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
+	min-height: 640px;
 	color: #fff;
 	padding-top: 55px;
 	box-sizing: border-box;

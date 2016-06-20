@@ -14,8 +14,7 @@ $(document).ready(function(){
         }
         $(".b-main").css({
             height: myHeight,
-            maxHeight: myHeight,
-            minHeight: 640
+            maxHeight: myHeight
         });
         if(myHeight > 640) {
             $(".b-main").css('background-size',"auto "+myHeight+"px");
