@@ -17,11 +17,9 @@ $(document).ready(function(){
             maxHeight: myHeight,
             minHeight: 640
         });
-        $(".b-main .main-woman").height(myHeight*0.9);
-        $(".b-main .main-woman").width(myHeight*0.9*1.27);
+        $(".b-main").css('background-size',"auto "+myHeight+"px");
         $(".b-header").css("padding-top",myHeight*0.07);
-        var margin = (myHeight*0.35-($(".b-header").height()+myHeight*0.06) > 0) ? myHeight*0.35-($(".b-header").height()+myHeight*0.06) : 0;
-        $(" .b-main .b-block h1").css("margin-top",margin);
+        $(".b-main .b-block .content").height(myHeight);
        
 
     }

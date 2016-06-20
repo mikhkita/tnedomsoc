@@ -374,31 +374,32 @@ a.link {
 
 
 .b-main{
+	background-color: #5f4d3c;
 	background-image: url("../i/main-back.jpg");
-	background-size: cover;
-	background-position: 50%;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
 	color: #fff;
-	/*padding-top: 3%;*/
 	box-sizing: border-box;
 }
 	
-	.b-main .main-woman {
+	/*.b-main .main-woman {
 		position: absolute;
 		background-size: contain;
 		background-position: 0% 100%;
 		background-repeat: no-repeat;
-		/*width: 48.7%;*/
+		width: 48.7%;
 		min-height: 576px;
     	min-width: 731.52px;
 		bottom: 0;
 		left: 50%;
 		background-image: url("../i/main-woman.png");
-	}
+	}*/
 	.b-main .b-block {
 
 	}
 		.b-main .b-block .b-header{
-
+			position: relative;
+			z-index: 1;
 		}
 			.b-main .b-block .b-header .logo {
 				width: 168px;
@@ -408,6 +409,9 @@ a.link {
 				background-position: 50%;
 				background-repeat: no-repeat;
 			}
+				.b-main .b-block .b-header .logo img {
+					display: none;
+				}
 			.b-main .b-block .b-header ul {
 				margin-left: 103px;
 
@@ -468,22 +472,36 @@ a.link {
 					font-size: 14px;
 					font-family: "Circe-Light";
 				}
-		.b-main .b-block h1 {
-			line-height: 1.375;
-			font-size: 36px;
-			text-transform: uppercase;
-			text-align: left;
-			margin-left: 200px;
-			font-family: "Circe-Bold";
-			/*margin-top: 8%;*/
-			position: relative;
-			z-index: 100;
+					.b-main .b-block .b-header .phone-cont h4 a {
+						color: #fff;
+					}
+						.b-main .b-block .b-header .phone-cont h4 a:hover {
+							text-decoration: underline;
+						}
+		.b-main .b-block .content {
+			display: table;
+			position: absolute;
+    		top: 0;
 		}
-		.b-main .b-block button {
-			margin-left: 200px;
-			margin-top: 4%;
-			width: 244px;
-		}
+			.b-main .b-block .content > div {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.b-main .b-block .content h1 {
+				line-height: 1.375;
+				font-size: 36px;
+				text-transform: uppercase;
+				text-align: left;
+				margin-left: 200px;
+				font-family: "Circe-Bold";
+				/*margin-top: 8%;*/
+				position: relative;
+			}
+			.b-main .b-block .content button {
+				margin-left: 200px;
+				margin-top: 35px;
+				width: 244px;
+			}
 .b-what {
 
 }
@@ -2090,7 +2108,7 @@ margin-top: 40px;
 		.b-footer .b-block .top {
 			padding-bottom: 56px;
 			border-bottom: 1px solid #999999;
-			font-family: Circe-Light;
+			font-family: "Circe-Light";
 		}
 			.b-footer .b-block .top ul {
 				width: 25%;
@@ -2133,7 +2151,7 @@ margin-top: 40px;
 			padding: 26px 0;
 			font-size: 14px;
 			color: #999999;
-			font-family: Circe-Light;
+			font-family: "Circe-Light";
 		}
 			.b-footer .b-block .bot a {
 				color: #999999; 	
