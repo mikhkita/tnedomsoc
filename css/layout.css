@@ -155,13 +155,13 @@ b {
 	left: 50%;
 	margin-left: -580px;
 }
-input::-webkit-input-placeholder {
-	color: #434343;
+::-webkit-input-placeholder {
+	color: #383838;
 	font-size: 20px;
 	font-family: 'Circe-Regular';
 }
-input:-moz-placeholder {
-	color: #434343;
+:-moz-placeholder {
+	color: #383838;
 	font-size: 20px;
 	font-family: 'Circe-Regular';
 }
@@ -192,6 +192,7 @@ a.link {
 	padding: 7px 0;
 	font-size: 20px;
 	box-sizing: border-box;
+	color: #383838;
 	font-family: 'Circe-Regular';
 	background: none;
 }
@@ -375,6 +376,72 @@ a.link {
 			.gmap-close-button:hover{
 				cursor: pointer;
 			}
+.fancybox-skin {
+	border-radius: 0;
+}
+/*.fancybox-close {
+	top: 0;
+	right: 0;
+	background-image: url("../i/popup-close.png");
+}*/
+.b-popup {
+	width: 565px;
+	padding: 55px 70px;
+	box-sizing: border-box;
+	color: #2f2f2f;
+}
+	.b-popup h3 {
+		line-height: 1.222;
+		font-family: "Circe-Bold";
+		font-size: 36px;
+		text-transform: uppercase;
+		margin-bottom: 27px;
+	}
+	.b-popup h4 {
+		font-size: 20px;
+		margin-bottom: 20px;
+
+	}
+	.b-popup .input {
+		width: 100%;
+		margin-bottom: 33px;
+		display: block;
+	}
+		.b-popup .input:last-child {
+			margin-bottom: 0;
+		}
+	.b-popup .input-half {
+		width: 200px;
+	}
+	.b-popup select {
+		-webkit-appearance: none;
+		cursor: pointer;
+		background-image: url("../i/select-arrow.jpg");
+		background-size: 14px 8px;
+		background-position: 410px 21px;
+		background-repeat: no-repeat;
+	}
+	.b-popup textarea.input  {		
+		max-width: 100%;
+		min-height: 240px;		
+		padding: 20px;		
+		margin-bottom: 25px;
+		border: 1px solid #7f7f7f;
+	}
+	.b-popup #datepicker {
+		background-image: url("../i/date.jpg");
+		background-size: 16px 16px;
+		padding-right: 35px;
+		background-position: 406px 13px;
+		background-repeat: no-repeat;
+	}
+	.b-popup .btn {
+		border-color: #484848;
+		color: #363636;
+		width: 145px;
+		margin-top: 18px;
+		display: inline-block;
+	}
 
 
 .b-main{
@@ -486,6 +553,7 @@ a.link {
 		.b-main .b-block .content {
 			display: table;
 			position: absolute;
+			min-height: 640px;
     		top: 0;
 		}
 			.b-main .b-block .content > div {

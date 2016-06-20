@@ -17,7 +17,9 @@ $(document).ready(function(){
             maxHeight: myHeight,
             minHeight: 640
         });
-        $(".b-main").css('background-size',"auto "+myHeight+"px");
+        if(myHeight > 640) {
+            $(".b-main").css('background-size',"auto "+myHeight+"px");
+        } else $(".b-main").css('background-size',"auto 640px");
         $(".b-main .b-block .content").height(myHeight);
        
 
@@ -136,5 +138,28 @@ $(document).ready(function(){
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
-    
+
+    $.datetimepicker.setLocale('ru');
+
+    $('#datepicker').datetimepicker({
+        format:'d.m.Y H:i',
+        minDate: 0,
+        minTime: 0,
+        yearStart: 2016,
+        yearEnd: 2030,
+        scrollMonth: false,
+        allowTimes: [
+            "8:00",
+            "9:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+        ]
+    });
 });

@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 
@@ -32,6 +33,7 @@
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.datetimepicker.full.min.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
@@ -64,7 +66,7 @@
 			<div class="content">
 				<div>
 					<h1>Авторская клиника<br>эстетической стоматологии<br>и косметологии</h1>
-					<button class="btn">Записаться на прием</button>
+					<button type="button" class="btn fancy" data-block="#b-popup-rec">Записаться на прием</button>
 				</div>
 			</div>
 		</div>
@@ -374,7 +376,7 @@
 					<p>В&nbsp;очередной раз спасибо. Хожу раз в&nbsp;полгода на&nbsp;профессиональную гигиену. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.</p>
 				</div>
 			</div>
-			<button class="btn btn-brown">Оставить отзыв</button>
+			<button class="btn btn-brown fancy" data-block="#b-popup-review">Оставить отзыв</button>
 		</div>
 	</div>
 	<div class="b b-articles">
@@ -474,36 +476,66 @@
 		</div>
 	</div>
 	<div style="display:none;">
-		<div id="b-popup-1">
-			<div class="b-popup" >
-				<h3>Оставьте заявку</h3>
-				<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
+		<div id="b-popup-rec">
+			<div class="b-popup">
+				<h3>записаться на&nbsp;прием</h3>
 				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
-					<div class="b-popup-form">
-						<label for="name">Введите Ваше имя</label>
-						<input type="text" id="name" name="name" required/>
-						<label for="tel">Введите Ваш номер телефона</label>
-						<input type="text" id="tel" name="phone" required/>
-						<label for="tel">Введите Ваш E-mail</label>
-						<input type="text" id="tel" name="email" required/>
-						<input type="hidden" name="subject" value="Заказ"/>
-						<input type="submit" class="ajax b-orange-butt" value="Заказать">
+					<div class="clearfix">
+						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
+						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
 					</div>
+					<input class="input" type="text" name="email" required placeholder="E-mail"/>
+					<select class="input" name="doctor">
+						<option value="Ортодонт">Гигиенист стоматологический</option>
+						<option value="Ортодонт">Ортодонт</option>
+						<option value="Ортопед">Ортопед</option>
+						<option value="Стоматолог-терапевт">Стоматолог-терапевт</option>
+						<option value="Хирург-имплантолог">Хирург-имплантолог</option>
+					</select>
+					<select class="input" name="doctor-name">
+						<option value="Куркина Алена Евгеньевна">Куркина Алена Евгеньевна</option>
+						<option value="Гурген Хачатрян">Гурген Хачатрян</option>
+					</select>
+					<input class="input" type="text" name="date" id="datepicker" required placeholder="Дата и время записи"/>
+					<input type="hidden" name="subject" value="Запись на прием"/>
+					<button class="ajax btn btn-brown">Отправить</button>
 				</form>
 			</div>
 		</div>
+		<div id="b-popup-review">
+			<div class="b-popup">
+				<h3>Оставить отзыв</h3>
+				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+					<div class="clearfix">
+						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
+						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
+					</div>
+					<input class="input" type="text" name="email" required placeholder="E-mail"/>
+					<textarea class="input" name="1" placeholder="Текст отзыва"></textarea>
+					<input type="hidden" name="subject" value="Отзыв"/>
+					<button class="ajax btn btn-brown">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<div id="b-popup-review">
+			<div class="b-popup">
+				<h3>оставить отзыв</h3>
+				<h4>Для того, чтобы оставить отзыв, требуется авторизоваться через Вконтакте</h4>
+				<button type="button" class="btn btn-brown">Войти</button>
+			</div>
+		</div>
 		<div id="b-popup-2">
-			<div class="b-thanks b-popup">
+			<div class="b-popup">
 				<h3>Спасибо!</h3>
-				<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+				<h4>Ваша заявка отправлена. В&nbsp;ближайшее время наши менеджеры свяжутся с&nbsp;вами.</h4>
+				<button type="button" class="btn btn-brown" onclick="$.fancybox.close(); return false;">Закрыть</button>
 			</div>
 		</div>
 		<div id="b-popup-error">
-			<div class="b-thanks b-popup">
+			<div class="b-popup">
 				<h3>Ошибка отправки!</h3>
 				<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+				<button type="button" class="btn btn-brown" onclick="$.fancybox.close(); return false;">Закрыть</button>
 			</div>
 		</div>
 	</div>
