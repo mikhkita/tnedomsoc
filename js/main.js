@@ -136,4 +136,5 @@ $(document).ready(function(){
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
+    
 });
