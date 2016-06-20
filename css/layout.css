@@ -459,6 +459,7 @@ a.link {
 			}
 			.b-main .b-block .b-header .phone-cont {
 				text-align: right;
+				margin-top: -10px;
 			}
 				.b-main .b-block .b-header .phone-cont h3 {
 					font-size: 18px;
@@ -2044,14 +2045,13 @@ margin-top: 40px;
 	background-image: url("../i/callback.jpg");
 	background-size: cover;
 	background-position: 50%;
-	padding-bottom: 80px;
+	padding-bottom: 75px;
 	/*background: rgb(89,71,52);
 	background: -moz-radial-gradient(center, ellipse cover,  rgba(89,71,52,1) 30%, rgba(63,45,29,1) 100%);
 	background: -webkit-radial-gradient(center, ellipse cover,  rgba(89,71,52,1) 30%,rgba(63,45,29,1) 100%);
 	background: radial-gradient(ellipse at center,  rgba(89,71,52,1) 30%,rgba(63,45,29,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#594734', endColorstr='#3f2d1d',GradientType=1 );
 */
-
 }
 	.b-callback .b-block {
 
@@ -2103,7 +2103,8 @@ margin-top: 40px;
 						color: #999999;
 					}
 						.b-footer .b-block .top ul li a:hover {
-							text-decoration: underline;
+							/* text-decoration: underline; */
+							color: #FFF;
 						}
 				.b-footer .b-block .top ul.soc li {
 					margin-bottom: 30px;
