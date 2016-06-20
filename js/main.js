@@ -19,7 +19,7 @@ $(document).ready(function(){
         });
         $(".b-main").css('background-size',"auto "+myHeight+"px");
         $(".b-header").css("padding-top",myHeight*0.07);
-        $(".b-main .b-block .content").height(myHeight);
+        $(".b-main .b-block .content").height(myHeight-myHeight*0.07-$(".b-header").height()).css('top',myHeight*0.07+$(".b-header").height());
        
 
     }

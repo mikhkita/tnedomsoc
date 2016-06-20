@@ -100,6 +100,10 @@ input.error,textarea.error{
 	border-bottom: 1px solid #F00 !important;
 	/*box-shadow: 0 0px 0px 1px #F00;*/
 }
+button {
+	background: none;
+	border: none;
+}
 .ps-lines{
 	
 }
@@ -594,16 +598,24 @@ a.link {
 	.b-services .b-block {
 
 	}	
-		.b-services .b-block .input {
-			width: 385px;
-			margin-top: 67px;
-			background-image: url("../i/search-black.png");
-			background-position: 100% 50%;
-			background-size: 15px;
-			background-repeat: no-repeat;
-			padding-right: 25px;
-		}	
+		.b-services .b-block form {
+			display: inline-block;
+			position: relative;
+		}
 
+			.b-services .b-block .input {
+				width: 385px;
+				margin-top: 67px;
+				padding-right: 25px;
+			}	
+			.b-services .b-block button {
+				width: 15px;
+				height: 15px;
+				background-image: url("../i/search-black.png");
+				background-position: 50%;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
 		.b-services .b-block ul {
 			margin-top: 100px;
 		}
