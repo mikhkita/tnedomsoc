@@ -322,7 +322,6 @@ a.link {
 			width: 90%;
 			left: 5%;
 			border-radius: 10px;
-			box-shadow: 0 0 30px rgba(0,0,0,0.5);
 		}
 		.gmap-bubble-marker:after{
 			background-image: url("../i/triangle.png");
@@ -2091,6 +2090,7 @@ margin-top: 40px;
 		.b-footer .b-block .top {
 			padding-bottom: 56px;
 			border-bottom: 1px solid #999999;
+			font-family: Circe-Light;
 		}
 			.b-footer .b-block .top ul {
 				width: 25%;
@@ -2133,6 +2133,7 @@ margin-top: 40px;
 			padding: 26px 0;
 			font-size: 14px;
 			color: #999999;
+			font-family: Circe-Light;
 		}
 			.b-footer .b-block .bot a {
 				color: #999999; 	
@@ -2146,15 +2147,16 @@ margin-top: 40px;
 }
 .gmap-bubble-marker{
 	-webkit-transform-origin: -10% 50%;
-    -moz-transform-origin: -10% 50%;
-    -o-transform-origin: -10% 50%;
-    -ms-transform-origin: -10% 50%;
-    transform-origin: -10% 50%;
+	-moz-transform-origin: -10% 50%;
+	-o-transform-origin: -10% 50%;
+	-ms-transform-origin: -10% 50%;
+	transform-origin: -10% 50%;
 	-webkit-transition: all 200ms ease-out;
-	   -moz-transition: all 200ms ease-out;
-	    -ms-transition: all 200ms ease-out;
-	   	 -o-transition: all 200ms ease-out;
-			transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-ms-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+	box-shadow: 0px 5px 25px rgba(0,0,0,0.4);
 }
 .gmap-bubble-marker-hide{
 	-webkit-transform: scale(0.5);

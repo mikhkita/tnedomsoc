@@ -54,10 +54,10 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-	var myPlace = new google.maps.LatLng(56.501157, 85.001960);
+	var myPlace = new google.maps.LatLng(56.501057, 85.001960);
     var myOptions = {
         zoom: 17,
-        center: myPlace,
+        center: new google.maps.LatLng(56.501157, 85.001960),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scrollwheel: false,
@@ -71,7 +71,7 @@ $(document).ready(function(){
         url: "i/pin.png", // url
         scaledSize: new google.maps.Size(38, 58), // scaled size
         origin: new google.maps.Point(0,0), // origin
-        anchor: new google.maps.Point(19,39) // anchor
+        anchor: new google.maps.Point(19,58) // anchor
         },
         animation: google.maps.Animation.DROP,
         map: map,
