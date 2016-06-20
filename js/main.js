@@ -54,7 +54,7 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
     
-	var myPlace = new google.maps.LatLng(56.503872, 85.019267);
+	var myPlace = new google.maps.LatLng(56.501157, 85.001960);
     var myOptions = {
         zoom: 17,
         center: myPlace,
@@ -71,7 +71,7 @@ $(document).ready(function(){
         url: "i/pin.png", // url
         scaledSize: new google.maps.Size(38, 58), // scaled size
         origin: new google.maps.Point(0,0), // origin
-        anchor: new google.maps.Point(60,-7) // anchor
+        anchor: new google.maps.Point(19,39) // anchor
         },
         animation: google.maps.Animation.DROP,
         map: map,
@@ -81,50 +81,22 @@ $(document).ready(function(){
     var contentString = '<div class="gmap-bubble-marker-cont"><div class="gmap-bubble-marker"><div class="gmap-close-button"></div><p class="gmap-cont gmap-cont-1">Авторская клиника эстетической<br>стоматологии и косметологии «COSMODENT»<br><strong>Иркутсктий тракт, 5<br>+7 (382) 220-23-32</strong></p></div></div>';
     var infowindow = new google.maps.InfoWindow({
         content: contentString
-      });
-    // marker.addListener('click', function() {
-    //     infowindow.open(map, marker);
-    //   });
+    });
 
     google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
-            var timeHide = setInterval(function(){
-                if( $("div").is(".gm-style-iw") ){
-                    $(".gm-style-iw").siblings("div").hide();
-                    clearInterval(timeHide);
-                }
-            },5);
-        });
+        infowindow.open(map,marker);
+        if( $(".gmap-bubble-marker").hasClass("gmap-bubble-marker-hide") ){
+            $(".gmap-bubble-marker").removeClass("gmap-bubble-marker-hide");
+        }else{
+            $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+        }
+    });
     google.maps.event.addListenerOnce(map, 'idle', function(){
         infowindow.open(map,marker);
-        var timeHide = setInterval(function(){
-            if( $("div").is(".gm-style-iw") ){
-                $(".gm-style-iw").siblings("div").hide();
-                clearInterval(timeHide);
-            }
-        },5);
     });
     $("body").on("click",".gmap-close-button",function(){
-            infowindow.close();
-        });
-    //  var options = {
-    //     $AutoPlay: true,                                
-    //     $SlideDuration: 500,                            
-
-    //     $BulletNavigatorOptions: {                      
-    //         $Class: $JssorBulletNavigator$,             
-    //         $ChanceToShow: 2,                           
-    //         $AutoCenter: 1,                            
-    //         $Steps: 1,                                  
-    //         $Lanes: 1,                                  
-    //         $SpacingX: 10,                              
-    //         $SpacingY: 10,                              
-    //         $Orientation: 1                             
-    //     }
-    // };
-
-    // var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
+        $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+    });
 
     $('.slider-cont').slick({
         dots: true,
