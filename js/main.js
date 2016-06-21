@@ -163,4 +163,40 @@ $(document).ready(function(){
             "20:00"
         ]
     });
+
+    
+
+    $("#search").click(function(){
+        $(".b-header ul li:nth-child(n+4)").animate({marginRight: "hide",width: "hide"}, 200);
+        $(this).animate({
+            width: "465px"
+          }, 200, function() {
+            $("#search input").fadeIn(150);
+            $("#search input[type='text']").focus();
+        });
+    });
+    // $("#search input[type=text]").blur(function(){
+
+    //     $("#search input").fadeOut(100);
+    //     $(".b-header ul li:nth-child(n+4)").animate({marginRight: "toggle",width: "toggle"}, 200);
+    //     $("#search").animate({
+    //         width: "34px"
+    //       }, 200);   
+    // });
+    var open = false;
+    $("body").on("mouseup","#search *",function(){
+        open = true;
+
+    });
+    $("body").on("mousedown",function() {
+        open = false;
+    }).bind("mouseup",function(){
+        if( !open ){
+            $("#search input").fadeOut(100);
+            $(".b-header ul li:nth-child(n+4)").animate({marginRight: "show",width: "show"}, 200);
+            $("#search").animate({
+                width: "34px"
+              }, 200);  
+        }
+    });
 });

@@ -496,8 +496,8 @@ a.link {
 	padding-top: 55px;
 }
 	.b-header .logo {
-		width: 168px;
-		height: 181px;
+		width: 175px;
+		height: 187px;
 		background-image: url("../i/logo.png");
 		background-size: contain;
 		background-position: 50%;
@@ -538,25 +538,69 @@ a.link {
 				   	 -o-transition: all 150ms ease-out;
 						transition: all 150ms ease-out;
 			}
-				.b-header ul li:hover a:after {
+			.b-header ul li:hover a:after {
 					bottom: -3px;
 					background-color: #FFF;
 				}
 	.b-header .search {
-		width: 34px;
-		height: 34px;
+		min-width: 34px;
+		min-height: 34px;
 		background-color: #c8c3bb;
-		background-image: url("../i/search.png");
-		background-position: 50%;
-		background-repeat: no-repeat;
-		background-size: 17px;
-		border-radius: 50%;
+		border-radius: 18px;
 		position: relative;
-		top: -5px;
+		box-sizing:border-box;
+		top: -7px;
 		left: -22px;
+		cursor: text;
 	}
+		.b-header .search:after {
+			position: absolute;
+			font-size: 0;
+			content: "";
+			width: 17px;
+			height: 17px;
+			background-image: url("../i/search.png");
+			right: 8px;
+			top: 8px;
+			cursor: text;
+		}
+		.b-header .search input[type="text"] {
+			border: none;
+			font-family: "Circe-Light";
+			width: 465px;
+			color: #fff;
+			font-size: 16px;
+			padding: 6px 50px 5px 25px;
+			box-sizing: border-box;
+			background: none;
+		}
+		.b-header .search input[type="text"]::-webkit-input-placeholder {
+			color: #fff;
+			font-size: 16px;
+			font-family: "Circe-Light";
+		}
+		.b-header .search input[type="text"]:-moz-placeholder {
+			color: #fff;
+			font-size: 16px;
+			font-family: "Circe-Light";
+		}
+		.b-header .search input[type="submit"] {
+			position: absolute;
+			height: 100%;
+			width: 50px;
+			opacity: 0;
+			top: 0;
+			right: 0;
+			border: none;
+			cursor: pointer;
+			z-index: 100;
+		}
+		.b-header .search form{
+			font-size: 0px;
+		}
 	.b-header .phone-cont {
 		text-align: right;
+		margin-top: -12px;
 	}
 		.b-header .phone-cont h3 {
 			font-size: 18px;
@@ -1195,9 +1239,8 @@ margin-top: 40px;
 		background-image: url("../i/logo@2x.png");
 	}
 }	
-@media screen and (max-width: 1250px){
-	
-}
-@media screen and (max-width: 1020px){
-
+@media screen and (min-width: 1900px){
+	.b-main .b-block .content h1 {
+		font-size: 40px;
+	}
 }
