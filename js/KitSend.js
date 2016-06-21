@@ -61,6 +61,7 @@ $(document).ready(function(){
 		$this.fancybox({
 			padding : 0,
 			content : $popup,
+			fitToView: false,
 			helpers: {
 	         	overlay: {
 	            	locked: true 
