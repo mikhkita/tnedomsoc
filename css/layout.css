@@ -573,7 +573,7 @@ a.link {
 					text-decoration: underline;
 				}
 .b-main{
-	background-color: #5f4d3c;
+	background-color: #604d3e;
 	background-image: url("../i/main-back.jpg");
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
@@ -581,19 +581,6 @@ a.link {
 	color: #fff;
 	box-sizing: border-box;
 }
-	
-	/*.b-main .main-woman {
-		position: absolute;
-		background-size: contain;
-		background-position: 0% 100%;
-		background-repeat: no-repeat;
-		width: 48.7%;
-		min-height: 576px;
-    	min-width: 731.52px;
-		bottom: 0;
-		left: 50%;
-		background-image: url("../i/main-woman.png");
-	}*/
 	.b-main .b-block {
 
 	}
