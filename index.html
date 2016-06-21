@@ -44,6 +44,30 @@
 		<li class="v" style="margin-left:580px"></li>
 		<li class="v" ></li>
 	</ul> -->
+	<div class="b-header-fixed">
+		<div class="b-header b-block clearfix">
+			<a href="#" class="logo left"></a>
+			<ul class="left clearfix">
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Врачи</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Работы</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="phone-cont right">
+				<h3>+7 (3822) 202 332</h3>
+				<h4><a href="#">Иркутский тракт, 5</a></h4>
+			</div>
+			<div href="#" class="search right">
+				<form action="#">
+					<input type="text" name="q" placeholder="Поиск по сайту" required style="display: none;">
+					<input type="submit" style="display: none;">
+				</form>
+			</div>
+		</div>
+	</div>
 	<div class="b b-main">
 		<div class="b-block">
 			<div class="b-header clearfix">
@@ -61,7 +85,12 @@
 					<h3>+7 (3822) 202 332</h3>
 					<h4><a href="#">Иркутский тракт, 5</a></h4>
 				</div>
-				<div href="#" class="search right"></div>
+				<div href="#" class="search right" id="search">
+					<form action="#">
+						<input type="text" name="q" placeholder="Поиск по сайту" required style="display: none;">
+						<input type="submit" style="display: none;">
+					</form>
+				</div>
 			</div>
 			<div class="content">
 				<div>
@@ -353,6 +382,7 @@
 						<h3 class="left">Валентина<br>Комарова</h3>
 					</div>
 					<p>Я&nbsp;полном восторге!!! Такого сервиса еще нет ни&nbsp;у&nbsp;кого!!!! Все предусмотрено, все для пациента))) , осталось еще на&nbsp;дом стоматолога для лечения зубов услугу добавить))))) удачи, и&nbsp;процветания!!!!</p>
+					<a class="link fancy" href="#" data-block="#b-popup-full">Читать полностью</a>
 				</div>
 				<div>
 					<div class="photo-cont clearfix">
@@ -376,7 +406,7 @@
 					<p>В&nbsp;очередной раз спасибо. Хожу раз в&nbsp;полгода на&nbsp;профессиональную гигиену. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.</p>
 				</div>
 			</div>
-			<button class="btn btn-brown fancy" data-block="#b-popup-review">Оставить отзыв</button>
+			<button class="btn btn-brown fancy" data-block="#b-popup-auth">Оставить отзыв</button>
 		</div>
 	</div>
 	<div class="b b-articles">
@@ -517,7 +547,21 @@
 				</form>
 			</div>
 		</div>
-		<div id="b-popup-review">
+		<div id="b-popup-full">
+			<div class="b-popup full-review">
+				<div class="photo-cont clearfix">
+					<div style="background-image: url('i/review.jpg');" class="img left"></div>
+					<div class="text left">
+						<h3>Алена водонаева</h3>
+						<h4>27.05.2016</h4>
+					</div>
+				</div>
+					<p>В&nbsp;очередной раз спасибо.<br />
+					Хожу раз в&nbsp;полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
+					Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование, атмосфера&nbsp;&mdash; все на&nbsp;высшем уровне. Спасибо за&nbsp;лечение, консультации и&nbsp;советы!</p>
+			</div>
+		</div>
+		<div id="b-popup-auth">
 			<div class="b-popup">
 				<h3>оставить отзыв</h3>
 				<h4>Для того, чтобы оставить отзыв, требуется авторизоваться через Вконтакте</h4>

@@ -62,6 +62,7 @@ $(document).ready(function(){
 			padding : 0,
 			content : $popup,
 			fitToView: false,
+			scrolling: 'no',
 			helpers: {
 	         	overlay: {
 	            	locked: true 

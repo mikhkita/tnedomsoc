@@ -19,12 +19,20 @@ $(document).ready(function(){
         if(myHeight > 640) {
             $(".b-main").css('background-size',"auto "+myHeight+"px");
         } else $(".b-main").css('background-size',"auto 640px");
-        $(".b-main .b-block .content").height(myHeight);
+        $(".b-main .b-block .content").height(myHeight-55);
        
 
     }
+
     $(window).resize(resize);
     resize();
+
+    $(window).scroll(function(){
+        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+        if(scroll > ($(".b-block .b-header").height()-50) ) $(".b-header-fixed").slideDown(); else $(".b-header-fixed").slideUp();
+        // $("body").mousedown();
+        // $("body").mouseup();
+    });
 
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
@@ -146,9 +154,9 @@ $(document).ready(function(){
         minTime: 0,
         yearStart: 2016,
         yearEnd: 2030,
+        scrollInput: false,
         scrollMonth: false,
         allowTimes: [
-            "8:00",
             "9:00",
             "10:00",
             "11:00",
@@ -159,6 +167,38 @@ $(document).ready(function(){
             "16:00",
             "17:00",
             "18:00",
+            "19:00",
+            "20:00"
         ]
+    });
+
+    
+
+    $(".b-header .search").click(function(){
+        var $this = $(this);
+        $(this).parent().find("ul li:nth-child(n+4)").animate({marginRight: "hide",width: "hide"}, 200);
+        $(this).animate({
+            width: "465px"
+          }, 200, function() {
+            $this.find("input").fadeIn(150);
+            $this.find("input[type='text']").focus();
+        });
+    });
+
+    var open = false;
+    $("body").on("mouseup",".b-header .search *",function(){
+        open = true;
+
+    });
+    $("body").on("mousedown",function() {
+        open = false;
+    }).bind("mouseup",function(){
+        if( !open ){
+            $(".b-header .search input").fadeOut(100);
+            $(".b-header ul li:nth-child(n+4)").animate({marginRight: "show",width: "show"}, 200);
+            $(".b-header .search").animate({
+                width: "34px"
+              }, 200);  
+        }
     });
 });
