@@ -19,7 +19,7 @@ $(document).ready(function(){
         if(myHeight > 640) {
             $(".b-main").css('background-size',"auto "+myHeight+"px");
         } else $(".b-main").css('background-size',"auto 640px");
-        $(".b-main .b-block .content").height(myHeight);
+        $(".b-main .b-block .content").height(myHeight-55);
        
 
     }
@@ -146,9 +146,9 @@ $(document).ready(function(){
         minTime: 0,
         yearStart: 2016,
         yearEnd: 2030,
+        scrollInput: false,
         scrollMonth: false,
         allowTimes: [
-            "8:00",
             "9:00",
             "10:00",
             "11:00",
@@ -159,6 +159,8 @@ $(document).ready(function(){
             "16:00",
             "17:00",
             "18:00",
+            "19:00",
+            "20:00"
         ]
     });
 });
