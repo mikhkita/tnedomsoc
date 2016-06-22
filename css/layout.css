@@ -126,9 +126,7 @@ button {
 		opacity: 0.8;
 		z-index: 9999;
 	}
-.fancybox-inner{
-	overflow: visible !important;
-}
+
 .bold{
 	font-family: 'Circe-Bold';
 }
