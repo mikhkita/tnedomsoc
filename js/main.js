@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if(scroll > ($(".b-block .b-header").height()-50) ) $(".b-header-fixed").slideDown(); else $(".b-header-fixed").slideUp();
+        if(scroll > ($(".b-block .b-header").height()-50) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
         // $("body").mousedown();
         // $("body").mouseup();
     });
@@ -151,10 +151,8 @@ $(document).ready(function(){
     $('#datepicker').datetimepicker({
         format:'d.m.Y H:i',
         minDate: 0,
-        minTime: 0,
         yearStart: 2016,
         yearEnd: 2030,
-        scrollInput: false,
         scrollMonth: false,
         allowTimes: [
             "9:00",
