@@ -63,11 +63,9 @@ $(document).ready(function(){
 			content : $popup,
 			fitToView: false,
 			scrolling: 'no',
-			helpers: {
-	         	overlay: {
-	            	locked: true 
-	         	}
-	      	},
+			tpl: {
+				closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
+			},
 			beforeShow: function(){
 				$popup.find(".custom-field").remove();
 				if( $this.attr("data-value") ){
@@ -107,7 +105,13 @@ $(document).ready(function(){
 	});
 
 	$(".fancy-img").fancybox({
-		padding : 0
+		padding : 0,
+		margin: [20, 60, 20, 60],
+		tpl: {
+		closeBtn : '<a title="Закрыть" class="popup-close icon-close close-gallery" href="javascript:;"></a>',
+		next     : '<a title="Вперед" class="fancybox-nav fancybox-next" href="javascript:;"><span class="icon-arrow-right"></span></a>',
+		prev     : '<a title="Назад" class="fancybox-nav fancybox-prev" href="javascript:;"><span class="icon-arrow-left"></span></a>'
+		}
 	});
 
 	$(".ajax").parents("form").submit(function(){
