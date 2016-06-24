@@ -208,6 +208,14 @@ $(document).ready(function(){
             heightStyle: "content",
             collapsible: true
         });
+        var active = $(".service-accord .ui-state-active").index();
+        $(".service-accord h3").click(function(e){
+            if($(this).index() == active) {
+                window.location.assign($(this).attr("data-href")); 
+            } else active = $(this).index();
+            
+        // window.open($(this).attr("data-href"),'_blank');
+        });
         // $(window).scroll(function(){
         //     var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
         //     if(scroll < $(".service-text").offset().top-100) $( ".service-accord" ).removeClass("fixed abs");
@@ -227,7 +235,9 @@ $(document).ready(function(){
     $('.articles-footer-slider').slick({
         prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
         nextArrow: "<span class='footer-arrow icon-arrow-right'></span>",
+        variableWidth: true,
         slidesToShow: 3,
         slidesToScroll: 1
     });
+    
 });

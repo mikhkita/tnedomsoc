@@ -257,10 +257,25 @@ b {
 
 	.b-text ul {
 		margin-bottom: 24px;
+		font-family: "Circe-Light";
+		margin-left: 15px;
 	}
 		.b-text ul li {
-
+			position: relative;
+			padding-left: 15px;
+			margin-bottom: 5px;
 		}
+			.b-text ul li:before {
+				position: absolute;
+				content: "";
+				font-size: 0;
+				top: 8px;
+				left: 1px;
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background-color: #1f1f1f;
+			}
 	.b-text p + ul {
 		margin-top: -18px;
 	}
@@ -1307,6 +1322,13 @@ margin-top: 40px;
 	.b-doctors-page {
 		background-image: url("../i/doctors.jpg");
 	}
+	.b-contacts-page {
+		background-image: url("../i/contacts.jpg");
+	}
+		.b-contacts-page .b-block {
+			padding-bottom: 144px !important;
+		}
+
 .b-other .b-block {
 	color: #fff;
 	padding-bottom: 100px;
@@ -1504,6 +1526,7 @@ padding: 40px 0;
 				padding: 13px 25px 8px;
 				position: relative;
 				margin: 0;
+				border-radius: 0;
 			}
 				.b-other-content .b-block .service-accord h3 i,.b-other-content .b-block .service-accord h3:after {
 					font-family: 'icomoon' !important;
@@ -1559,6 +1582,7 @@ padding: 40px 0;
 							display: inline-block;
 							color: #9b9b9b;
 							line-height: 1.5;
+							font-family: 'Circe-Light';
 						}
 							.b-other-content .b-block .service-accord div a:hover {
 								color: #dfc480;
@@ -1703,95 +1727,150 @@ padding: 40px 0;
 						text-decoration: underline;	
 						color: #1f1f1f;
 					}
-	.b-other-content .b-block .doctors {
-		margin-top: 40px;
-		width: 100%;
-	}
-		.b-other-content .b-block .doctors li {
-			width: 269px;
-			height: 544px;
-			float: left;
-			margin-right: 21px;
-			margin-bottom: 60px;
+		.b-other-content .b-block .doctors {
+			margin-top: 40px;
+			width: 100%;
 		}
-			.b-other-content .b-block .doctors li:nth-child(4n) {
-				margin-right: 0;
+			.b-other-content .b-block .doctors li {
+				width: 269px;
+				height: 544px;
+				float: left;
+				margin-right: 21px;
+				margin-bottom: 60px;
 			}
-			.b-other-content .b-block .doctor-cont {
-				display: table;
-				text-align: center;
-				height: 363px;
-				width: 100%;
-				background-position: 50% 100%;
-				background-size: cover;
-				margin-bottom: 25px;
-				background-image: url("../i/doctor-1.jpg");
-			}
-				.b-other-content .b-block .doctor-cont a {
-					display: table-cell;
-					text-transform: uppercase;
-					color: #fff;
-					vertical-align: middle;
-					opacity: 0;
+				.b-other-content .b-block .doctors li:nth-child(4n) {
+					margin-right: 0;
+				}
+				.b-other-content .b-block .doctor-cont {
+					display: table;
+					text-align: center;
+					height: 363px;
 					width: 100%;
-					height: 100%;
-					-webkit-transition: all 200ms ease-out;
-				    -moz-transition: all 200ms ease-out;
-				    -ms-transition: all 200ms ease-out;
-				    -o-transition: all 200ms ease-out;
-				    transition: all 200ms ease-out;
+					background-position: 50% 100%;
+					background-size: cover;
+					margin-bottom: 25px;
+					background-image: url("../i/doctor-1.jpg");
 				}
-					.b-other-content .b-block .doctor-cont a:hover {
-						opacity: 1;
-						background-color: rgba(191, 158, 77,0.631);
+					.b-other-content .b-block .doctor-cont a {
+						display: table-cell;
+						text-transform: uppercase;
+						color: #fff;
+						vertical-align: middle;
+						opacity: 0;
+						width: 100%;
+						height: 100%;
+						-webkit-transition: all 200ms ease-out;
+					    -moz-transition: all 200ms ease-out;
+					    -ms-transition: all 200ms ease-out;
+					    -o-transition: all 200ms ease-out;
+					    transition: all 200ms ease-out;
 					}
-			.b-other-content .b-block .doctors li .doctor-link {
-				display: block;
-				font-size: 24px;
-				font-family: "Circe-Bold";
-				line-height: 1.25;
-				color: #1f1f1f;
-				text-transform: uppercase;
-				margin-bottom: 15px;
+						.b-other-content .b-block .doctor-cont a:hover {
+							opacity: 1;
+							background-color: rgba(191, 158, 77,0.631);
+						}
+				.b-other-content .b-block .doctors li .doctor-link {
+					display: block;
+					font-size: 24px;
+					font-family: "Circe-Bold";
+					line-height: 1.25;
+					color: #1f1f1f;
+					text-transform: uppercase;
+					margin-bottom: 15px;
+				}
+					.b-other-content .b-block .doctors li .doctor-link:hover {
+						text-decoration: underline;
+					}
+					.b-other-content .b-block .doctors li h4 {
+						font-size: 18px;
+						font-family: "Circe-Light";
+						max-height: 81px;
+						overflow: hidden;
+					}
+		.b-other-content .b-block .doctor-detail {
+			position: relative;
+		}
+			.b-other-content .b-block .doctor-detail img {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				max-width: 370px;
+				max-height: 100%;
 			}
-				.b-other-content .b-block .doctors li .doctor-link:hover {
-					text-decoration: underline;
-				}
-				.b-other-content .b-block .doctors li h4 {
-					font-size: 18px;
-					font-family: "Circe-Light";
-					max-height: 81px;
-					overflow: hidden;
-				}
-	.b-other-content .b-block .doctor-detail {
-		position: relative;
-	}
-		.b-other-content .b-block .doctor-detail img {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			max-width: 370px;
-			max-height: 100%;
-		}
-		.b-other-content .b-block .doctor-detail .text {
-			width: 765px;
-			padding-bottom: 35px;
-		}
-			.b-other-content .b-block .doctor-detail .text h2 {
+			.b-other-content .b-block .doctor-detail .text {
+				width: 765px;
+				padding-bottom: 35px;
+			}
+				.b-other-content .b-block .doctor-detail .text h2 {
 
-			}
-			.b-other-content .b-block .doctor-detail .text h3 {
+				}
+				.b-other-content .b-block .doctor-detail .text h3 {
+					font-size: 24px;
+					font-family: "Circe-Bold";
+					color: #dfc480;
+					margin-top: 15px;
+				}
+				.b-other-content .b-block .doctor-detail .text button {
+					margin-top: 30px;
+				}
+				.b-other-content .b-block .doctor-detail .text .b-text {
+					margin-top: 45px;
+				}
+		.b-other-content .b-block .contacts-cont {
+
+		}	
+			.b-other-content .b-block .contacts-cont h2 {
+
+margin-bottom: 25px;
+
+}
+			.b-other-content .b-block .contacts-cont h3 {
 				font-size: 24px;
-				font-family: "Circe-Bold";
-				color: #dfc480;
-				margin-top: 15px;
+				text-align: center;
+				margin: 85px 0 75px;
+				position: relative;
 			}
-			.b-other-content .b-block .doctor-detail .text button {
-				margin-top: 30px;
+			.b-other-content .b-block .contacts-cont h3:after,.b-other-content .b-block .contacts-cont h3:before {
+				position: absolute;
+				font-size: 0;
+				left: 50%;
+				margin-left: -146px;
+				content: "";
+				height: 2px;
+				background-color: #dfc480;
+				width: 292px;
 			}
-			.b-other-content .b-block .doctor-detail .text .b-text {
-				margin-top: 45px;
-			}
+				.b-other-content .b-block .contacts-cont h3:before {
+					top: -25px;
+				}
+				.b-other-content .b-block .contacts-cont h3:after {
+					bottom: -25px;
+				}
+			.b-other-content .b-block .contacts-cont .contacts-gallery {
+
+margin-top: 50px;
+}
+				.b-other-content .b-block .contacts-cont .contacts-gallery a {
+					display: block;
+					float: left;
+					width: 368px;
+					height: 360px;
+					margin-right: 28px;
+					background-size: cover;
+					background-position: 50%;
+				}
+					.b-other-content .b-block .contacts-cont .contacts-gallery a:nth-child(3n) {
+						margin-right: 0;
+					}
+				.b-other-content .b-block .contacts-cont .contacts-gallery a:nth-child(1) {
+					background-image: url("../i/gallery-1.jpg");
+				}
+				.b-other-content .b-block .contacts-cont .contacts-gallery a:nth-child(2) {
+					background-image: url("../i/gallery-2.jpg");
+				}
+				.b-other-content .b-block .contacts-cont .contacts-gallery a:nth-child(3) {
+					background-image: url("../i/gallery-3.jpg");
+				}
 .doctors-slider {
 	margin-top: 45px;
 }
@@ -1869,7 +1948,9 @@ padding: 40px 0;
 	padding-bottom: 65px;
 }
 	.articles-footer-slider .slick-slide {
-		margin: 0 12.5px;
+		margin-right: 25px;
+		width: 370px;
+
 	}
 
 .b-about-cosm {
