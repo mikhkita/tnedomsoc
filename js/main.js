@@ -59,8 +59,9 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
-    if($("#map_canvas").length) {
-    	var myPlace = new google.maps.LatLng(56.501057, 85.001960);
+    
+    if( $("#map_canvas").length ){
+        var myPlace = new google.maps.LatLng(56.501057, 85.001960);
         var myOptions = {
             zoom: 17,
             center: new google.maps.LatLng(56.501157, 85.001960),
@@ -104,6 +105,7 @@ $(document).ready(function(){
             $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
         });
     }
+
     $('.slider-cont').slick({
         dots: true,
         prevArrow: "<span class='arrow icon-arrow-left'></span>",
