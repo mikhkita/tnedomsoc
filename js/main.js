@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if(scroll > ($(".b-block .b-header").height()-50) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
+        if(scroll > ($(".b-block .b-header").height()+50) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
         // $("body").mousedown();
         // $("body").mouseup();
     });
@@ -155,6 +155,51 @@ $(document).ready(function(){
             $grid.isotope({ filter: filterValue });
         });
     }
+=======
+    $('.slider-cont').slick({
+        dots: true,
+        prevArrow: "<span class='arrow icon-arrow-left'></span>",
+        nextArrow: "<span class='arrow icon-arrow-right'></span>",
+        fade: true
+    });
+
+    $('.slider-back').slick({
+        arrows: false
+        
+    });
+
+     $('.slider-cont').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log(nextSlide - currentSlide);
+        if( nextSlide - currentSlide == 1 || (currentSlide - nextSlide) > 1) {
+            $('.slider-back').slick('slickNext');
+        } else $('.slider-back').slick('slickPrev');
+    });
+
+    $('.reviews-slider').slick({
+        prevArrow: "<span class='arrow icon-arrow-left black'></span>",
+        nextArrow: "<span class='arrow icon-arrow-right black'></span>",
+        slidesToShow: 2,
+        slidesToScroll: 1
+    });
+    
+    $('.b-articles .articles-slider').slick({
+        prevArrow: "<span class='arrow icon-arrow-left black'></span>",
+        nextArrow: "<span class='arrow icon-arrow-right black'></span>",
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });
+
+    var $grid = $('#doctors').isotope({
+        itemSelector: '#doctors li',
+    });
+    // filter items on button click
+    $('ul.filter').on( 'click', 'li', function() {
+        $('ul.filter li.active').removeClass("active");
+        $(this).addClass("active");
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+>>>>>>> 109f3c258f89a5c11783b5ad4ac42006d22e5ef6
 
     $.datetimepicker.setLocale('ru');
 
@@ -208,5 +253,34 @@ $(document).ready(function(){
                 width: "34px"
               }, 200);  
         }
+    });
+
+    if($(".service-accord").length) {
+        $( ".service-accord" ).accordion({
+            icons: false,
+            heightStyle: "content",
+            collapsible: true
+        });
+        // $(window).scroll(function(){
+        //     var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+        //     if(scroll < $(".service-text").offset().top-100) $( ".service-accord" ).removeClass("fixed abs");
+        //     if(scroll > $(".service-text").offset().top-100 && scroll < $(".b-grey").offset().top-$( ".service-accord" ).height()-85-100 ) $( ".service-accord" ).addClass("fixed").removeClass("abs");
+        //     if(scroll > $(".b-grey").offset().top-$( ".service-accord" ).height()-85 ) { $( ".service-accord" ).addClass("abs").removeClass("fixed"); }
+        // });
+
+    }
+
+
+    $('.doctors-slider').slick({
+        prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
+        nextArrow: "<span class='footer-arrow icon-arrow-right'></span>",
+        slidesToShow: 5,
+        slidesToScroll: 1
+    });
+    $('.articles-footer-slider').slick({
+        prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
+        nextArrow: "<span class='footer-arrow icon-arrow-right'></span>",
+        slidesToShow: 3,
+        slidesToScroll: 1
     });
 });

@@ -67,7 +67,71 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?py5h40');
+    src: url('../fonts/icomoon.eot?py5h40#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon.ttf?py5h40') format('truetype'),
+         url('../fonts/icomoon.woff?py5h40') format('woff'),
+         url('../fonts/icomoon.svg?py5h40#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.diag:before {
+    content: "\e900";
+}
+.terapevt:before {
+    content: "\e901";
+}
+.estet:before {
+    content: "\e902";
+}
+.implant:before {
+    content: "\e903";
+}
+.ortopedia:before {
+    content: "\e904";
+}
+.ortodontia:before {
+    content: "\e905";
+}
+.hiryrg:before {
+    content: "\e906";
+}
+.gigiena:before {
+    content: "\e907";
+}
+.icon-search:before {
+    content: "\e908";
+}
+.icon-arrow-left:before {
+    content: "\e909";
+}
+.icon-arrow-right:before {
+    content: "\e90a";
+}
+.icon-close:before {
+    content: "\e90b";
+}
+.icon-arrow:before {
+    content: "\e90c";
+}
 html,
 body {
 	position: relative;
@@ -132,6 +196,7 @@ button {
 }
 b {
 	font-family: "Circe-Bold";
+	font-weight: normal;
 }
 .underline{
 	text-decoration: underline;
@@ -147,6 +212,9 @@ b {
 	width: 1160px;
 	margin: 0px auto;
 }
+	.b-grey {
+		background-color: #f8f8f8;
+	}
 .b-absolute{
 	position: absolute;
 	top: 0px;
@@ -163,6 +231,40 @@ b {
 	font-size: 20px;
 	font-family: 'Circe-Regular';
 }
+.b-text {
+	color: #1f1f1f;
+	text-align: left;
+}
+	.b-text h2 {
+		font-size: 48px;
+		font-family: "Circe-Bold";
+		text-transform: uppercase;
+		line-height: 1.354;
+		margin-bottom: 24px;
+	}
+	.b-text h3 {
+
+	}
+	.b-text h4 {
+		font-family: "Circe-Bold";
+		text-transform: uppercase;
+		margin-bottom: 6px;
+	}
+	.b-text p {
+		font-family: "Circe-Light";
+		margin-bottom: 24px;
+	}	
+
+	.b-text ul {
+		margin-bottom: 24px;
+	}
+		.b-text ul li {
+
+		}
+	.b-text p + ul {
+		margin-top: -18px;
+	}
+
 
 .title {
 	font-size: 48px;
@@ -171,14 +273,14 @@ b {
 	text-transform: uppercase;
 	line-height: 1.354;
 }
-a.link {
+a.link,.b-text a {
 	font-family: "Circe-Light";
 	position: relative;
 }
-	a.link:hover {
+	a.link:hover,.b-text a:hover {
 		text-decoration: underline;
 	}
-	a.link:after {
+	a.link:after,.b-text a:after {
 		position: absolute;
 	    content: ">";
 	    right: -15px;
@@ -227,48 +329,74 @@ a.link {
 		color: #fff;
 		border-color: #dfc480;
 	}
+.search-btn {
+	width: 25px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	cursor: pointer;
+	color: #333333;
+	font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+	.search-btn:before {
+		content: "\e908";
+		font-size: 15px;
+		right: 0;
+	    top: 50%;
+	    margin-top: -7px;
+	    position: absolute;
+		
+	}
 .slick-slider .arrow {
-	width: 13px;
-	height: 24px;
 	position: absolute;
 	top: 50%;
 	margin-top: -12px;
 	cursor: pointer;
-	background-image: url("../i/arrows.png");
-	background-size: 78px 24px;
-	background-repeat: no-repeat;
 	opacity: 0.5;
+	font-size: 24px;
 	z-index: 100;
 }
 .slick-slider .arrow:hover {
 	opacity: 1;
 }
 
-.slick-slider .left-arrow {
-	background-position: 0px 50%;
+.slick-slider .arrow.icon-arrow-left {
 	left: 0px;
 }
-.slick-slider .right-arrow {
-	background-position: -13px 50%;
+.slick-slider .arrow.icon-arrow-right {
 	right: 0px;
 }
 
-
 .slick-slider .arrow.black {
 	opacity: 1;
+	color: #202020;
 }
-	.slick-slider .left-arrow.black {
-		background-position: -26px 50%;
-	}
-	.slick-slider .right-arrow.black {
-		background-position: -39px 50%;
-	}
-.slick-slider .left-arrow.black:hover {
-	background-position: -52px 50%;
+.slick-slider .arrow.black:hover,.slick-slider .footer-arrow:hover {
+	color: #dfc480;
 }
-.slick-slider .right-arrow.black:hover {
-	background-position: -65px 50%;
+.slick-slider .footer-arrow {
+	position: absolute;
+	top: -90px;
+	right: 	0;
+	cursor: pointer;
+	font-size: 24px;
+	z-index: 100;
 }
+.slick-slider .footer-arrow.icon-arrow-left {
+	right: 50px;
+}
+
 .slick-slider .slick-dots {
 	font-size: 0;
 	padding-bottom: 32px;
@@ -382,17 +510,14 @@ a.link {
 	right: 0;
 	background-image: url("../i/popup-close.png");
 }*/
-//НЕ СКАЧЕТ ПОПАП
-.fancybox-lock .fancybox-overlay {
-    overflow: auto;
+.fancybox-wrap {
+	margin-bottom: 20px;
 }
-
 .b-popup {
 	width: 565px;
 	padding: 55px 70px;
 	box-sizing: border-box;
 	color: #2f2f2f;
-	margin-bottom: 30px;
 }
 	.b-popup h3 {
 		line-height: 1.222;
@@ -501,6 +626,12 @@ a.link {
 		background-position: 50%;
 		background-repeat: no-repeat;
 	}
+		.b-block .b-header .logo {
+			left: 0;
+    		top: 47px;
+		    position: absolute;
+		}
+    
 		.b-header .logo img {
 			display: none;
 		}
@@ -508,6 +639,9 @@ a.link {
 		margin-left: 103px;
 
 	}	
+		.b-block .b-header ul {
+			margin-left: 277px;	
+		}
 		.b-header ul li {
 			float: left;
 			margin-right: 31px;
@@ -551,13 +685,9 @@ a.link {
 		left: -22px;
 		cursor: text;
 	}
-		.b-header .search:after {
+		.b-header .search:before {
 			position: absolute;
-			font-size: 0;
-			content: "";
-			width: 17px;
-			height: 17px;
-			background-image: url("../i/search.png");
+			font-size: 17px;
 			right: 8px;
 			top: 8px;
 			cursor: text;
@@ -663,6 +793,7 @@ a.link {
 		.b-header-fixed .b-header .search {
 			background-color: rgba(148, 148, 148,0.2);
 			top: 7px;
+			color: #787776;
 		}
 		.b-header-fixed .b-header .search:after {
 			background-image: url("../i/search-grey.png");
@@ -817,18 +948,6 @@ a.link {
 				width: 385px;
 				padding-right: 25px;
 			}	
-			.b-services .b-block button {
-				width: 25px;
-				background-image: url("../i/search-black.png");
-				background-position: 100% 50%;
-				background-size: 15px;
-				background-repeat: no-repeat;
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				height: 100%;
-				cursor: pointer;
-			}
 		.b-services .b-block ul {
 			margin-top: 100px;
 		}
@@ -844,17 +963,29 @@ a.link {
 					box-sizing: border-box;
 					text-align: left;
 				}
-				.b-services .b-block li a:hover {
-					background-color: #f8f8f8;
-				}
+				
 				.b-services .b-block li div {
+					position: relative;
 					height: 142px !important;
 					margin-left: 14px;
 					margin-bottom: 30px;
-					background-image: url("../i/teeth.png");
-					background-size: 600px 108px;
-					background-repeat: no-repeat;
+					color: #8e8e8e;
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+
+				    /* Better Font Rendering =========== */
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
 				}
+					.b-services .b-block li div:before {
+						position: absolute;
+						bottom: 0;
+					}
 				.b-services .b-block h3 {
 					font-size: 20px;
 					color: #383838;
@@ -866,45 +997,35 @@ a.link {
 					font-family: "Circe-Light";
 					color: #9b9b9b;
 				}
-					.b-services .b-block li:nth-child(1) div {
-						background-position: 0px 100%;
-						width: 77px;
- 						height: 89px;
+					.b-services .b-block .diag:before{
+						font-size: 89px;
 					}
-					.b-services .b-block li:nth-child(2) div {
-						background-position: -77px 100%;
-						width: 91px;
-  						height: 89px;
+					.b-services .b-block .terapevt:before{
+						font-size: 89px;
 					}
-					.b-services .b-block li:nth-child(3) div {
-						background-position: -168px 100%;
-						width: 86px;
-  						height: 108px;
+					.b-services .b-block .estet:before{
+						font-size: 108px;
 					}
-					.b-services .b-block li:nth-child(4) div {
-						background-position: -254px 100%;
-						width: 66px;
-  						height: 87px;
+					.b-services .b-block .implant:before{
+						font-size: 87px;
 					}
-					.b-services .b-block li:nth-child(5) div {
-						background-position: -320px 100%;
-						width: 66px;
-  						height: 89px;
+					.b-services .b-block .ortopedia:before{
+						font-size: 89px;
 					}
-					.b-services .b-block li:nth-child(6) div {
-						background-position: -386px 100%;
-						width: 73px;
-  						height: 88px;
+					.b-services .b-block .ortodontia:before{
+						font-size: 88px;
 					}
-					.b-services .b-block li:nth-child(7) div {
-						background-position: -459px 100%;
-						width: 66px;
-  						height: 88px;
+					.b-services .b-block .hiryrg:before{
+						font-size: 88px;
 					}
-					.b-services .b-block li:nth-child(8) div {
-						background-position: -525px 100%;
-						width: 75px;
-  						height: 94px;
+					.b-services .b-block .gigiena:before{
+						font-size: 94px;
+					}
+				.b-services .b-block li a:hover {
+					background-color: #f8f8f8;
+				}
+					.b-services .b-block li a:hover div,.b-services .b-block li a:hover h4 {
+						color: #383838;
 					}
 .b-doctors {
 	background-color: #f8f8f8;
@@ -915,11 +1036,11 @@ a.link {
 		.b-doctors .b-block .title {
 
 		}
-		.b-doctors .b-block .filter {
+		.filter {
 			display: inline-block;
 			margin-top: 28px;
 		}
-			.b-doctors .b-block .filter li {
+			.filter li {
 				float: left;
 				text-decoration: none;
 				cursor: pointer;
@@ -937,14 +1058,14 @@ a.link {
 				   	 -o-transition: all 200ms ease-out;
 						transition: all 200ms ease-out;
 			}
-				.b-doctors .b-block .filter li:hover {
+				.filter li:hover {
 					color: #383838;
 					border-color: #383838;
 				}
-				.b-doctors .b-block .filter li:last-child {
+				.filter li:last-child {
 					margin-right: 0;
 				}
-				.b-doctors .b-block .filter li.active {
+				.filter li.active {
 					text-decoration: none;
 					cursor: default;
 					border-color: #dfc480;
@@ -1117,11 +1238,11 @@ margin-top: 40px;
 	.b-articles .b-block {
 
 	}
-		.b-articles .b-block .articles-slider {
+		.articles-slider {
 			margin-top: 45px;
 			padding: 0 58px;
 		}
-			.b-articles .b-block .articles-slider .slick-slide {
+			.articles-slider .slick-slide {
 				width: 327px;
 				height: 463px;
 				background-color: #fff;
@@ -1129,31 +1250,31 @@ margin-top: 40px;
 				text-align: left;
 			}
 
-			.b-articles .b-block .articles-slider .slick-slide .img{
+			.articles-slider .slick-slide .img{
 				font-size: 0;
 				width: 100%;
 				height: 182px;
 				background-size: cover;
 				background-position: 50%;
 			}
-			.b-articles .b-block .articles-slider .slick-slide .text{	
+			.articles-slider .slick-slide .text{	
 				padding: 24px 20px 0 28px;
 				height: 281px;
 				box-sizing: border-box;
 				position: relative;
 			}
-				.b-articles .b-block .articles-slider .slick-slide .text h3 {
+				.articles-slider .slick-slide .text h3 {
 					font-size: 18px;
 					font-family: "Circe-Bold";
 					text-transform: uppercase;
 					margin-bottom: 11px;
 				}
-				.b-articles .b-block .articles-slider .slick-slide .text p {
+				.articles-slider .slick-slide .text p {
 					font-family: "Circe-Light";
 				    max-height: 120px;
 				    overflow: hidden;
 				}
-				.b-articles .b-block .articles-slider .slick-slide .text a {
+				.articles-slider .slick-slide .text a {
 					position: absolute;
 					bottom: 30px;
 				}
@@ -1172,6 +1293,590 @@ margin-top: 40px;
 	width: 100%;
 	height: 395px;
 }
+.b-other {
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+	.b-services-page {
+		background-image: url("../i/services.jpg");
+	}
+	.b-articles-page {
+		background-image: url("../i/articles.jpg");
+	}
+	.b-doctors-page {
+		background-image: url("../i/doctors.jpg");
+	}
+.b-other .b-block {
+	color: #fff;
+	padding-bottom: 100px;
+}
+	.b-other .b-block .b-header .search{
+		background-color: rgba(255, 255, 255,0.5);
+	}
+	.b-other .b-block h1{
+		font-size: 48px;
+		font-family: "Circe-Bold";
+		text-transform: uppercase;
+		color: #fff;
+		margin-top: 84px;
+		margin-bottom: 18px;
+	}
+	
+	.b-other .b-block form {
+		position: relative;
+		display: inline-block;
+	}
+	.b-other .b-block .input {
+		width: 385px;
+	    padding-right: 25px;
+	    border-color: #fff;
+	    color: #fff;
+	}
+	.b-other .b-block .input::-webkit-input-placeholder {
+		color: #fff;
+	}
+	.b-other .b-block .input:-moz-placeholder {
+		color: #fff;
+	}
+	.b-other .b-block .search-btn{
+		opacity: 0.8;
+	    color: #fff;
+	}
+.b-navigation {
+ background-color: #f8f8f8;
+}
+	.b-navigation ul {
+
+padding: 40px 0;
+}
+		.b-navigation li {
+			float: left;
+		}
+			.b-navigation li a {
+				display: block;
+				position: relative;
+				font-family: "Circe-Light";
+				padding-right: 27px;
+			}
+				.b-navigation li a:after {
+					font-size: 5px;
+					position: absolute;
+					content: "\e90c";
+					right: 6px;
+					top: 10px;
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
+				.b-navigation li a:hover {
+					text-decoration: underline;
+				}
+				.b-navigation li.active a{
+					cursor: default;
+					text-decoration: none;
+					color: #000;
+				}
+					.b-navigation li.active a:after {
+						display: none;
+					}
+.b-other-content {
+	text-align: left;
+}
+	.b-other-content .b-block {
+		padding-top: 45px;
+		color: #1f1f1f;
+	}
+		.b-other-content .b-block .title {
+			padding-top: 0;
+
+		}
+
+		.b-other-content .service-list {
+			margin-top: 40px;
+		}
+		.b-other-content .service-list .service-cont {
+			width: 470px;
+			text-align: left;
+			display: inline-block;
+			vertical-align: top;
+			padding-bottom: 70px;
+		}
+			.b-other-content .service-list .service-cont:nth-child(2n+1) {
+				margin-right: 120px;
+			}
+			.b-other-content .service-list .service-cont .service-title {
+				display: table;
+				cursor: pointer;
+				min-height: 86px;
+			}
+				.b-other-content .service-list .service-cont .service-title i {
+					display: table-cell;
+					color: #383838;
+					vertical-align: middle;
+					font-family: 'icomoon' !important;
+				    speak: none;
+				    font-style: normal;
+				    font-weight: normal;
+				    font-variant: normal;
+				    text-transform: none;
+				    line-height: 1;
+				    -webkit-font-smoothing: antialiased;
+				    -moz-osx-font-smoothing: grayscale;
+				}
+				.b-other-content .service-list .service-cont .service-title span {
+					display: table-cell;
+					line-height: 1.222;
+					font-size: 36px;
+					color: #383838;
+					text-transform: uppercase;
+					vertical-align: middle;
+					padding-left: 23px;
+				}
+					.b-other-content .service-list .service-cont .service-title span small {
+						text-transform: lowercase;
+					}
+				.b-other-content .service-list .service-cont .service-title:hover i,
+				.b-other-content .service-list .service-cont .service-title:hover span  {
+					color: #dfc480;
+
+				}
+
+			.b-other-content .service-list .service-cont .diag,
+			.b-other-content .service-list .service-cont .implant,
+			.b-other-content .service-list .service-cont .ortopedia,
+			.b-other-content .service-list .service-cont .ortodontia,
+			.b-other-content .service-list .service-cont .hiryrg {
+				font-size: 72px;
+			}
+			.b-other-content .service-list .service-cont .terapevt {
+				font-size: 70px;
+			}
+			.b-other-content .service-list .service-cont .estet {
+				font-size: 88px;
+			}
+			.b-other-content .service-list .service-cont .gigiena {
+				font-size: 78px;
+			}
+
+			.b-other-content .service-list .service-cont ul {
+				margin-top: 25px;
+			}
+				.b-other-content .service-list .service-cont ul li {
+					margin-bottom: 12px;
+				}
+					.b-other-content .service-list .service-cont  ul li a {
+						color: #9b9b9b;
+						font-family: "Circe-Light";
+					}
+						.b-other-content .service-list .service-cont  ul li a:hover {
+							color: #dfc480;
+							text-decoration: underline;
+						}
+		.b-other-content .b-block .service-text {
+			width: 765px;
+			padding-bottom: 85px;
+		}
+		.b-other-content .b-block .service-accord {
+			width: 368px;
+		}
+			.b-other-content .b-block .service-accord.fixed {
+				position: fixed;
+			    top: 110px;
+			    left: 50%;
+			    margin-left: 212px;
+			}
+			.b-other-content .b-block .service-accord.abs {
+				position: absolute;
+			    bottom: 85px;
+			   	right: 0;
+			}
+			.b-other-content .b-block .service-accord h3{
+				display: table;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 13px 25px 8px;
+				position: relative;
+				margin: 0;
+			}
+				.b-other-content .b-block .service-accord h3 i,.b-other-content .b-block .service-accord h3:after {
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					color: #202020;
+				}
+				.b-other-content .b-block .service-accord h3 i {
+					text-align: center;
+					width: 43px;
+					display: table-cell;
+					vertical-align: middle;
+					font-size: 37px;
+					
+				}
+					.b-other-content .b-block .service-accord h3:after {
+						content: "\e909";
+						display: block;
+						position: absolute;
+						top: 50%;
+						right: 22px;
+						margin-top: -8px;
+						-moz-transform: rotate(-90deg); /* Для Firefox */
+						-ms-transform: rotate(-90deg); /* Для IE */
+						-webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+						-o-transform: rotate(-90deg); /* Для Opera */
+						transform: rotate(-90deg);
+					
+					}
+
+				.b-other-content .b-block .service-accord h3 span {
+					display: table-cell;
+					vertical-align: middle;
+					font-size: 20px;
+					font-family: "Circe-Regular";
+					text-transform: uppercase;
+					padding-left: 21px;
+					color: #202020;
+					padding-right: 10px;
+				}
+					.b-other-content .b-block .service-accord h3 .estet,.b-other-content .b-block .service-accord h3 .gigiena,.b-other-content .b-block .service-accord h3 .terapevt {
+						font-size: 	42px;
+					}
+
+						.b-other-content .b-block .service-accord div a {
+							margin-bottom: 11px;
+							display: inline-block;
+							color: #9b9b9b;
+							line-height: 1.5;
+						}
+							.b-other-content .b-block .service-accord div a:hover {
+								color: #dfc480;
+								text-decoration: underline;
+							}
+				.ui-accordion .ui-accordion-content {
+					border:none;
+					padding: 21px 30px 14px;
+				}
+				.ui-accordion-header.ui-state-default {
+					background: #fff;
+					border: 1px solid #fff;
+				}
+					.ui-accordion-header.ui-state-default.ui-state-hover {
+						border-color: #9b9b9b;
+					}
+					.ui-accordion-header.ui-state-default.ui-accordion-header-active {
+						background: #dfc480;
+						border-color: #dfc480;
+					}
+							.ui-accordion-header.ui-state-default.ui-accordion-header-active i,.ui-accordion-header.ui-state-default.ui-accordion-header-active span,.ui-accordion-header.ui-state-default.ui-accordion-header-active:after{
+								color: 	#fff !important;
+							}
+							.b-other-content .b-block .service-accord h3.ui-accordion-header-active:after {
+								-moz-transform: rotate(90deg); /* Для Firefox */
+								-ms-transform: rotate(90deg); /* Для IE */
+								-webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+								-o-transform: rotate(90deg); /* Для Opera */
+								transform: rotate(90deg);
+							}
+
+		.b-other-content .b-block .articles-filter {
+			display: inline-block;
+			margin: 25px 0;
+		}
+			.b-other-content .b-block .articles-filter li {
+				margin-bottom: 15px;
+				float: left;
+				text-decoration: none;
+				cursor: pointer;
+				color: #717171;
+				margin-right: 15px;
+				border: 1px solid;
+				letter-spacing: 0.4px;
+				padding: 4px 10px 3px;
+				border-color: #999;
+				border-radius: 0px;
+				font-family: "Circe-Light";
+				-webkit-transition: all 200ms ease-out;
+				-moz-transition: all 200ms ease-out;
+				-ms-transition: all 200ms ease-out;
+				-o-transition: all 200ms ease-out;
+				transition: all 200ms ease-out;
+			}
+				.b-other-content .b-block .articles-filter li:hover {
+					color: #383838;
+					border-color: #383838;
+				}
+				.b-other-content .b-block .articles-filter li:last-child {
+					margin-right: 0;
+				}
+				.b-other-content .b-block .articles-filter li.active {
+					text-decoration: none;
+					cursor: default;
+					border-color: #dfc480;
+					background-color: #dfc480;
+					color: #FFF;
+				}
+		.b-other-content .b-block .articles-all {
+			margin-bottom: 	20px;
+		}
+			.b-other-content .b-block .articles-all li {
+				width: 370px;
+				height: 463px;
+				background-color: #fff;
+				float: 	left;	
+				margin: 25px 0;
+				margin-right: 25px;
+				text-align: left;
+			}
+				.b-other-content .b-block .articles-all li:nth-child(3n) {
+					margin-right: 0;
+				}
+				.b-other-content .b-block .articles-all li .img{
+					font-size: 0;
+					width: 100%;
+					height: 182px;
+					background-size: cover;
+					background-position: 50%;
+				}
+				.b-other-content .b-block .articles-all li .text{	
+					padding: 24px 20px 0 28px;
+					height: 281px;
+					box-sizing: border-box;
+					position: relative;
+				}
+					.b-other-content .b-block .articles-all li .text h3 {
+						font-size: 18px;
+						font-family: "Circe-Bold";
+						text-transform: uppercase;
+						margin-bottom: 11px;
+					}
+					.b-other-content .b-block .articles-all li .text p {
+						font-family: "Circe-Light";
+					    max-height: 120px;
+					    overflow: hidden;
+					}
+					.b-other-content .b-block .articles-all li .text a {
+						position: absolute;
+						bottom: 30px;
+					}
+		.b-other-content .b-block .show-next {
+  			text-transform: uppercase;
+  			text-align: center;	
+  			padding-bottom: 45px;
+		}			
+			.b-other-content .b-block .show-next a{
+				display: inline-block;	
+			}
+
+		.b-other-content .b-block .articles-nav {
+			width: 368px;
+		}
+			.b-other-content .b-block .articles-nav .rubrics {
+				margin-bottom: 20px;
+			}
+			.b-other-content .b-block .articles-nav h3 {
+				font-family: "Circe-Bold";
+				font-size: 24px;
+				color: #dfc480;
+				margin-bottom: 15px;
+				text-transform: uppercase;
+			}
+
+			.b-other-content .b-block .articles-nav a {
+				color: 	#a6a6a6;
+				font-family: "Circe-Light";
+				display: block;
+				margin-bottom: 10px;	
+			}
+					.b-other-content .b-block .articles-nav a:hover {
+						text-decoration: underline;	
+						color: #1f1f1f;
+					}
+	.b-other-content .b-block .doctors {
+		margin-top: 40px;
+		width: 100%;
+	}
+		.b-other-content .b-block .doctors li {
+			width: 269px;
+			height: 544px;
+			float: left;
+			margin-right: 21px;
+			margin-bottom: 60px;
+		}
+			.b-other-content .b-block .doctors li:nth-child(4n) {
+				margin-right: 0;
+			}
+			.b-other-content .b-block .doctor-cont {
+				display: table;
+				text-align: center;
+				height: 363px;
+				width: 100%;
+				background-position: 50% 100%;
+				background-size: cover;
+				margin-bottom: 25px;
+				background-image: url("../i/doctor-1.jpg");
+			}
+				.b-other-content .b-block .doctor-cont a {
+					display: table-cell;
+					text-transform: uppercase;
+					color: #fff;
+					vertical-align: middle;
+					opacity: 0;
+					width: 100%;
+					height: 100%;
+					-webkit-transition: all 200ms ease-out;
+				    -moz-transition: all 200ms ease-out;
+				    -ms-transition: all 200ms ease-out;
+				    -o-transition: all 200ms ease-out;
+				    transition: all 200ms ease-out;
+				}
+					.b-other-content .b-block .doctor-cont a:hover {
+						opacity: 1;
+						background-color: rgba(191, 158, 77,0.631);
+					}
+			.b-other-content .b-block .doctors li .doctor-link {
+				display: block;
+				font-size: 24px;
+				font-family: "Circe-Bold";
+				line-height: 1.25;
+				color: #1f1f1f;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+			}
+				.b-other-content .b-block .doctors li .doctor-link:hover {
+					text-decoration: underline;
+				}
+				.b-other-content .b-block .doctors li h4 {
+					font-size: 18px;
+					font-family: "Circe-Light";
+					max-height: 81px;
+					overflow: hidden;
+				}
+	.b-other-content .b-block .doctor-detail {
+		position: relative;
+	}
+		.b-other-content .b-block .doctor-detail img {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			max-width: 370px;
+			max-height: 100%;
+		}
+		.b-other-content .b-block .doctor-detail .text {
+			width: 765px;
+			padding-bottom: 35px;
+		}
+			.b-other-content .b-block .doctor-detail .text h2 {
+
+			}
+			.b-other-content .b-block .doctor-detail .text h3 {
+				font-size: 24px;
+				font-family: "Circe-Bold";
+				color: #dfc480;
+				margin-top: 15px;
+			}
+			.b-other-content .b-block .doctor-detail .text button {
+				margin-top: 30px;
+			}
+			.b-other-content .b-block .doctor-detail .text .b-text {
+				margin-top: 45px;
+			}
+.doctors-slider {
+	margin-top: 45px;
+}
+.doctors-slider .slick-slide {
+	height: 314px;
+	width: 20%;
+	background-position: 50% 100%;
+	background-size: cover;
+	position: relative;
+	background-image: url("../i/doctor-1.jpg");
+}
+	.doctors-slider .slick-slide .desc-cont {
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding: 125px 22px 0;
+		top: 0;
+		left: 0;
+		box-sizing: border-box;
+		color: #fff;
+		text-align: left;
+		background-color: rgba(52, 52, 52,0.349);
+		-webkit-transition: all 200ms ease-out;
+	    -moz-transition: all 200ms ease-out;
+	    -ms-transition: all 200ms ease-out;
+	   	 -o-transition: all 200ms ease-out;
+			transition: all 200ms ease-out;
+	}
+	.doctors-slider .slick-slide:hover .desc-cont{
+		visibility: visible;
+		opacity: 1;
+	}
+	.doctors-slider .slick-slide .desc-cont h3{
+		font-size: 18px;
+		font-family: "Circe-Bold";
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+	.doctors-slider .slick-slide .desc-cont h4{
+		line-height: 1.3;
+		margin-bottom: 26px;
+		font-family: "Circe-Light";
+	}
+	.doctors-slider .slick-slide .desc-cont h5{
+		font-size: 16px;
+		position: relative;
+		display: inline-block;
+		font-family: "Circe-Light";
+	}
+		.doctors-slider .slick-slide .desc-cont h5:hover {
+			text-decoration: underline;
+		}
+		.doctors-slider .slick-slide .desc-cont h5:before {
+			position: absolute;
+			font-size: 0;
+			width: 16px;
+			height: 1px;
+			content: "";
+			background-color: #fff;
+			right: -20px;
+			top: 10px;
+		}
+		.doctors-slider .slick-slide .desc-cont h5:after {
+			position: absolute;
+			font-size: 13px;
+			content: ">";
+			right: -22px;
+			top: 2px;
+		}
+.articles-footer-slider {
+	padding: 0;
+	padding-bottom: 65px;
+}
+	.articles-footer-slider .slick-slide {
+		margin: 0 12.5px;
+	}
+
+.b-about-cosm {
+	padding: 65px 0;
+}		
+
+
 .b-callback {
 	background-image: url("../i/callback.jpg");
 	background-size: cover;
