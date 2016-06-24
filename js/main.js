@@ -242,4 +242,10 @@ $(document).ready(function(){
         slidesToScroll: 1
     });
     
+    customHandlers["doctor_rec"] = function(el){
+        var name = $(el).attr("data-name");
+        var spec =  $(el).attr("data-spec");
+        $("#name-select option[value='"+name+"'").prop("selected",true);
+        $("#spec-select option[value='"+spec+"'").prop("selected",true);
+    }
 });
