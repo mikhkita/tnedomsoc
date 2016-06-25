@@ -31,11 +31,17 @@ $(document).ready(function(){
     $(window).resize(resize);
     resize();
 
+    var prevScroll = 0;
     $(window).scroll(function(){
-        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if(scroll > ($(".b-other").height()) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
-        // $("body").mousedown();
-        // $("body").mouseup();
+        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop,
+            offset = ($(".b-other").length)?$(".b-other").height():110;
+
+        if( scroll > (offset) && ( $("body").height() - 75 <= scroll + myHeight || prevScroll > scroll) )
+            $(".b-header-fixed").addClass("show"); 
+        else 
+            $(".b-header-fixed").removeClass("show");
+
+        prevScroll = scroll;
     });
 
     $.fn.placeholder = function() {
