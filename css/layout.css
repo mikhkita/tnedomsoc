@@ -1369,7 +1369,10 @@ margin-top: 40px;
 	.b-contacts-page {
 		background-image: url("../i/contacts.jpg");
 	}
-		.b-contacts-page .b-block {
+	.b-reviews-page {
+		background-image: url("../i/reviews.jpg");
+	}
+		.b-contacts-page .b-block,.b-reviews-page .b-block{
 			padding-bottom: 144px !important;
 		}
 
@@ -1461,6 +1464,7 @@ padding: 40px 0;
 	}
 		.b-other-content .b-block .title {
 			padding-top: 0;
+			text-align: left;
 		}
 
 		.b-other-content .service-list {
@@ -1884,20 +1888,18 @@ padding: 40px 0;
 					margin-top: 45px;
 				}
 		.b-other-content .b-block .contacts-cont {
-
+			text-align: center;
 		}	
 			.b-other-content .b-block .contacts-cont h2 {
-
-margin-bottom: 25px;
-
-}
-			.b-other-content .b-block .contacts-cont h3 {
+				margin-bottom: 25px;
+			}	
+			.b-other-content .b-block .contacts-cont .time {
 				font-size: 24px;
 				text-align: center;
 				margin: 85px 0 75px;
 				position: relative;
 			}
-			.b-other-content .b-block .contacts-cont h3:after,.b-other-content .b-block .contacts-cont h3:before {
+			.b-other-content .b-block .contacts-cont .time:after,.b-other-content .b-block .contacts-cont .time:before {
 				position: absolute;
 				font-size: 0;
 				left: 50%;
@@ -1907,16 +1909,19 @@ margin-bottom: 25px;
 				background-color: #dfc480;
 				width: 292px;
 			}
-				.b-other-content .b-block .contacts-cont h3:before {
+				.b-other-content .b-block .contacts-cont button {
+					display: inline-block;
+					margin-top: 5px;
+				}
+				.b-other-content .b-block .contacts-cont .time:before {
 					top: -25px;
 				}
-				.b-other-content .b-block .contacts-cont h3:after {
+				.b-other-content .b-block .contacts-cont .time:after {
 					bottom: -25px;
 				}
 			.b-other-content .b-block .contacts-cont .contacts-gallery {
-
-margin-top: 50px;
-}
+				margin-top: 50px;
+			}
 				.b-other-content .b-block .contacts-cont .contacts-gallery a {
 					display: block;
 					float: left;
