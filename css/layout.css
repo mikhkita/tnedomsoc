@@ -304,11 +304,11 @@ b {
 	box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
 }
 .fancybox-wrap.beforeClose .fancybox-skin{
-	-webkit-transform: rotateX(-15deg) translateY(50px);
-	   -moz-transform: rotateX(-15deg) translateY(50px);
-	    -ms-transform: rotateX(-15deg) translateY(50px);
-	   	 -o-transform: rotateX(-15deg) translateY(50px);
-			transform: rotateX(-15deg) translateY(50px);
+	-webkit-transform: rotateX(0deg) translateY(50px);
+	   -moz-transform: rotateX(0deg) translateY(50px);
+	    -ms-transform: rotateX(0deg) translateY(50px);
+	   	 -o-transform: rotateX(0deg) translateY(50px);
+			transform: rotateX(0deg) translateY(50px);
 }
 .b-text {
 	color: #1f1f1f;
@@ -612,6 +612,7 @@ a.link,.b-text a {
 	padding: 55px 70px;
 	box-sizing: border-box;
 	color: #2f2f2f;
+	margin-bottom: 50px;
 }
 	.b-popup h3 {
 		line-height: 1.222;
@@ -1392,7 +1393,7 @@ margin-top: 40px;
 	background-position: 50%;
 	background-repeat: no-repeat;
 }
-	.b-services-page {
+	/*.b-services-page {
 		background-image: url("../i/services.jpg");
 	}
 	.b-articles-page {
@@ -1402,8 +1403,8 @@ margin-top: 40px;
 		background-image: url("../i/doctors.jpg");
 	}
 	.b-contacts-page {
-		background-image: url("../i/contacts.jpg");
-	}
+		background-image: url("../i/contacts.jpg"); 
+	}*/
 		.b-contacts-page .b-block {
 			padding-bottom: 144px !important;
 		}

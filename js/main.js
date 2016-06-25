@@ -20,16 +20,18 @@ $(document).ready(function(){
             $(".b-main").css('background-size',"auto "+myHeight+"px");
         } else $(".b-main").css('background-size',"auto 640px");
         $(".b-main .b-block .content").height(myHeight-55);
-       
-
     }
+
+    $('.b-other').parallax({
+        speed : 0.5
+    });
 
     $(window).resize(resize);
     resize();
 
     $(window).scroll(function(){
         var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if(scroll > ($(".b-block .b-header").height()+50) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
+        if(scroll > ($(".b-other").height()) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
         // $("body").mousedown();
         // $("body").mouseup();
     });
