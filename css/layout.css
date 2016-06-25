@@ -1395,7 +1395,6 @@ padding: 40px 0;
 	}
 		.b-other-content .b-block .title {
 			padding-top: 0;
-
 		}
 
 		.b-other-content .service-list {
@@ -1421,14 +1420,17 @@ padding: 40px 0;
 					color: #383838;
 					vertical-align: middle;
 					font-family: 'icomoon' !important;
-				    speak: none;
-				    font-style: normal;
-				    font-weight: normal;
-				    font-variant: normal;
-				    text-transform: none;
-				    line-height: 1;
-				    -webkit-font-smoothing: antialiased;
-				    -moz-osx-font-smoothing: grayscale;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					display: block;
+					width: 72px;
+					margin-top: 5px;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
 				}
 				.b-other-content .service-list .service-cont .service-title span {
 					display: table-cell;
@@ -1467,6 +1469,7 @@ padding: 40px 0;
 
 			.b-other-content .service-list .service-cont ul {
 				margin-top: 25px;
+				margin-left: 97px;
 			}
 				.b-other-content .service-list .service-cont ul li {
 					margin-bottom: 12px;
