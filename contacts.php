@@ -68,7 +68,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="b b-other b-contacts-page" data-parallax="scroll" data-image-src="i/contacts.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/contacts.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>
@@ -92,7 +92,11 @@
 					</form>
 				</div>
 			</div>
-			<h1>Контакты</h1>
+			<div class="b-other-text">
+				<div>
+					<h1>Контакты</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-navigation">
@@ -116,7 +120,7 @@
 					<a href="i/gallery-2.jpg" class="fancy-img" rel="fancy-img"></a>
 					<a href="i/gallery-3.jpg" class="fancy-img" rel="fancy-img"></a>
 				</div>
-				<h3>
+				<h3 class="time">
 					Ждем вас по будням с <b>9:00</b> до <b>20:00</b><br>
 					и в субботу с <b>10:00</b> до <b>18:00</b>
 				</h3>

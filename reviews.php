@@ -68,7 +68,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="b b-other b-reviews-page">
+	<div class="b b-other">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>
@@ -92,7 +92,11 @@
 					</form>
 				</div>
 			</div>
-			<h1>Отзывы</h1>
+			<div class="b-other-text">
+				<div>
+					<h1>Отзывы</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-navigation">

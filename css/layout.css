@@ -1415,6 +1415,26 @@ margin-top: 40px;
 	background-position: 50%;
 	background-repeat: no-repeat;
 }
+	.b-other:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		font-size: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.3);
+	}
+	.b-other .b-other-text {
+		display: table;
+		height: 320px;
+		width: 100%;
+		text-align: center;
+	}
+		.b-other .b-other-text > div {
+			display: table-cell;
+			vertical-align: middle;
+		}
 	/*.b-services-page {
 		background-image: url("../i/services.jpg");
 	}
@@ -1433,13 +1453,9 @@ margin-top: 40px;
 		.b-contacts-page .b-block,.b-reviews-page .b-block{
 		background-image: url("../i/contacts.jpg"); 
 	}*/
-		.b-contacts-page .b-block {
-			padding-bottom: 144px !important;
-		}
 
 .b-other .b-block {
 	color: #fff;
-	padding-bottom: 100px;
 }
 	.b-other .b-block .b-header .search{
 		background-color: rgba(255, 255, 255,0.5);
@@ -1449,7 +1465,6 @@ margin-top: 40px;
 		font-family: "Circe-Bold";
 		text-transform: uppercase;
 		color: #fff;
-		margin-top: 84px;
 		margin-bottom: 18px;
 	}
 	

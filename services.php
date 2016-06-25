@@ -90,7 +90,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other b-services-page" data-parallax="scroll" data-image-src="i/services.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/services.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>
@@ -118,11 +118,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</form>
 				</div>
 			</div>
-			<h1>Услуги</h1>
-			<form action="#" method="POST">
-				<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
-				<button class="search-btn"></button>
-			</form>
+			<div class="b-other-text">
+				<div>
+					<h1>Услуги</h1>
+					<form action="#" method="POST">
+						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
+						<button class="search-btn"></button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-navigation">

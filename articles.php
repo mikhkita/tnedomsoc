@@ -68,7 +68,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="b b-other b-articles-page" data-parallax="scroll" data-image-src="i/articles.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/articles.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>
@@ -92,11 +92,15 @@
 					</form>
 				</div>
 			</div>
-			<h1>Статьи</h1>
-			<form action="#" method="POST">
-				<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
-				<button class="search-btn"></button>
-			</form>
+			<div class="b-other-text">
+				<div>
+					<h1>Статьи</h1>
+					<form action="#" method="POST">
+						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
+						<button class="search-btn"></button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-navigation">

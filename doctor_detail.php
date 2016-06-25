@@ -70,7 +70,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="b b-other b-doctors-page" data-parallax="scroll" data-image-src="i/doctors.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/doctors.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>
@@ -94,11 +94,15 @@
 					</form>
 				</div>
 			</div>
-			<h1>Врачи и сотрудники</h1>
-			<form action="#" method="POST">
-				<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
-				<button class="search-btn"></button>
-			</form>
+			<div class="b-other-text">
+				<div>
+					<h1>Врачи и сотрудники</h1>
+					<form action="#" method="POST">
+						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
+						<button class="search-btn"></button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-navigation">
@@ -121,7 +125,6 @@
 						<p><b>Профессиональные навыки:</b> лечение кариеса, пульпита, периодонтита, сложная эндодонтия, перелечивание каналов, эстетическая реставрация зубов.</p>
 						<p><b>Специализация доктора:</b> применение операционного микроскопа. Лечение пациентов в&nbsp;седации (закись азота), работа в&nbsp;условиях общего обезболивания (в&nbsp;наркозе).</p>
 						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
-						<a href="#">Читать полностью</a>
 					</div>
 				</div>
 			</div>
