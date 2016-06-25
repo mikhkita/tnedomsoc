@@ -32,8 +32,9 @@ $(document).ready(function(){
     resize();
 
     $(window).scroll(function(){
-        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if(scroll > ($(".b-other").height()) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
+        var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop,
+            offset = ($(".b-other").length)?$(".b-other").height():110;
+        if(scroll > (offset) ) $(".b-header-fixed").addClass("show"); else $(".b-header-fixed").removeClass("show");
         // $("body").mousedown();
         // $("body").mouseup();
     });

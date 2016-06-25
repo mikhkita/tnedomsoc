@@ -284,11 +284,11 @@ b {
 	    -ms-transition: all 350ms ease-out;
 	   	 -o-transition: all 350ms ease-out;
 			transition: all 350ms ease-out;
-	-webkit-transform: scale(0.9) rotateX(15deg) translateY(-50px);
-	   -moz-transform: scale(0.9) rotateX(15deg) translateY(-50px);
-	    -ms-transform: scale(0.9) rotateX(15deg) translateY(-50px);
-	   	 -o-transform: scale(0.9) rotateX(15deg) translateY(-50px);
-			transform: scale(0.9) rotateX(15deg) translateY(-50px);
+	-webkit-transform: scale(0.9) rotateX(35deg) translateY(-200px);
+	   -moz-transform: scale(0.9) rotateX(35deg) translateY(-200px);
+	    -ms-transform: scale(0.9) rotateX(35deg) translateY(-200px);
+	   	 -o-transform: scale(0.9) rotateX(35deg) translateY(-200px);
+			transform: scale(0.9) rotateX(35deg) translateY(-200px);
 }
 .fancybox-wrap.beforeShow .fancybox-skin,
 .fancybox-wrap.afterShow .fancybox-skin{
@@ -304,11 +304,17 @@ b {
 	box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
 }
 .fancybox-wrap.beforeClose .fancybox-skin{
-	-webkit-transform: rotateX(0deg) translateY(50px);
-	   -moz-transform: rotateX(0deg) translateY(50px);
-	    -ms-transform: rotateX(0deg) translateY(50px);
-	   	 -o-transform: rotateX(0deg) translateY(50px);
-			transform: rotateX(0deg) translateY(50px);
+	-webkit-transition: all 250ms ease-out;
+	   -moz-transition: all 250ms ease-out;
+	    -ms-transition: all 250ms ease-out;
+	   	 -o-transition: all 250ms ease-out;
+			transition: all 250ms ease-out;
+	-webkit-transform: scale(0.7);
+	   -moz-transform: scale(0.7);
+	    -ms-transform: scale(0.7);
+	   	 -o-transform: scale(0.7);
+			transform: scale(0.7);
+	opacity: 0;
 }
 .b-text {
 	color: #1f1f1f;
@@ -983,6 +989,7 @@ a.link,.b-text a {
 			
 .b-slider {
 	color: #fff;
+	overflow: hidden;
 }
 	.b-slider .slider-back {
 		width: 100%;
@@ -990,8 +997,16 @@ a.link,.b-text a {
 		position: absolute;
 		top: 0;
 		left: 0;
-		
 	}
+		.b-slider .slider-back span.b-brown{
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(61, 39, 22, 0.75);
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-image: url('../i/callback.png');
+		}
 		.b-slider .slider-back .slick-list{
 			width: inherit;
 			height: inherit;
