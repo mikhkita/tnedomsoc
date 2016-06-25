@@ -612,6 +612,7 @@ a.link,.b-text a {
 }*/
 .fancybox-wrap {
 	margin-bottom: 20px;
+	overflow: visible !important;
 }
 .b-popup {
 	width: 565px;
@@ -1002,10 +1003,10 @@ a.link,.b-text a {
 			display: block;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(61, 39, 22, 0.75);
+			background-color: rgba(95, 74, 53, 0.75);
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
-			background-image: url('../i/callback.png');
+			/* background-image: url('../i/callback.png'); */
 		}
 		.b-slider .slider-back .slick-list{
 			width: inherit;
