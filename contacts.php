@@ -120,7 +120,7 @@
 					<a href="i/gallery-2.jpg" class="fancy-img" rel="fancy-img"></a>
 					<a href="i/gallery-3.jpg" class="fancy-img" rel="fancy-img"></a>
 				</div>
-				<h3>
+				<h3 class="time">
 					Ждем вас по будням с <b>9:00</b> до <b>20:00</b><br>
 					и в субботу с <b>10:00</b> до <b>18:00</b>
 				</h3>

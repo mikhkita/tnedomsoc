@@ -92,11 +92,15 @@
 					</form>
 				</div>
 			</div>
-			<h1>Услуги</h1>
-			<form action="#" method="POST">
-				<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
-				<button class="search-btn"></button>
-			</form>
+			<div class="b-other-text">
+				<div>
+					<h1>Услуги</h1>
+					<form action="#" method="POST">
+						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
+						<button class="search-btn"></button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-navigation">
