@@ -22,9 +22,11 @@ $(document).ready(function(){
         $(".b-main .b-block .content").height(myHeight-55);
     }
 
-    $('.b-other').parallax({
-        speed : 0.5
-    });
+    if( $('.b-other').length ){
+        $('.b-other').parallax({
+            speed : 0.5
+        });
+    }
 
     $(window).resize(resize);
     resize();
