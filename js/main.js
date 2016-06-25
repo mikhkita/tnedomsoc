@@ -1,5 +1,12 @@
 $(document).ready(function(){	
-    var myWidth,myHeight;
+    var myWidth,myHeight,
+        isMobile = device.mobile(),
+        isTablet = device.tablet(),
+        firstTog = false,
+        prevWidth = 0,
+        rotation = 0;
+
+    // isMobile = true;
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -12,14 +19,54 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+        if( prevWidth >= 1024 && isTablet ) firstTog = false;
+
+        if( (!isMobile && !isTablet) || Math.abs(myWidth/myHeight-rotation) > 0.5 || myHeight-prevHeight < 0 || !firstTog ) firstRender();
+
+        prevHeight = myHeight;
+        rotation = myWidth/myHeight;
+    }
+
+    function firstRender(){
         $(".b-main").css({
             height: myHeight,
             maxHeight: myHeight
         });
+
         if(myHeight > 640) {
             $(".b-main").css('background-size',"auto "+myHeight+"px");
         } else $(".b-main").css('background-size',"auto 640px");
         $(".b-main .b-block .content").height(myHeight-55);
+
+        firstTog = true;
+    }
+
+    if( isMobile )
+        new FastClick(document.body);
+
+    $(".b-burger").click(openMenu);
+    $(".b-mobile-menu, .b-mobile-menu a").click(closeMenu).on('touchmove', function(e){ e.preventDefault(); });
+
+    function openMenu(){
+        $("body").addClass("mobile-menu-opened");
+        TweenLite.to($(".b-mobile-menu li,.b-mobile-menu .btn"), 0, { y : 150, opacity: 0, ease : Cubic.easeOut } );
+        $(".b-mobile-menu").fadeIn(200);
+        $(".b-mobile-menu li").each(function(){
+            TweenLite.to($(this), 0.4, { y : 0, opacity: 1, delay: 0.08*$(this).index()+0.1, ease : Cubic.easeOut } );
+        });
+        TweenLite.to($(".b-mobile-menu .btn"), 0.4, { y : 0, opacity: 1, delay: 0.08*($(".b-mobile-menu li").length+1)+0.1, ease : Cubic.easeOut } );
+        return false;
+    }
+
+    var togLink = false;
+    function closeMenu(){
+        $("body").removeClass("mobile-menu-opened");
+        $(".b-mobile-menu").fadeOut(300);
+        if( !$(this).hasClass("b-mobile-menu-a") && !$(this).hasClass("b-menu-call") && togLink == false ){
+            return false;
+        }else{
+            togLink = true;
+        }
     }
 
     if( $('.b-other').length ){
@@ -40,6 +87,16 @@ $(document).ready(function(){
             $(".b-header-fixed").addClass("show"); 
         else 
             $(".b-header-fixed").removeClass("show");
+
+        if( isMobile ){
+            offset = ($(".b-other").length)?($(".b-other").height()-130):($(".b-main").height()-130);
+
+            if( scroll > offset ){
+                $(".b-mobile-header").addClass("b-gold");
+            }else{
+                $(".b-mobile-header").removeClass("b-gold");
+            }
+        }
 
         prevScroll = scroll;
     });
@@ -69,52 +126,6 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
-    
-    if( $("#map_canvas").length ){
-        var myPlace = new google.maps.LatLng(56.501057, 85.001960);
-        var myOptions = {
-            zoom: 17,
-            center: new google.maps.LatLng(56.501157, 85.001960),
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            disableDefaultUI: true,
-            scrollwheel: false,
-            zoomControl: true
-        }
-        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-
-        var marker = new google.maps.Marker({
-            position: myPlace,
-            icon: {
-            url: "i/pin.png", // url
-            scaledSize: new google.maps.Size(38, 58), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(19,58) // anchor
-            },
-            animation: google.maps.Animation.DROP,
-            map: map,
-            title: "COSMODENT"
-        });
-
-        var contentString = '<div class="gmap-bubble-marker-cont"><div class="gmap-bubble-marker"><div class="gmap-close-button"></div><p class="gmap-cont gmap-cont-1">Авторская клиника эстетической<br>стоматологии и косметологии «COSMODENT»<br><strong>Иркутсктий тракт, 5<br>+7 (382) 220-23-32</strong></p></div></div>';
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
-            if( $(".gmap-bubble-marker").hasClass("gmap-bubble-marker-hide") ){
-                $(".gmap-bubble-marker").removeClass("gmap-bubble-marker-hide");
-            }else{
-                $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
-            }
-        });
-        google.maps.event.addListenerOnce(map, 'idle', function(){
-            infowindow.open(map,marker);
-        });
-        $("body").on("click",".gmap-close-button",function(){
-            $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
-        });
-    }
 
     $('.slider-cont').slick({
         dots: true,
@@ -138,27 +149,48 @@ $(document).ready(function(){
     $('.reviews-slider').slick({
         prevArrow: "<span class='arrow icon-arrow-left black'></span>",
         nextArrow: "<span class='arrow icon-arrow-right black'></span>",
-        slidesToShow: 2,
+        slidesToShow: isMobile ? 1 : 2,
         slidesToScroll: 1
     });
     
     $('.b-articles .articles-slider').slick({
         prevArrow: "<span class='arrow icon-arrow-left black'></span>",
         nextArrow: "<span class='arrow icon-arrow-right black'></span>",
-        slidesToShow: 3,
+        slidesToShow: isMobile ? 1 : 3,
         slidesToScroll: 1
     });
 
-    var $grid = $('#doctors').isotope({
-        itemSelector: '#doctors li',
-    });
-    // filter items on button click
-    $('ul.filter').on( 'click', 'li', function() {
-        $('ul.filter li.active').removeClass("active");
-        $(this).addClass("active");
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-    });
+    if( isMobile ){
+        $("#doctors").slick({
+            mobileFirst : true,
+            prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
+            nextArrow: "<span class='footer-arrow icon-arrow-right'></span>"
+        });
+
+        $(".b-doctors .filter li").click(function(){
+            if( !$(this).hasClass("active") ){
+                $(".b-doctors .filter li").removeClass("active");
+                $(this).addClass("active");
+                if( $(this).attr("data-filter") == "*" ){
+                    $("#doctors").slick('slickUnfilter');
+                }else{
+                    $("#doctors").slick('slickUnfilter');
+                    $("#doctors").slick('slickFilter',$(this).attr("data-filter"));
+                }
+            }
+        });
+    }else{
+        var $grid = $('#doctors').isotope({
+            itemSelector: '#doctors li',
+        });
+        // filter items on button click
+        $('ul.filter').on( 'click', 'li', function() {
+            $('ul.filter li.active').removeClass("active");
+            $(this).addClass("active");
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+    }
 
     $.datetimepicker.setLocale('ru');
 
@@ -257,5 +289,53 @@ $(document).ready(function(){
         var spec =  $(el).attr("data-spec");
         $("#name-select option[value='"+name+"'").prop("selected",true);
         $("#spec-select option[value='"+spec+"'").prop("selected",true);
+    }
+
+    if( $("#map_canvas").length ){
+        var myPlace = new google.maps.LatLng(56.501057, 85.001960);
+        var myOptions = {
+            zoom: 17,
+            center: ( isMobile ) ? new google.maps.LatLng(56.501278, 85.003651) : new google.maps.LatLng(56.501157, 85.001960),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            zoomControl: true
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+
+        var marker = new google.maps.Marker({
+            position: myPlace,
+            icon: {
+            url: "i/pin.png", // url
+            scaledSize: new google.maps.Size(38, 58), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(19,58) // anchor
+            },
+            animation: google.maps.Animation.DROP,
+            map: map,
+            title: "COSMODENT"
+        });
+
+        var contentString = '<div class="gmap-bubble-marker-cont"><div class="gmap-bubble-marker"><div class="gmap-close-button icon-close"></div><p class="gmap-cont gmap-cont-1">Авторская клиника эстетической<br>стоматологии и косметологии «COSMODENT»<br><strong>Иркутсктий тракт, 5<br>+7 (382) 220-23-32</strong></p></div></div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+            if( $(".gmap-bubble-marker").hasClass("gmap-bubble-marker-hide") ){
+                $(".gmap-bubble-marker").removeClass("gmap-bubble-marker-hide");
+            }else{
+                $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+            }
+        });
+
+        google.maps.event.addListenerOnce(map, 'idle', function(){
+            infowindow.open(map,marker);
+        });
+        
+        $("body").on("click",".gmap-close-button",function(){
+            $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+        });
     }
 });
