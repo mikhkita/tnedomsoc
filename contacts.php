@@ -92,7 +92,11 @@
 					</form>
 				</div>
 			</div>
-			<h1>Контакты</h1>
+			<div class="b-other-text">
+				<div>
+					<h1>Контакты</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="b b-navigation">
