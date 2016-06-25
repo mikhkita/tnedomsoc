@@ -9,14 +9,30 @@ function getNextField($form){
 function fancyOpen(el){
     $.fancybox(el,{
         scrolling: 'no',
-        afterShow:function(){
-            setTimeout(function(){
+        tpl: {
+			closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
+		},
+        beforeShow: function(){
+			$(".fancybox-wrap").addClass("beforeShow");
+		},
+		afterShow: function(){
+			$(".fancybox-wrap").removeClass("beforeShow");
+			$(".fancybox-wrap").addClass("afterShow");
+			setTimeout(function(){
                 $('.fancybox-wrap').css({
                     'position':'absolute'
                 });
                 $('.fancybox-inner').css('height','auto');
             },200);
-        },
+		},
+		beforeClose: function(){
+			$(".fancybox-wrap").removeClass("afterShow");
+			$(".fancybox-wrap").addClass("beforeClose");
+		},
+		afterClose: function(){
+			$(".fancybox-wrap").removeClass("beforeClose");
+			$(".fancybox-wrap").addClass("afterClose");
+		},
         padding:0
     }); 
     $('html').addClass('fancybox-lock'); 
@@ -67,6 +83,7 @@ $(document).ready(function(){
 				closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
 			},
 			beforeShow: function(){
+				$(".fancybox-wrap").addClass("beforeShow");
 				$popup.find(".custom-field").remove();
 				if( $this.attr("data-value") ){
 					var name = getNextField($popup.find("form"));
@@ -77,17 +94,23 @@ $(document).ready(function(){
 				}
 			},
 			afterShow: function(){
+				$(".fancybox-wrap").removeClass("beforeShow");
+				$(".fancybox-wrap").addClass("afterShow");
 				if( $this.attr("data-afterShow") && customHandlers[$this.attr("data-afterShow")] ){
 					customHandlers[$this.attr("data-afterShow")]($this);
 				}
 				$popup.find("input[type='text'],input[type='number'],textarea").eq(0).focus();
 			},
 			beforeClose: function(){
+				$(".fancybox-wrap").removeClass("afterShow");
+				$(".fancybox-wrap").addClass("beforeClose");
 				if( $this.attr("data-beforeClose") && customHandlers[$this.attr("data-beforeClose")] ){
 					customHandlers[$this.attr("data-beforeClose")]($this);
 				}
 			},
 			afterClose: function(){
+				$(".fancybox-wrap").removeClass("beforeClose");
+				$(".fancybox-wrap").addClass("afterClose");
 				if( $this.attr("data-afterClose") && customHandlers[$this.attr("data-afterClose")] ){
 					customHandlers[$this.attr("data-afterClose")]($this);
 				}
@@ -111,6 +134,21 @@ $(document).ready(function(){
 		closeBtn : '<a title="Закрыть" class="popup-close icon-close close-gallery" href="javascript:;"></a>',
 		next     : '<a title="Вперед" class="fancybox-nav fancybox-next" href="javascript:;"><span class="icon-arrow-right"></span></a>',
 		prev     : '<a title="Назад" class="fancybox-nav fancybox-prev" href="javascript:;"><span class="icon-arrow-left"></span></a>'
+		},
+		beforeShow: function(){
+			$(".fancybox-wrap").addClass("beforeShow");
+		},
+		afterShow: function(){
+			$(".fancybox-wrap").removeClass("beforeShow");
+			$(".fancybox-wrap").addClass("afterShow");
+		},
+		beforeClose: function(){
+			$(".fancybox-wrap").removeClass("afterShow");
+			$(".fancybox-wrap").addClass("beforeClose");
+		},
+		afterClose: function(){
+			$(".fancybox-wrap").removeClass("beforeClose");
+			$(".fancybox-wrap").addClass("afterClose");
 		}
 	});
 
