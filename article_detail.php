@@ -70,7 +70,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="b b-other b-articles-page" data-parallax="scroll" data-image-src="i/articles.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/articles.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>

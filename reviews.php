@@ -68,7 +68,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="b b-other b-reviews-page">
+	<div class="b b-other">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>
