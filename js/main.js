@@ -83,6 +83,8 @@ $(document).ready(function(){
         var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop,
             offset = ($(".b-other").length)?$(".b-other").height():110;
 
+        offset = 110;
+
         if( scroll > (offset) && ( $("body").height() - 75 <= scroll + myHeight || prevScroll > scroll) )
             $(".b-header-fixed").addClass("show"); 
         else 

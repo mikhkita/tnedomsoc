@@ -1609,7 +1609,7 @@ a.link,.b-text a {
 			.b-other-content .b-block .doctor-detail img {
 				position: relative;
 				bottom: 0;
-				margin-top: 40px;
+				margin-top: 60px;
 				left: -35px;
 				max-width: 750px;
 				max-height: 100%;
@@ -2030,7 +2030,8 @@ a.link,.b-text a {
 				line-height: 50px;
 				font-family: 'Circe-Regular';
 			}
-				.b-mobile-menu ul li a:active{
+				.b-mobile-menu ul li a:active,
+				.b-mobile-menu ul li.active a{
 					color: #dfc480;
 				}
 			.b-mobile-menu ul li:last-child a{

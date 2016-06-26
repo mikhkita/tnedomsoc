@@ -63,7 +63,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>
 			<li><a href="reviews.php" class="b-mobile-menu-a">Отзывы</a></li>
 			<li><a href="works.php" class="b-mobile-menu-a">Работы</a></li>
-			<li><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
+			<li class="active"><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
 			<li><a href="contacts.php" class="b-mobile-menu-a">Контакты</a></li>
         </ul>
     </div>
@@ -76,7 +76,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li><a href="actions.php">Акции</a></li>
 				<li><a href="reviews.php">Отзывы</a></li>
 				<li><a href="works.php">Работы</a></li>
-				<li><a href="articles.php">Статьи</a></li>
+				<li class="active"><a href="articles.php">Статьи</a></li>
 				<li><a href="contacts.php">Контакты</a></li>
 			</ul>
 			<div class="phone-cont right">
@@ -101,7 +101,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<li><a href="actions.php">Акции</a></li>
 					<li><a href="reviews.php">Отзывы</a></li>
 					<li><a href="works.php">Работы</a></li>
-					<li><a href="articles.php">Статьи</a></li>
+					<li class="active"><a href="articles.php">Статьи</a></li>
 					<li><a href="contacts.php">Контакты</a></li>
 				</ul>
 				<div class="phone-cont right">

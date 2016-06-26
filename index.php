@@ -57,7 +57,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
         <a href="index.php" class="b-logo"></a>
         <span class="b-close-mobile icon-close"></span>
         <ul>
-        	<li><a href="index.php" class="b-mobile-menu-a">Главная</a></li>
+        	<li class="active"><a href="index.php" class="b-mobile-menu-a">Главная</a></li>
         	<li><a href="services.php" class="b-mobile-menu-a">Услуги</a></li>
 			<li><a href="doctors.php" class="b-mobile-menu-a">Врачи</a></li>
 			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>

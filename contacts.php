@@ -147,9 +147,9 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<p>Добро пожаловать!</p>
 				</div>
 				<div class="contacts-gallery clearfix">
-					<a href="<?=(($mobile)?"":"i/gallery-1.jpg")?>" style="background-image: url('i/gallery-1.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a href="<?=(($mobile)?"":"i/gallery-2.jpg")?>" style="background-image: url('i/gallery-2.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a href="<?=(($mobile)?"":"i/gallery-3.jpg")?>" style="background-image: url('i/gallery-3.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
+					<a <?=(($mobile)?"":"href='i/gallery-1.jpg'")?> style="background-image: url('i/gallery-1.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
+					<a <?=(($mobile)?"":"href='i/gallery-2.jpg'")?> style="background-image: url('i/gallery-2.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
+					<a <?=(($mobile)?"":"href='i/gallery-3.jpg'")?> style="background-image: url('i/gallery-3.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
 				</div> 
 				<h2 class="title contacts-title">COSMODENT НА КАРТЕ</h2>
 				<h3 class="time">
