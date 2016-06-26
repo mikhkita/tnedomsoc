@@ -151,38 +151,39 @@ b {
 		font-size: 48px;
 		font-family: "Circe-Bold";
 		line-height: 1.354;
-		margin-bottom: 24px;
+		margin-bottom: 44px;
 	}
 	.b-text h3 {
 
 	}
 	.b-text h4 {
 		font-family: "Circe-Bold";
-		margin-bottom: 6px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
 	}
 	.b-text p {
 		font-family: "Circe-Light";
-		margin-bottom: 24px;
+		margin-bottom: 45px;
 	}	
 
 	.b-text ul {
-		margin-bottom: 24px;
+		margin-bottom: 45px;
 		font-family: "Circe-Light";
 		margin-left: 15px;
 	}
 		.b-text ul li {
 			position: relative;
-			padding-left: 10px;
+			padding-left: 30px;
 			margin-bottom: 5px;
 		}
 			.b-text ul li:before {
 				position: absolute;
 				content: "";
 				font-size: 0;
-				top: 8px;
-				left: -13px;
-				width: 5px;
-				height: 5px;
+				top: 14px;
+				left: -14px;
+				width: 10px;
+				height: 10px;
 				border-radius: 50%;
 			}
 	.b-text p + ul {
@@ -197,7 +198,7 @@ b {
 	line-height: 1.354;
 }
 a.link,.b-text a {
-	font-family: "Circe-Light";
+	font-family: "Circe-Regular";
 	position: relative;
 }
 	a.link:hover,.b-text a:hover {
@@ -304,22 +305,26 @@ a.link,.b-text a {
 	right: 50px;
 }
 
-.doctors.slick-slider .footer-arrow{
+.doctors.slick-slider .footer-arrow,
+.doctors-slider.slick-slider .footer-arrow{
 	top: auto;
 	bottom: 0px;
 	color: #FFF;
 	width: 135px;
 	height: 108px;
 	padding-top: 37px;
+	text-align: center;
 	box-sizing: border-box;
 }
 
-.doctors.slick-slider .footer-arrow.icon-arrow-left{
+.doctors.slick-slider .footer-arrow.icon-arrow-left,
+.doctors-slider.slick-slider .footer-arrow.icon-arrow-left{
 	right: auto;
 	left: 0px;
 }
 
-.doctors.slick-slider .footer-arrow.icon-arrow-right{
+.doctors.slick-slider .footer-arrow.icon-arrow-right,
+.doctors-slider.slick-slider .footer-arrow.icon-arrow-right{
 	right: 0px;
 }
 
@@ -893,6 +898,7 @@ a.link,.b-text a {
 					font-size: 16px;
 					display: none;
 					font-family: "Circe-Light";
+					color: #5f5f5f;
 				}
 					.b-services .b-block .diag:before{
 						font-size: 60px;
@@ -1007,7 +1013,7 @@ a.link,.b-text a {
 					font-size: 28px;
 					position: relative;
 					display: inline-block;
-					font-family: "Circe-Light";
+					font-family: "Circe-Regular";
 				}
 					.b-doctors .b-block .doctors li .desc-cont h5:hover {
 						text-decoration: underline;
@@ -1171,7 +1177,9 @@ a.link,.b-text a {
 		.b-contacts-page .b-block {
 			padding-bottom: 144px !important;
 		}
-
+.b-other .b-other-text{
+	margin-top: 80px;
+}
 .b-other .b-block {
 	padding-bottom: 100px;
 }
@@ -1189,8 +1197,8 @@ a.link,.b-text a {
 		display: inline-block;
 	}
 	.b-other .b-block .input {
-		width: 385px;
-	    padding-right: 25px;
+		width: 600px;
+		padding-right: 25px;
 	}
 	.b-other .b-block .input::-webkit-input-placeholder {
 	}
@@ -1199,12 +1207,8 @@ a.link,.b-text a {
 	.b-other .b-block .search-btn{
 		opacity: 0.8;
 	}
-.b-navigation {
-}
-	.b-navigation ul {
-
-padding: 40px 0;
-}
+.b-navigation {background: #FFF;margin-bottom: -40px;}
+	.b-navigation ul {padding: 55px 0 0px;}
 		.b-navigation li {
 			float: left;
 		}
@@ -1212,14 +1216,14 @@ padding: 40px 0;
 				display: block;
 				position: relative;
 				font-family: "Circe-Light";
-				padding-right: 27px;
+				padding-right: 46px;
 			}
 				.b-navigation li a:after {
-					font-size: 5px;
+					font-size: 10px;
 					position: absolute;
 					content: "\e90c";
 					right: 6px;
-					top: 10px;
+					top: 17px;
 					font-family: 'icomoon' !important;
 					speak: none;
 					font-style: normal;
@@ -1232,6 +1236,7 @@ padding: 40px 0;
 				}
 				.b-navigation li.active a{
 					cursor: default;
+					display: none;
 					text-decoration: none;
 				}
 					.b-navigation li.active a:after {
@@ -1241,25 +1246,27 @@ padding: 40px 0;
 	text-align: left;
 }
 	.b-other-content .b-block {
-		padding-top: 45px;
+		padding-top: 50px;
 	}
 		.b-other-content .b-block .title {
 			padding-top: 0;
 			text-align: left;
 		}
-
+		.b-other-content .b-block .second-title{
+			padding-top: 50px;
+		}
 		.b-other-content .service-list {
 			margin-top: 40px;
 		}
 		.b-other-content .service-list .service-cont {
-			width: 470px;
+			width: 680px;
 			text-align: left;
 			display: inline-block;
 			vertical-align: top;
 			padding-bottom: 70px;
 		}
 			.b-other-content .service-list .service-cont:nth-child(2n+1) {
-				margin-right: 120px;
+				margin-right: 0px;
 			}
 			.b-other-content .service-list .service-cont .service-title {
 				display: table;
@@ -1282,7 +1289,7 @@ padding: 40px 0;
 				.b-other-content .service-list .service-cont .service-title span {
 					display: table-cell;
 					line-height: 1.222;
-					font-size: 36px;
+					font-size: 31px;
 					vertical-align: middle;
 					padding-left: 23px;
 				}
@@ -1312,23 +1319,26 @@ padding: 40px 0;
 
 			.b-other-content .service-list .service-cont ul {
 				margin-top: 25px;
-				margin-left: 97px;
+				margin-left: 95px;
 			}
 				.b-other-content .service-list .service-cont ul li {
 					margin-bottom: 12px;
 				}
 					.b-other-content .service-list .service-cont  ul li a {
 						font-family: "Circe-Light";
+						color: #5f5f5f;
 					}
 						.b-other-content .service-list .service-cont  ul li a:hover {
 							text-decoration: underline;
 						}
 		.b-other-content .b-block .service-text {
-			width: 765px;
-			padding-bottom: 85px;
+			width: 680px;
+			padding-bottom: 25px;
 		}
 		.b-other-content .b-block .service-accord {
-			width: 368px;
+			width: 680px;
+			margin-bottom: 60px;
+			margin-top: 50px;
 		}
 			.b-other-content .b-block .service-accord.fixed {
 				position: fixed;
@@ -1344,7 +1354,7 @@ padding: 40px 0;
 			.b-other-content .b-block .service-accord h3{
 				display: table;
 				width: 100%;
-				padding: 13px 25px 8px;
+				padding: 23px 25px 18px;
 				position: relative;
 				margin: 0;
 				border-radius: 0;
@@ -1362,23 +1372,21 @@ padding: 40px 0;
 					width: 43px;
 					display: table-cell;
 					vertical-align: middle;
-					font-size: 37px;
-					
+					font-size: 42px;
 				}
 					.b-other-content .b-block .service-accord h3:after {
 						content: "\e909";
 						display: block;
 						position: absolute;
 						top: 50%;
-						right: 22px;
-						margin-top: -8px;
-					
+						right: 34px;
+						margin-top: -17px;
 					}
 
 				.b-other-content .b-block .service-accord h3 span {
 					display: table-cell;
 					vertical-align: middle;
-					font-size: 20px;
+					font-size: 28px;
 					font-family: "Circe-Regular";
 					padding-left: 21px;
 					padding-right: 10px;
@@ -1389,9 +1397,10 @@ padding: 40px 0;
 
 						.b-other-content .b-block .service-accord div a {
 							margin-bottom: 11px;
-							display: inline-block;
+							display: block;
 							line-height: 1.5;
 							font-family: 'Circe-Light';
+							color: #5f5f5f;
 						}
 							.b-other-content .b-block .service-accord div a:hover {
 								text-decoration: underline;
@@ -1405,6 +1414,7 @@ padding: 40px 0;
 					border: 1px solid #fff;
 				}
 					.ui-accordion-header.ui-state-default.ui-state-hover {
+						color: #5f5f5f;
 					}
 					.ui-accordion-header.ui-state-default.ui-accordion-header-active {
 						background: #dfc480;
@@ -1443,9 +1453,9 @@ padding: 40px 0;
 			margin-bottom: 	20px;
 		}
 			.b-other-content .b-block .articles-all li {
-				width: 370px;
-				height: 463px;
-				float: 	left;	
+				width: 680px;
+				height: 735px;
+				float: 	left;
 				margin: 25px 0;
 				margin-right: 25px;
 				text-align: left;
@@ -1456,24 +1466,24 @@ padding: 40px 0;
 				.b-other-content .b-block .articles-all li .img{
 					font-size: 0;
 					width: 100%;
-					height: 182px;
+					height: 352px;
 					background-size: cover;
 					background-position: 50%;
 				}
-				.b-other-content .b-block .articles-all li .text{	
-					padding: 24px 20px 0 28px;
-					height: 281px;
+				.b-other-content .b-block .articles-all li .text{
+					padding: 34px 20px 0 35px;
+					height: 382px;
 					position: relative;
 				}
 					.b-other-content .b-block .articles-all li .text h3 {
-						font-size: 18px;
+						font-size: 32px;
 						font-family: "Circe-Bold";
 						margin-bottom: 11px;
 					}
 					.b-other-content .b-block .articles-all li .text p {
 						font-family: "Circe-Light";
-					    max-height: 120px;
-					    overflow: hidden;
+						max-height: 125px;
+						overflow: hidden;
 					}
 					.b-other-content .b-block .articles-all li .text a {
 						position: absolute;
@@ -1488,21 +1498,26 @@ padding: 40px 0;
 			}
 
 		.b-other-content .b-block .articles-nav {
-			width: 368px;
+			width: 680px;
+			background-color: #f8f8f8;
+			padding: 35px;
+			box-sizing: border-box;
+			margin-bottom: 60px;
 		}
 			.b-other-content .b-block .articles-nav .rubrics {
 				margin-bottom: 20px;
 			}
 			.b-other-content .b-block .articles-nav h3 {
 				font-family: "Circe-Bold";
-				font-size: 24px;
+				font-size: 36px;
 				margin-bottom: 15px;
 			}
 
 			.b-other-content .b-block .articles-nav a {
 				font-family: "Circe-Light";
 				display: block;
-				margin-bottom: 10px;	
+				margin-bottom: 10px;
+				color: #5f5f5f;
 			}
 					.b-other-content .b-block .articles-nav a:hover {
 						text-decoration: underline;	
@@ -1512,11 +1527,11 @@ padding: 40px 0;
 			width: 100%;
 		}
 			.b-other-content .b-block .doctors li {
-				width: 269px;
-				height: 544px;
+				width: 680px;
+				height: 680px;
 				float: left;
 				margin-right: 21px;
-				margin-bottom: 60px;
+				margin-bottom: 200px;
 			}
 				.b-other-content .b-block .doctors li:nth-child(4n) {
 					margin-right: 0;
@@ -1524,20 +1539,21 @@ padding: 40px 0;
 				.b-other-content .b-block .doctor-cont {
 					display: block;
 					position: relative;
-					height: 363px;
+					height: 680px;
 					width: 100%;
 					background-position: 50% 100%;
 					background-size: cover;
-					margin-bottom: 25px;
+					margin-bottom: 35px;
 					background-image: url("../i/doctor-1.jpg");
 				}
 					.b-other-content .b-block .doctor-cont span {
 						position: absolute;
 						top: 50%;
-						border-bottom: 1px dashed #fff;
-						left: 37px;
-						margin-top: -10px;
-						line-height: 19px;
+						border-bottom: 2px dashed #fff;
+						left: 50%;
+						margin-top: -18px;
+						margin-left: -170px;
+						line-height: 36px;
 						vertical-align: middle;
 						opacity: 0;
 						visibility: hidden;
@@ -1559,16 +1575,16 @@ padding: 40px 0;
 							}
 				.b-other-content .b-block .doctors li .doctor-link {
 					display: block;
-					font-size: 24px;
+					font-size: 36px;
 					font-family: "Circe-Bold";
 					line-height: 1.25;
-					margin-bottom: 15px;
+					margin-bottom: 5px;
 				}
 					.b-other-content .b-block .doctors li .doctor-link:hover {
 						text-decoration: underline;
 					}
 					.b-other-content .b-block .doctors li h4 {
-						font-size: 18px;
+						font-size: 28px;
 						font-family: "Circe-Light";
 						max-height: 81px;
 						overflow: hidden;
@@ -1577,14 +1593,19 @@ padding: 40px 0;
 			position: relative;
 		}
 			.b-other-content .b-block .doctor-detail img {
-				position: absolute;
+				position: relative;
 				bottom: 0;
-				left: 0;
-				max-width: 370px;
+				margin-top: 40px;
+				left: -35px;
+				max-width: 750px;
 				max-height: 100%;
+				display: none;
+			}
+			.b-other-content .b-block .doctor-detail img.b-mobile-image{
+				display: block;
 			}
 			.b-other-content .b-block .doctor-detail .text {
-				width: 765px;
+				width: 680px;
 				padding-bottom: 35px;
 			}
 				.b-other-content .b-block .doctor-detail .text h2 {
@@ -1593,7 +1614,7 @@ padding: 40px 0;
 				.b-other-content .b-block .doctor-detail .text h3 {
 					font-size: 24px;
 					font-family: "Circe-Bold";
-					margin-top: 15px;
+					margin-top: 25px;
 				}
 				.b-other-content .b-block .doctor-detail .text button {
 					margin-top: 30px;
@@ -1658,35 +1679,47 @@ padding: 40px 0;
 				}
 .doctors-slider {
 	margin-top: 45px;
+	width: 750px;
+	margin-left: -35px;
 }
 .doctors-slider .slick-slide {
-	height: 314px;
-	width: 20%;
+	height: 750px;
+	width: 100%;
 	background-position: 50% 100%;
 	background-size: cover;
 	position: relative;
-	background-image: url("../i/doctor-1.jpg");
 }
+	.doctors-slider .slick-slide .b-mobile-bottom{
+		background-color: rgba(0,0,0,0.3);
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 40px 100px;
+	}
 	.doctors-slider .slick-slide .desc-cont {
 		display: block;
-		visibility: hidden;
-		opacity: 0;
+		visibility: visible;
+		opacity: 1;
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		padding: 125px 22px 0;
-		top: 0;
+		padding: 405px 0px 0;
+		top: auto;
 		left: 0;
-		text-align: left;
+		bottom: 0px;
+		text-align: center;
+		background-color: transparent;
 	}
 	.doctors-slider .slick-slide:hover .desc-cont{
 		visibility: visible;
 		opacity: 1;
 	}
 	.doctors-slider .slick-slide .desc-cont h3{
-		font-size: 18px;
+		font-size: 32px;
 		font-family: "Circe-Bold";
-		margin-bottom: 7px;
+		margin-bottom: 23px;
 	}
 	.doctors-slider .slick-slide .desc-cont h4{
 		line-height: 1.3;
@@ -1694,10 +1727,10 @@ padding: 40px 0;
 		font-family: "Circe-Light";
 	}
 	.doctors-slider .slick-slide .desc-cont h5{
-		font-size: 16px;
+		font-size: 28px;
 		position: relative;
 		display: inline-block;
-		font-family: "Circe-Light";
+		font-family: "Circe-Regular";
 	}
 		.doctors-slider .slick-slide .desc-cont h5:hover {
 			text-decoration: underline;
@@ -1705,18 +1738,19 @@ padding: 40px 0;
 		.doctors-slider .slick-slide .desc-cont h5:before {
 			position: absolute;
 			font-size: 0;
-			width: 16px;
-			height: 1px;
+			width: 32px;
+			height: 2px;
 			content: "";
-			right: -20px;
-			top: 10px;
+			right: -50px;
+			top: 21px;
+			background-color: #FFF;
 		}
 		.doctors-slider .slick-slide .desc-cont h5:after {
 			position: absolute;
-			font-size: 13px;
+			font-size: 28px;
 			content: ">";
-			right: -22px;
-			top: 2px;
+			right: -54px;
+			top: 3px;
 		}
 .articles-footer-slider {
 	padding: 0;
@@ -1958,10 +1992,10 @@ padding: 40px 0;
 				width: auto;
 				color: #FFF;
 				/*color: #222;*/
-				font-size: 60px;
+				font-size: 50px;
 				text-decoration: none;
 				position: relative;
-				line-height: 62px;
+				line-height: 50px;
 				font-family: 'Circe-Regular';
 			}
 				.b-mobile-menu ul li a:active{

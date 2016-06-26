@@ -54,29 +54,30 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<li class="v" ></li>
 	</ul> -->
 	<div class="b-mobile-menu">
-        <a href="/" class="b-logo"></a>
+        <a href="index.php" class="b-logo"></a>
         <span class="b-close-mobile icon-close"></span>
         <ul>
-        	<li><a href="#" class="b-mobile-menu-a">Услуги</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Врачи</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Акции</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Отзывы</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Работы</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Статьи</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Контакты</a></li>
+        	<li><a href="index.php" class="b-mobile-menu-a">Главная</a></li>
+        	<li><a href="services.php" class="b-mobile-menu-a">Услуги</a></li>
+			<li><a href="doctors.php" class="b-mobile-menu-a">Врачи</a></li>
+			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>
+			<li><a href="reviews.php" class="b-mobile-menu-a">Отзывы</a></li>
+			<li><a href="works.php" class="b-mobile-menu-a">Работы</a></li>
+			<li><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
+			<li><a href="contacts.php" class="b-mobile-menu-a">Контакты</a></li>
         </ul>
     </div>
 	<div class="b-header-fixed">
 		<div class="b-header b-block clearfix">
-			<a href="#" class="logo left"></a>
+			<a href="index.php" class="logo left"></a>
 			<ul class="left clearfix">
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Врачи</a></li>
-				<li><a href="#">Акции</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Работы</a></li>
-				<li><a href="#">Статьи</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="services.php">Услуги</a></li>
+				<li><a href="doctors.php">Врачи</a></li>
+				<li><a href="actions.php">Акции</a></li>
+				<li><a href="reviews.php">Отзывы</a></li>
+				<li><a href="works.php">Работы</a></li>
+				<li><a href="articles.php">Статьи</a></li>
+				<li><a href="contacts.php">Контакты</a></li>
 			</ul>
 			<div class="phone-cont right">
 				<h3>+7 (3822) 202 332</h3>
@@ -93,15 +94,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b b-main">
 		<div class="b-block">
 			<div class="b-header clearfix">
-				<a href="#" class="logo left"><img src="i/logo.png"></a>
+				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
 				<ul class="left clearfix">
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Врачи</a></li>
-					<li><a href="#">Акции</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Работы</a></li>
-					<li><a href="#">Статьи</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="services.php">Услуги</a></li>
+					<li><a href="doctors.php">Врачи</a></li>
+					<li><a href="actions.php">Акции</a></li>
+					<li><a href="reviews.php">Отзывы</a></li>
+					<li><a href="works.php">Работы</a></li>
+					<li><a href="articles.php">Статьи</a></li>
+					<li><a href="contacts.php">Контакты</a></li>
 				</ul>
 				<div class="phone-cont right">
 					<h3>+7 (3822) 202 332</h3>
@@ -288,7 +289,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li data-filter=".stomatolog-1">Стоматолог-терапевт</li>
 				<li data-filter=".hiryrg-1">Хирург-имплантолог</li>
 			</ul>
-			<ul class="doctors clearfix" id="doctors">
+			<ul class="doctors b-main-doctors clearfix" id="doctors">
 				<li class="gigienist-1" style="background-image: url('i/doctor-1.jpg');">
 					<a class="desc-cont" href="#">
 						<div class="b-mobile-bottom">

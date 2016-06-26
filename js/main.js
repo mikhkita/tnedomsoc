@@ -6,7 +6,7 @@ $(document).ready(function(){
         prevWidth = 0,
         rotation = 0;
 
-    // isMobile = true;
+    isMobile = true;
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -161,7 +161,7 @@ $(document).ready(function(){
     });
 
     if( isMobile ){
-        $("#doctors").slick({
+        $(".b-main-doctors").slick({
             mobileFirst : true,
             prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
             nextArrow: "<span class='footer-arrow icon-arrow-right'></span>"
@@ -176,6 +176,20 @@ $(document).ready(function(){
                 }else{
                     $("#doctors").slick('slickUnfilter');
                     $("#doctors").slick('slickFilter',$(this).attr("data-filter"));
+                }
+            }
+        });
+
+        $(".b-other-content .doctor-filter li").click(function(){
+            if( !$(this).hasClass("active") ){
+                $(".doctor-filter li").removeClass("active");
+                $(this).addClass("active");
+                $("#doctors li").hide();
+
+                if( $(this).attr("data-filter") == "*" ){
+                    $("#doctors li").show();
+                }else{
+                    $("#doctors li").filter($(this).attr("data-filter")).show();
                 }
             }
         });
@@ -273,7 +287,7 @@ $(document).ready(function(){
     $('.doctors-slider').slick({
         prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
         nextArrow: "<span class='footer-arrow icon-arrow-right'></span>",
-        slidesToShow: 5,
+        slidesToShow: isMobile ? 1 : 5,
         slidesToScroll: 1
     });
     $('.articles-footer-slider').slick({
@@ -333,7 +347,7 @@ $(document).ready(function(){
         google.maps.event.addListenerOnce(map, 'idle', function(){
             infowindow.open(map,marker);
         });
-        
+
         $("body").on("click",".gmap-close-button",function(){
             $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
         });

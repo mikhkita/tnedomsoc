@@ -1466,6 +1466,7 @@ margin-top: 40px;
 		text-transform: uppercase;
 		color: #fff;
 		margin-bottom: 18px;
+		margin-top: -15px;
 	}
 	
 	.b-other .b-block form {
@@ -1944,6 +1945,9 @@ padding: 40px 0;
 				left: 0;
 				max-width: 370px;
 				max-height: 100%;
+			}
+			.b-other-content .b-block .doctor-detail img.b-mobile-image{
+				display: none;
 			}
 			.b-other-content .b-block .doctor-detail .text {
 				width: 765px;

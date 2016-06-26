@@ -54,29 +54,30 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<li class="v" ></li>
 	</ul> -->
 	<div class="b-mobile-menu">
-        <a href="/" class="b-logo"></a>
+        <a href="index.php" class="b-logo"></a>
         <span class="b-close-mobile icon-close"></span>
         <ul>
-        	<li><a href="#" class="b-mobile-menu-a">Услуги</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Врачи</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Акции</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Отзывы</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Работы</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Статьи</a></li>
-			<li><a href="#" class="b-mobile-menu-a">Контакты</a></li>
+        	<li><a href="index.php" class="b-mobile-menu-a">Главная</a></li>
+        	<li><a href="services.php" class="b-mobile-menu-a">Услуги</a></li>
+			<li><a href="doctors.php" class="b-mobile-menu-a">Врачи</a></li>
+			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>
+			<li><a href="reviews.php" class="b-mobile-menu-a">Отзывы</a></li>
+			<li><a href="works.php" class="b-mobile-menu-a">Работы</a></li>
+			<li><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
+			<li><a href="contacts.php" class="b-mobile-menu-a">Контакты</a></li>
         </ul>
     </div>
 	<div class="b-header-fixed">
 		<div class="b-header b-block clearfix">
-			<a href="#" class="logo left"></a>
+			<a href="index.php" class="logo left"></a>
 			<ul class="left clearfix">
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Врачи</a></li>
-				<li><a href="#">Акции</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Работы</a></li>
-				<li><a href="#">Статьи</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="services.php">Услуги</a></li>
+				<li><a href="doctors.php">Врачи</a></li>
+				<li><a href="actions.php">Акции</a></li>
+				<li><a href="reviews.php">Отзывы</a></li>
+				<li><a href="works.php">Работы</a></li>
+				<li><a href="articles.php">Статьи</a></li>
+				<li><a href="contacts.php">Контакты</a></li>
 			</ul>
 			<div class="phone-cont right">
 				<h3>+7 (3822) 202 332</h3>
@@ -93,15 +94,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b b-other" data-parallax="scroll" data-image-src="i/services.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
-				<a href="#" class="logo left"><img src="i/logo.png"></a>
+				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
 				<ul class="left clearfix">
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">Врачи</a></li>
-					<li><a href="#">Акции</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Работы</a></li>
-					<li><a href="#">Статьи</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="services.php">Услуги</a></li>
+					<li><a href="doctors.php">Врачи</a></li>
+					<li><a href="actions.php">Акции</a></li>
+					<li><a href="reviews.php">Отзывы</a></li>
+					<li><a href="works.php">Работы</a></li>
+					<li><a href="articles.php">Статьи</a></li>
+					<li><a href="contacts.php">Контакты</a></li>
 				</ul>
 				<div class="phone-cont right">
 					<h3>+7 (3822) 202 332</h3>
@@ -140,109 +141,109 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<h2 class="title">что мы предлагаем</h2>
 			<ul class="service-list">
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="diag"></i><span>Диагностика</span>
 					</a>
 					<ul>
-						<li><a href="#">Компьютерная томография зубов</a></li>
-						<li><a href="#">Лазерная диагностика кариеса ДИАГНОКАМ<br>(DIAGNOcam)</a></li>
-						<li><a href="#">Визиограф</a></li>
-						<li><a href="#">Рентген-диагностика состояния зубов</a></li>		
+						<li><a href="service_detail.php">Компьютерная томография зубов</a></li>
+						<li><a href="service_detail.php">Лазерная диагностика кариеса ДИАГНОКАМ<br>(DIAGNOcam)</a></li>
+						<li><a href="service_detail.php">Визиограф</a></li>
+						<li><a href="service_detail.php">Рентген-диагностика состояния зубов</a></li>		
 					</ul>
 				</li>
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="terapevt"></i><span>ТЕРАПЕВТИЧЕСКАЯ СТОМАТОЛОГИЯ</span>
 					</a>
 					<ul>
-						<li><a href="#">Лечение кариеса</a></li>
-						<li><a href="#">Лечение зубов без бормашины</a></li>
-						<li><a href="#">Лечение кариеса методом ICON</a></li>
-						<li><a href="#">Лечение пульпита</a></li>
-						<li><a href="#">Лечение корневых каналов зaубов (эндодонтия)</a></li>
-						<li><a href="#">Лечение зубов под микроскопом</a></li>
-						<li><a href="#">Лечение зубов в седации (закись азота)</a></li>
-						<li><a href="#">Лечение зубов под общим наркозом в Москве</a></li>
-						<li><a href="#">«Здоровая мама» – программа для беременных</a></li>
-						<li><a href="#">Озонотерапия: лечение кариеса и заболеваний десен</a></li>
-						<li><a href="#">Лечение травм зубов и десен</a></li>
-						<li><a href="#">Индивидуальные спортивные каппы</a></li>
-						<li><a href="#">Лечение десен</a></li>	
+						<li><a href="service_detail.php">Лечение кариеса</a></li>
+						<li><a href="service_detail.php">Лечение зубов без бормашины</a></li>
+						<li><a href="service_detail.php">Лечение кариеса методом ICON</a></li>
+						<li><a href="service_detail.php">Лечение пульпита</a></li>
+						<li><a href="service_detail.php">Лечение корневых каналов зaубов (эндодонтия)</a></li>
+						<li><a href="service_detail.php">Лечение зубов под микроскопом</a></li>
+						<li><a href="service_detail.php">Лечение зубов в седации (закись азота)</a></li>
+						<li><a href="service_detail.php">Лечение зубов под общим наркозом в Москве</a></li>
+						<li><a href="service_detail.php">«Здоровая мама» – программа для беременных</a></li>
+						<li><a href="service_detail.php">Озонотерапия: лечение кариеса и заболеваний десен</a></li>
+						<li><a href="service_detail.php">Лечение травм зубов и десен</a></li>
+						<li><a href="service_detail.php">Индивидуальные спортивные каппы</a></li>
+						<li><a href="service_detail.php">Лечение десен</a></li>	
 					</ul>
 				</li>
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="estet"></i><span>ЭСТЕТИЧЕСКАЯ СТОМАТОЛОГИЯ</span>
 					</a>
 					<ul>
-						<li><a href="#">Эстетическая стоматология</a></li>
-						<li><a href="#">Виниры и люминиры</a></li>
-						<li><a href="#">Композитные виниры</a></li>
-						<li><a href="#">Стоматология Anti-Age</a></li>		
+						<li><a href="service_detail.php">Эстетическая стоматология</a></li>
+						<li><a href="service_detail.php">Виниры и люминиры</a></li>
+						<li><a href="service_detail.php">Композитные виниры</a></li>
+						<li><a href="service_detail.php">Стоматология Anti-Age</a></li>		
 					</ul>
 				</li>
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="implant"></i><span>ИМПЛАНТАЦИЯ</span>
 					</a>
 					<ul>
-						<li><a href="#">Зубные имплантаты (импланты)</a></li>
-						<li><a href="#">Костная пластика</a></li>	
+						<li><a href="service_detail.php">Зубные имплантаты (импланты)</a></li>
+						<li><a href="service_detail.php">Костная пластика</a></li>	
 					</ul>
 				</li>
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="ortopedia"></i><span>ПРОТЕЗИРОВАНИЕ <small>(ортопедия)</small></span>
 					</a>
 					<ul>
-						<li><a href="#">Съемное протезирование зубов</a></li>
-						<li><a href="#">Бюгельное протезирование</a></li>
-						<li><a href="#">Мостовидные зубные протезы</a></li>
-						<li><a href="#">Микропротезирование зубов (вкладки)</a></li>
-						<li><a href="#">Керамические коронки</a></li>
-						<li><a href="#">Протезирование на имплантатах</a></li>
-						<li><a href="#">Металлокерамические коронки</a></li>
+						<li><a href="service_detail.php">Съемное протезирование зубов</a></li>
+						<li><a href="service_detail.php">Бюгельное протезирование</a></li>
+						<li><a href="service_detail.php">Мостовидные зубные протезы</a></li>
+						<li><a href="service_detail.php">Микропротезирование зубов (вкладки)</a></li>
+						<li><a href="service_detail.php">Керамические коронки</a></li>
+						<li><a href="service_detail.php">Протезирование на имплантатах</a></li>
+						<li><a href="service_detail.php">Металлокерамические коронки</a></li>
 					</ul>
 				</li>
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="ortodontia"></i><span>ОРТОДОНТИЯ <small>(исправление прикуса)</small></span>
 					</a>
 					<ul>
-						<li><a href="#">Брекеты для взрослых</a></li>
-						<li><a href="#">Сапфировые брекеты</a></li>
-						<li><a href="#">Керамические брекеты</a></li>
-						<li><a href="#">Лингвальные невидимые брекеты</a></li>
-						<li><a href="#">Невидимые брекеты Incognito</a></li>
-						<li><a href="#">Каппы Инвизилайн (Invisalign)</a></li>
-						<li><a href="#">Самолигирующиеся брекеты Damon (Даймон, Дэймон)</a></li>
-						<li><a href="#">Ретейнеры</a></li>	
+						<li><a href="service_detail.php">Брекеты для взрослых</a></li>
+						<li><a href="service_detail.php">Сапфировые брекеты</a></li>
+						<li><a href="service_detail.php">Керамические брекеты</a></li>
+						<li><a href="service_detail.php">Лингвальные невидимые брекеты</a></li>
+						<li><a href="service_detail.php">Невидимые брекеты Incognito</a></li>
+						<li><a href="service_detail.php">Каппы Инвизилайн (Invisalign)</a></li>
+						<li><a href="service_detail.php">Самолигирующиеся брекеты Damon (Даймон, Дэймон)</a></li>
+						<li><a href="service_detail.php">Ретейнеры</a></li>	
 					</ul>
 				</li>
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="hiryrg"></i><span>ХИРУРГИЯ</span>
 					</a>
 					<ul>
-						<li><a href="#">Удаление зуба мудрости</a></li>
-						<li><a href="#">Удаление ретинированого зуба</a></li>
+						<li><a href="service_detail.php">Удаление зуба мудрости</a></li>
+						<li><a href="service_detail.php">Удаление ретинированого зуба</a></li>
 					</ul>
 				</li>
 				<li class="service-cont">
-					<a href="#" class="service-title">
+					<a href="service_detail.php" class="service-title">
 						<i class="gigiena"></i><span>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</span>
 					</a>
 					<ul>
-						<li><a href="#">Удаление зубного камня</a></li>
-						<li><a href="#">Чистка зубов Air Flow</a></li>
-						<li><a href="#">Фторирование и ремотерапия (реминерализация)</a></li>
-						<li><a href="#">Dental Care for Smokers: комплексная программа для тех, кто курит</a></li>
-						<li><a href="#">White Wedding – ZOOM4 отбеливание к свадьбе!</a></li>
-						<li><a href="#">Отбеливание ZOOM4 - 29 990 рублей, на двоих - всего </a></li>
-						<li><a href="#">44 990 рублей</a></li>
-						<li><a href="#">Отбеливание зубов ZOOM 4</a></li>
-						<li><a href="#">Домашнее и офисное отбеливание зубов Opalescence</a></li>
-						<li><a href="#">Домашнее отбеливание - полоски Crest</a></li>
+						<li><a href="service_detail.php">Удаление зубного камня</a></li>
+						<li><a href="service_detail.php">Чистка зубов Air Flow</a></li>
+						<li><a href="service_detail.php">Фторирование и ремотерапия (реминерализация)</a></li>
+						<li><a href="service_detail.php">Dental Care for Smokers: комплексная программа для тех, кто курит</a></li>
+						<li><a href="service_detail.php">White Wedding – ZOOM4 отбеливание к свадьбе!</a></li>
+						<li><a href="service_detail.php">Отбеливание ZOOM4 - 29 990 рублей, на двоих - всего </a></li>
+						<li><a href="service_detail.php">44 990 рублей</a></li>
+						<li><a href="service_detail.php">Отбеливание зубов ZOOM 4</a></li>
+						<li><a href="service_detail.php">Домашнее и офисное отбеливание зубов Opalescence</a></li>
+						<li><a href="service_detail.php">Домашнее отбеливание - полоски Crest</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -301,7 +302,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					Все права защищены &copy; 2016
 				</div>
 				<div class="right">
-					Разработка и поддержка сайта: <a href="http://redder.pro" target="_blank">REDDER</a>
+					<a href="http://redder.pro" class="b-redder" target="_blank">REDDER</a>
 				</div>
 			</div>
 		</div>
@@ -315,15 +316,17 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
 						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
 					</div>
-					<input class="input" type="text" name="email" required placeholder="E-mail"/>
-					<select class="input" name="doctor">
+					<input class="input" type="email" name="email" required placeholder="E-mail"/>
+					<select class="input" name="doctor" id="spec-select">
+						<option selected disabled>Выберите специалиста</option>
 						<option value="Ортодонт">Гигиенист стоматологический</option>
 						<option value="Ортодонт">Ортодонт</option>
 						<option value="Ортопед">Ортопед</option>
 						<option value="Стоматолог-терапевт">Стоматолог-терапевт</option>
 						<option value="Хирург-имплантолог">Хирург-имплантолог</option>
 					</select>
-					<select class="input" name="doctor-name">
+					<select class="input" name="doctor-name" id="name-select">
+						<option selected disabled>Выберите доктора</option>
 						<option value="Куркина Алена Евгеньевна">Куркина Алена Евгеньевна</option>
 						<option value="Гурген Хачатрян">Гурген Хачатрян</option>
 					</select>
