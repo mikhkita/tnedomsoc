@@ -26,7 +26,6 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css" />
-	<link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/layout-desktop.css" />
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
