@@ -6,7 +6,7 @@ $(document).ready(function(){
         prevWidth = 0,
         rotation = 0;
 
-    isMobile = true;
+    // isMobile = true;
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -161,6 +161,15 @@ $(document).ready(function(){
     });
 
     if( isMobile ){
+        $(".contacts-gallery").slick({
+            prevArrow: "<span class='arrow icon-arrow-left'></span>",
+            nextArrow: "<span class='arrow icon-arrow-right'></span>",
+            slidesToShow: 1 ,
+            slidesToScroll: 1,
+            arrows : false,
+            dots : true
+        });
+
         $(".b-main-doctors").slick({
             mobileFirst : true,
             prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
@@ -229,8 +238,6 @@ $(document).ready(function(){
             "20:00"
         ]
     });
-
-    
 
     $(".b-header .search").click(function(){
         var $this = $(this);

@@ -378,6 +378,11 @@ b {
 	text-transform: uppercase;
 	line-height: 1.354;
 }
+.b-other-content .b-block .title.contacts-title{
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 15px;
+}
 a.link,.b-text a {
 	font-family: "Circe-Light";
 	position: relative;
@@ -1977,7 +1982,7 @@ padding: 40px 0;
 			.b-other-content .b-block .contacts-cont .time {
 				font-size: 24px;
 				text-align: center;
-				margin: 85px 0 75px;
+				margin: 5px 0 75px;
 				position: relative;
 			}
 			.b-other-content .b-block .contacts-cont .time:after,.b-other-content .b-block .contacts-cont .time:before {
@@ -1989,6 +1994,7 @@ padding: 40px 0;
 				height: 2px;
 				background-color: #dfc480;
 				width: 292px;
+				display: none;
 			}
 				.b-other-content .b-block .contacts-cont button {
 					display: inline-block;
