@@ -402,4 +402,8 @@ $(document).ready(function(){
             }
         });
     });
+
+    $("body").on("click",".articles-slider .slick-slide,.articles-all li",function(){
+        window.location.assign($(this).find(".link").attr("href")); 
+    });
 });

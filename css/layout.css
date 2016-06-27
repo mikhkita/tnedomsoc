@@ -1383,6 +1383,7 @@ margin-top: 40px;
 				background-color: #fff;
 				margin: 0 11px; 
 				text-align: left;
+				cursor: pointer;
 			}
 
 			.articles-slider .slick-slide .img{
@@ -1816,6 +1817,7 @@ padding: 40px 0;
 				margin: 25px 0;
 				margin-right: 25px;
 				text-align: left;
+				cursor: pointer;
 			}
 				.b-other-content .b-block .articles-all li:nth-child(3n) {
 					margin-right: 0;

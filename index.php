@@ -469,7 +469,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="text">
 						<h3>4 мифа о стоматологии</h3>
 						<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия). Дозы излучения снижены настолько, что безопасно.</p>
-						<a href="#" class="link">Читать полностью</a>
+						<a href="article_detail.php" class="link">Читать полностью</a>
 					</div>
 				</div>
 				<div>
@@ -477,7 +477,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="text">
 						<h3>Передовое и уникальное оборудование</h3>
 						<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex.</p>
-						<a href="#" class="link">Читать полностью</a>
+						<a href="article_detail.php" class="link">Читать полностью</a>
 					</div>
 				</div>
 				<div>
@@ -485,7 +485,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<div class="text">
 						<h3>имплантация сразу после удаления зуба</h3>
 						<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия).</p>
-						<a href="#" class="link">Читать полностью</a>
+						<a href="article_detail.php" class="link">Читать полностью</a>
 					</div>
 				</div>
 				<div>
