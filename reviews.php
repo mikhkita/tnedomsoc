@@ -117,7 +117,7 @@
 				</div>
 				<button class="btn btn-brown fancy" data-block="#b-popup-auth">Оставить отзыв</button>
 			</div>
-			<ul class="reviews-full clearfix">
+			<ul class="reviews-full clearfix ul-ajax">
 				<li>
 					<div class="photo-cont clearfix">
 						<div class="left img" style="background-image: url('i/review.jpg');"></div>
@@ -204,7 +204,7 @@
 				</li>
 			</ul>
 			<div class="show-next">
-				<a href="#">Показать еще</a>
+				<i class="icon-refresh"></i><span data-href="reviews_next.php">Показать еще</span>
 			</div>
 		</div>
 	</div>

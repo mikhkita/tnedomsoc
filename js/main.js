@@ -207,6 +207,12 @@ $(document).ready(function(){
     }else{
         var $grid = $('#doctors').isotope({
             itemSelector: '#doctors li',
+            hiddenStyle: {
+                opacity: 0
+            },
+              visibleStyle: {
+                opacity: 1
+            }
         });
         // filter items on button click
         $('ul.filter').on( 'click', 'li', function() {

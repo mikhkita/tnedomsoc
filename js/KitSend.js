@@ -156,35 +156,32 @@ $(document).ready(function(){
 			}
 		});
 	});
-	// $(".fancy-ajax").each(function(){
-	// 	var href = $(this).attr("data-href");
-		$(".fancy-ajax").fancybox({
-			padding : 0,
-			type: 'ajax',
-			fitToView: false,
-			scrolling: 'no',
-			tpl: {
-				closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
-			},
-			beforeShow: function(){
-				$(".fancybox-wrap").addClass("beforeShow");
-				$('html').addClass('fancybox-lock'); 
-			},
-			afterShow: function(){
-				$(".fancybox-wrap").removeClass("beforeShow");
-				$(".fancybox-wrap").addClass("afterShow");
-			},
-			beforeClose: function(){
-				$('html').removeClass('fancybox-lock'); 
-				$(".fancybox-wrap").removeClass("afterShow");
-				$(".fancybox-wrap").addClass("beforeClose");
-			},
-			afterClose: function(){
-				$(".fancybox-wrap").removeClass("beforeClose");
-				$(".fancybox-wrap").addClass("afterClose");
-			}
-		});
-	// });
+	$(".fancy-ajax").fancybox({
+		padding : 0,
+		type: 'ajax',
+		fitToView: false,
+		scrolling: 'no',
+		tpl: {
+			closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
+		},
+		beforeShow: function(){
+			$(".fancybox-wrap").addClass("beforeShow");
+			$('html').addClass('fancybox-lock'); 
+		},
+		afterShow: function(){
+			$(".fancybox-wrap").removeClass("beforeShow");
+			$(".fancybox-wrap").addClass("afterShow");
+		},
+		beforeClose: function(){
+			$('html').removeClass('fancybox-lock'); 
+			$(".fancybox-wrap").removeClass("afterShow");
+			$(".fancybox-wrap").addClass("beforeClose");
+		},
+		afterClose: function(){
+			$(".fancybox-wrap").removeClass("beforeClose");
+			$(".fancybox-wrap").addClass("afterClose");
+		}
+	});
 
 	$(".ajax").parents("form").submit(function(){
   		if( $(this).find("input.error,select.error,textarea.error").length == 0 ){
