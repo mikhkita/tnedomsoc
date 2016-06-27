@@ -1623,7 +1623,7 @@ padding: 40px 0;
 						}
 		.b-other-content .b-block .service-text {
 			width: 765px;
-			padding-bottom: 85px;
+			padding-bottom: 55px;
 		}
 		.b-other-content .b-block .service-accord {
 			width: 368px;
@@ -1845,6 +1845,9 @@ padding: 40px 0;
 				cursor: pointer;
 				padding: 10px;
 			}
+				.b-other-content .b-block .show-next span:hover {
+					text-decoration: underline;
+				}
 
 		.b-other-content .b-block .articles-nav {
 			width: 368px;
@@ -2155,7 +2158,47 @@ padding: 40px 0;
 					border-color: #dfc480;
 					background-color: #dfc480;
 				}
-
+		.b-other-content .b-block .about-img {
+			width: 368px;
+			text-align: center;
+		}
+			.b-other-content .b-block .about-img .img{
+				width: 368px;
+				height: 368px;
+				border-radius: 50%;
+				background-image: url("../i/about-man.jpg");
+				background-position: 50%;
+			}
+				.b-other-content .b-block .about-img h3 {
+					margin-top: 35px;
+					font-size: 24px;
+					font-family: "Circe-Bold";
+					line-height: 1.25;
+					text-transform: uppercase;
+				}
+				.b-other-content .b-block .about-img h4 {
+					font-family: "Circe-Light";
+					color: #494949;
+					margin-top: 5px;
+				}
+		.b-other-content .b-block .about-slider {
+			margin-top: 45px;
+			margin-bottom: 60px;
+		}
+			.b-other-content .b-block .about-slider {
+				background-color: rgba(99, 99, 99,0.5);
+			}
+				.b-other-content .b-block .about-slider .slick-dots {
+					width: 100%;
+				    position: absolute;
+				    bottom: 20px;
+				    text-align: center;
+				    padding: 0;
+				}
+		
+			.b-other-content .b-block .about-slider .slick-slide {
+				height: 500px;
+			}
 .doctors-slider {
 	margin-top: 45px;
 }

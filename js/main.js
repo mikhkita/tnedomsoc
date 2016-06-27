@@ -223,6 +223,12 @@ $(document).ready(function(){
         });
     }
 
+    $(".about-slider").slick({
+        prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
+        nextArrow: "<span class='footer-arrow icon-arrow-right'></span>",
+        dots : true
+    });
+
     $.datetimepicker.setLocale('ru');
 
     $('#datepicker').datetimepicker({
