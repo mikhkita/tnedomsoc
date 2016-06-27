@@ -25,6 +25,7 @@
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
 	<script type="text/javascript" src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/parallax.min.js"></script>
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>

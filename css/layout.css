@@ -77,6 +77,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -132,6 +140,10 @@
 .icon-arrow:before {
     content: "\e90c";
 }
+.icon-refresh:before {
+    content: "\e90d";
+}
+
 html,
 body {
 	position: relative;
@@ -378,14 +390,16 @@ b {
 	text-transform: uppercase;
 	line-height: 1.354;
 }
-a.link,.b-text a {
+.link,.b-text a {
 	font-family: "Circe-Light";
 	position: relative;
+	color: #dfc480;
+	cursor: pointer;
 }
-	a.link:hover,.b-text a:hover {
+	.link:hover,.b-text a:hover {
 		text-decoration: underline;
 	}
-	a.link:after,.b-text a:after {
+	.link:after,.b-text a:after {
 		position: absolute;
 	    content: ">";
 	    right: -15px;
@@ -611,13 +625,9 @@ a.link,.b-text a {
 .fancybox-skin {
 	border-radius: 0;
 }
-/*.fancybox-close {
-	top: 0;
-	right: 0;
-	background-image: url("../i/popup-close.png");
-}*/
+
 .fancybox-wrap {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	overflow: visible !important;
 }
 .b-popup {
@@ -625,7 +635,6 @@ a.link,.b-text a {
 	padding: 55px 70px;
 	box-sizing: border-box;
 	color: #2f2f2f;
-	margin-bottom: 50px;
 }
 	.b-popup h3 {
 		line-height: 1.222;
@@ -1779,6 +1788,14 @@ padding: 40px 0;
 					background-color: #dfc480;
 					color: #FFF;
 				}
+		.b-other-content .b-block .ul-ajax {
+			opacity: 1;
+			-webkit-transition: all 500ms ease-out;
+			-moz-transition: all 500ms ease-out; 
+			-ms-transition: all 500ms ease-out;
+			-o-transition: all 500ms ease-out;
+			transition: all 500ms ease-out;
+		}
 		.b-other-content .b-block .articles-all {
 			margin-bottom: 	20px;
 		}
@@ -1826,9 +1843,20 @@ padding: 40px 0;
   			text-transform: uppercase;
   			text-align: center;	
   			padding-bottom: 45px;
+  			cursor: pointer;
 		}			
-			.b-other-content .b-block .show-next a{
-				display: inline-block;	
+			.b-other-content .b-block .show-next i {
+				font-size: 36px;
+				display: none;
+				-o-animation: rotate 3s infinite linear;
+			    -webkit-animation: rotate 3s infinite linear;
+			    -moz-animation: rotate 3s infinite linear;
+			    animation: rotate 3s infinite linear;
+				
+			}
+			.b-other-content .b-block .show-next span{
+				display: inline-block;
+				color: #1f1f1f;
 			}
 
 		.b-other-content .b-block .articles-nav {
@@ -1972,7 +2000,7 @@ padding: 40px 0;
 			text-align: center;
 		}	
 			.b-other-content .b-block .contacts-cont h2 {
-				margin-bottom: 25px;
+				margin-bottom: 28px;
 			}	
 			.b-other-content .b-block .contacts-cont .time {
 				font-size: 24px;
@@ -1992,7 +2020,7 @@ padding: 40px 0;
 			}
 				.b-other-content .b-block .contacts-cont button {
 					display: inline-block;
-					margin-top: 5px;
+					margin-top: 2px;
 				}
 				.b-other-content .b-block .contacts-cont .time:before {
 					top: -25px;
@@ -2024,6 +2052,65 @@ padding: 40px 0;
 				.b-other-content .b-block .contacts-cont .contacts-gallery a:nth-child(3) {
 					background-image: url("../i/gallery-3.jpg");
 				}
+		.b-other-content .b-block .reviews-full {
+			margin-top: 67px;
+			margin-bottom: 3px;
+		}
+			.b-other-content .b-block .reviews-full li {
+				width: 365px;
+				background-color: #f8f8f8;
+				margin-right: 31px;
+				margin-bottom: 31px;
+				float: left;
+			}
+				.b-other-content .b-block .reviews-full li:nth-child(3n) {
+					margin-right: 0;
+				}
+				.b-other-content .b-block .reviews-full li .photo-cont {
+					border-bottom: 1px solid #ebebeb;
+					padding: 17px 20px;
+				}
+					.b-other-content .b-block .reviews-full li .photo-cont .img {
+						width: 75px;
+						height: 75px;
+						border-radius: 50%;
+						background-position: 50%;
+						background-repeat: no-repeat;
+						background-size: cover;
+					}
+					.b-other-content .b-block .reviews-full li .photo-cont .review-title {
+						margin-left: 20px;
+						margin-top: 14px;
+					}
+						.b-other-content .b-block .reviews-full li .photo-cont .review-title h3 {
+							font-size: 18px;
+							font-family: "Circe-Bold";
+							text-transform: uppercase;					
+							color: #dfc480;
+						}
+						.b-other-content .b-block .reviews-full li .photo-cont .review-title h4 {
+							font-size: 14px;
+							font-family: "Circe-Light";
+							color: #c5c4c3;
+						}
+						.b-other-content .b-block .reviews-full li p {
+							font-family: "Circe-Light";
+							padding: 25px 25px 0;
+							overflow: hidden;
+							height: 236px;
+							box-sizing: border-box;
+						}
+						.b-other-content .b-block .reviews-full li span {
+							margin-left: 25px;
+							display: inline-block;
+							margin-top: 23px;
+							margin-bottom: 23px;
+						}
+
+
+
+
+
 .doctors-slider {
 	margin-top: 45px;
 }

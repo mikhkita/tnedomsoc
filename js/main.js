@@ -352,4 +352,39 @@ $(document).ready(function(){
             $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
         });
     }
+
+    $(".show-next span").click(function(){
+        var obj = $(this);
+        obj.hide();
+        obj.parent().find('i').css("display","block");
+        var href = obj.attr("data-href");
+        $.ajax({
+            type: "GET",
+            url: href,
+            success: function(msg){
+                $(".ul-ajax").append(msg);
+                obj.parent().find('i').hide();
+                 
+                obj.show();
+                
+            }
+        });
+    });
+    $("body").on("click",".articles-filter li:not(.active)",function(){
+        var obj = $(this);
+        $(".articles-filter li.active").removeClass("active");
+        obj.addClass("active");
+        $(".show-next").hide();
+        $(".ul-ajax").css("visibility","hidden").css("opacity","0");
+        href = obj.attr("data-href");
+        $.ajax({
+            type: "GET",
+            url: href,
+            success: function(msg){
+                $(".ul-ajax").html(msg);
+                $(".ul-ajax").css("visibility","visible").css("opacity","1");
+                
+            }
+        });
+    });
 });

@@ -8,6 +8,8 @@ function getNextField($form){
 
 function fancyOpen(el){
     $.fancybox(el,{
+    	padding:0,
+    	fitToView: false,
         scrolling: 'no',
         tpl: {
 			closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
@@ -32,8 +34,7 @@ function fancyOpen(el){
 		afterClose: function(){
 			$(".fancybox-wrap").removeClass("beforeClose");
 			$(".fancybox-wrap").addClass("afterClose");
-		},
-        padding:0
+		}
     }); 
     $('html').addClass('fancybox-lock'); 
     $('.fancybox-overlay').html($('.fancybox-wrap')); 
@@ -127,30 +128,63 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$(".fancy-img").fancybox({
-		padding : 0,
-		margin: [20, 60, 20, 60],
-		tpl: {
-		closeBtn : '<a title="Закрыть" class="popup-close icon-close close-gallery" href="javascript:;"></a>',
-		next     : '<a title="Вперед" class="fancybox-nav fancybox-next" href="javascript:;"><span class="icon-arrow-right"></span></a>',
-		prev     : '<a title="Назад" class="fancybox-nav fancybox-prev" href="javascript:;"><span class="icon-arrow-left"></span></a>'
-		},
-		beforeShow: function(){
-			$(".fancybox-wrap").addClass("beforeShow");
-		},
-		afterShow: function(){
-			$(".fancybox-wrap").removeClass("beforeShow");
-			$(".fancybox-wrap").addClass("afterShow");
-		},
-		beforeClose: function(){
-			$(".fancybox-wrap").removeClass("afterShow");
-			$(".fancybox-wrap").addClass("beforeClose");
-		},
-		afterClose: function(){
-			$(".fancybox-wrap").removeClass("beforeClose");
-			$(".fancybox-wrap").addClass("afterClose");
-		}
+	$(".fancy-img").each(function(){
+		var href = $(this).attr("data-href");
+		$(".fancy-img").fancybox({
+			padding : 0,
+			href : href,
+			margin: [20, 60, 20, 60],
+			tpl: {
+			closeBtn : '<a title="Закрыть" class="popup-close icon-close close-gallery" href="javascript:;"></a>',
+			next     : '<a title="Вперед" class="fancybox-nav fancybox-next" href="javascript:;"><span class="icon-arrow-right"></span></a>',
+			prev     : '<a title="Назад" class="fancybox-nav fancybox-prev" href="javascript:;"><span class="icon-arrow-left"></span></a>'
+			},
+			beforeShow: function(){
+				$(".fancybox-wrap").addClass("beforeShow");
+			},
+			afterShow: function(){
+				$(".fancybox-wrap").removeClass("beforeShow");
+				$(".fancybox-wrap").addClass("afterShow");
+			},
+			beforeClose: function(){
+				$(".fancybox-wrap").removeClass("afterShow");
+				$(".fancybox-wrap").addClass("beforeClose");
+			},
+			afterClose: function(){
+				$(".fancybox-wrap").removeClass("beforeClose");
+				$(".fancybox-wrap").addClass("afterClose");
+			}
+		});
 	});
+	// $(".fancy-ajax").each(function(){
+	// 	var href = $(this).attr("data-href");
+		$(".fancy-ajax").fancybox({
+			padding : 0,
+			type: 'ajax',
+			fitToView: false,
+			scrolling: 'no',
+			tpl: {
+				closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
+			},
+			beforeShow: function(){
+				$(".fancybox-wrap").addClass("beforeShow");
+				$('html').addClass('fancybox-lock'); 
+			},
+			afterShow: function(){
+				$(".fancybox-wrap").removeClass("beforeShow");
+				$(".fancybox-wrap").addClass("afterShow");
+			},
+			beforeClose: function(){
+				$('html').removeClass('fancybox-lock'); 
+				$(".fancybox-wrap").removeClass("afterShow");
+				$(".fancybox-wrap").addClass("beforeClose");
+			},
+			afterClose: function(){
+				$(".fancybox-wrap").removeClass("beforeClose");
+				$(".fancybox-wrap").addClass("afterClose");
+			}
+		});
+	// });
 
 	$(".ajax").parents("form").submit(function(){
   		if( $(this).find("input.error,select.error,textarea.error").length == 0 ){
