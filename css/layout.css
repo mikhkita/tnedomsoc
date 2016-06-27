@@ -1399,6 +1399,10 @@ margin-top: 40px;
 				box-sizing: border-box;
 				position: relative;
 			}
+			.articles-slider .slick-slide .text > div {
+				max-height: 185px;
+				overflow: hidden;
+			}
 				.articles-slider .slick-slide .text h3 {
 					font-size: 18px;
 					font-family: "Circe-Bold";
@@ -1407,8 +1411,6 @@ margin-top: 40px;
 				}
 				.articles-slider .slick-slide .text p {
 					font-family: "Circe-Light";
-				    max-height: 120px;
-				    overflow: hidden;
 				}
 				.articles-slider .slick-slide .text a {
 					position: absolute;
@@ -1835,6 +1837,10 @@ padding: 40px 0;
 					box-sizing: border-box;
 					position: relative;
 				}
+					.b-other-content .b-block .articles-all li .text > div {
+						max-height: 185px;
+						overflow: hidden;
+					}
 					.b-other-content .b-block .articles-all li .text h3 {
 						font-size: 18px;
 						font-family: "Circe-Bold";
@@ -1843,8 +1849,6 @@ padding: 40px 0;
 					}
 					.b-other-content .b-block .articles-all li .text p {
 						font-family: "Circe-Light";
-					    max-height: 120px;
-					    overflow: hidden;
 					}
 					.b-other-content .b-block .articles-all li .text a {
 						position: absolute;
@@ -2074,6 +2078,7 @@ padding: 40px 0;
 				margin-right: 31px;
 				margin-bottom: 31px;
 				float: left;
+				position: relative;
 			}
 				.b-other-content .b-block .reviews-full li:nth-child(3n) {
 					margin-right: 0;
@@ -2105,19 +2110,21 @@ padding: 40px 0;
 							font-family: "Circe-Light";
 							color: #c5c4c3;
 						}
-						.b-other-content .b-block .reviews-full li p {
-							font-family: "Circe-Light";
+						.b-other-content .b-block .reviews-full li .text {
+							position: relative;
+							height: 306px;
 							padding: 25px 25px 0;
-							overflow: hidden;
-							height: 236px;
 							box-sizing: border-box;
 						}
-						.b-other-content .b-block .reviews-full li span {
-							margin-left: 25px;
-							display: inline-block;
-							margin-top: 23px;
-							margin-bottom: 23px;
-						}
+							.b-other-content .b-block .reviews-full li .text p {
+								font-family: "Circe-Light";
+								overflow: hidden;
+								max-height: 216px;
+							}
+							.b-other-content .b-block .reviews-full li .text .link {
+								position: absolute;
+								bottom: 23px;
+							}
 
 
 
