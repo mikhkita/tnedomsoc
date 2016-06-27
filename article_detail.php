@@ -174,7 +174,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	</div>
 	<div class="b b-other-content b-grey">
 		<div class="b-block">
-			<h2 class="title">Другие статьи</h2>
+			<h2 class="title b-padding-title">Другие статьи</h2>
 			<div class="articles-footer-slider articles-slider">
 				<div>
 					<div class="img" style='background-image: url("i/article-1.jpg");'></div>

@@ -197,6 +197,12 @@ b {
 	padding-top: 100px;
 	line-height: 1.354;
 }
+.b-other-content .b-block .title.contacts-title{
+	
+}
+.b-padding-title{
+	padding-left: 45px;
+}
 a.link,.b-text a {
 	font-family: "Circe-Regular";
 	position: relative;
@@ -294,15 +300,22 @@ a.link,.b-text a {
 }
 .slick-slider .footer-arrow {
 	position: absolute;
-	top: -90px;
+	top: 50%;
 	right: 	0;
 	cursor: pointer;
 	font-size: 24px;
 	z-index: 100;
+	width: 80px;
+	height: 100px;
+	margin-top: -62px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 37px;
 }
 
 .slick-slider .footer-arrow.icon-arrow-left {
-	right: 50px;
+	right: auto;
+	left: 0px;
 }
 
 .doctors.slick-slider .footer-arrow,
@@ -1106,6 +1119,7 @@ a.link,.b-text a {
 				margin: 0 11px;
 				text-align: left;
 				padding: 0px 80px;
+				box-sizing: border-box;
 				background-color: transparent;
 			}
 
@@ -1149,7 +1163,7 @@ a.link,.b-text a {
 		}
 #map_canvas {
 	width: 100%;
-	height: 395px;
+	height: 500px;
 }
 .b-other {
 	background-size: cover;
@@ -1595,7 +1609,7 @@ a.link,.b-text a {
 			.b-other-content .b-block .doctor-detail img {
 				position: relative;
 				bottom: 0;
-				margin-top: 40px;
+				margin-top: 60px;
 				left: -35px;
 				max-width: 750px;
 				max-height: 100%;
@@ -1629,9 +1643,9 @@ a.link,.b-text a {
 				margin-bottom: 25px;
 			}	
 			.b-other-content .b-block .contacts-cont .time {
-				font-size: 24px;
+				font-size: 28px;
 				text-align: center;
-				margin: 85px 0 75px;
+				margin: 0px 0 85px;
 				position: relative;
 			}
 			.b-other-content .b-block .contacts-cont .time:after,.b-other-content .b-block .contacts-cont .time:before {
@@ -1642,26 +1656,42 @@ a.link,.b-text a {
 				content: "";
 				height: 2px;
 				width: 292px;
+				display: none;
 			}
 				.b-other-content .b-block .contacts-cont button {
 					display: inline-block;
 					margin-top: 5px;
 				}
 				.b-other-content .b-block .contacts-cont .time:before {
-					top: -25px;
+					top: -35px;
 				}
 				.b-other-content .b-block .contacts-cont .time:after {
-					bottom: -25px;
+					bottom: -35px;
 				}
 			.b-other-content .b-block .contacts-cont .contacts-gallery {
-				margin-top: 50px;
+				margin-top: 60px;
+				width: 750px;
+				margin-left: -35px;
+				height: 750px;
+			}
+			.contacts-gallery.slick-slider .slick-dots{
+				bottom: 0px;
+				position: absolute;
+				left: 0px;
+				width: 100%;
+			}
+			.contacts-gallery.slick-slider .slick-dots li button{
+				background-color: rgba(255,255,255,0.7);
+			}
+			.contacts-gallery.slick-slider .slick-dots li.slick-active button{
+				background-color: #dfc480;
 			}
 				.b-other-content .b-block .contacts-cont .contacts-gallery a {
 					display: block;
 					float: left;
-					width: 368px;
-					height: 360px;
-					margin-right: 28px;
+					width: 750px;
+					height: 750px;
+					margin-right: 0px;
 					background-size: cover;
 					background-position: 50%;
 				}
@@ -1752,13 +1782,15 @@ a.link,.b-text a {
 			right: -54px;
 			top: 3px;
 		}
+
+
 .articles-footer-slider {
 	padding: 0;
-	padding-bottom: 65px;
+	padding-bottom: 80px;
 }
 	.articles-footer-slider .slick-slide {
-		margin-right: 25px;
-		width: 370px;
+		margin-right: 0px 11px;
+		width: 750px;
 
 	}
 
@@ -1998,7 +2030,8 @@ a.link,.b-text a {
 				line-height: 50px;
 				font-family: 'Circe-Regular';
 			}
-				.b-mobile-menu ul li a:active{
+				.b-mobile-menu ul li a:active,
+				.b-mobile-menu ul li.active a{
 					color: #dfc480;
 				}
 			.b-mobile-menu ul li:last-child a{

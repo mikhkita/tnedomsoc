@@ -58,7 +58,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
         <span class="b-close-mobile icon-close"></span>
         <ul>
         	<li><a href="index.php" class="b-mobile-menu-a">Главная</a></li>
-        	<li><a href="services.php" class="b-mobile-menu-a">Услуги</a></li>
+        	<li class="active"><a href="services.php" class="b-mobile-menu-a">Услуги</a></li>
 			<li><a href="doctors.php" class="b-mobile-menu-a">Врачи</a></li>
 			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>
 			<li><a href="reviews.php" class="b-mobile-menu-a">Отзывы</a></li>
@@ -71,7 +71,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div class="b-header b-block clearfix">
 			<a href="index.php" class="logo left"></a>
 			<ul class="left clearfix">
-				<li><a href="services.php">Услуги</a></li>
+				<li class="active"><a href="services.php">Услуги</a></li>
 				<li><a href="doctors.php">Врачи</a></li>
 				<li><a href="actions.php">Акции</a></li>
 				<li><a href="reviews.php">Отзывы</a></li>
@@ -96,7 +96,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<div class="b-header clearfix">
 				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
 				<ul class="left clearfix">
-					<li><a href="services.php">Услуги</a></li>
+					<li class="active"><a href="services.php">Услуги</a></li>
 					<li><a href="doctors.php">Врачи</a></li>
 					<li><a href="actions.php">Акции</a></li>
 					<li><a href="reviews.php">Отзывы</a></li>
