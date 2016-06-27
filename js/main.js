@@ -278,8 +278,7 @@ $(document).ready(function(){
     if($(".service-accord").length) {
         $( ".service-accord" ).accordion({
             icons: false,
-            heightStyle: "content",
-            collapsible: true
+            heightStyle: "content"
         });
         var active = $(".service-accord .ui-state-active").index();
         $(".service-accord h3").click(function(e){
@@ -403,7 +402,7 @@ $(document).ready(function(){
         });
     });
 
-    $("body").on("click",".articles-slider .slick-slide,.articles-all li",function(){
+    $("body").on("click",".articles-slider .slick-slide,.articles-all li,.actions li",function(){
         window.location.assign($(this).find(".link").attr("href")); 
     });
 });

@@ -405,7 +405,7 @@ b {
 	.link:hover,.b-text a:hover {
 		text-decoration: underline;
 	}
-	.link:after,.b-text a:after {
+	.link:after {
 		position: absolute;
 	    content: ">";
 	    right: -15px;
@@ -1502,7 +1502,7 @@ padding: 40px 0;
 					position: absolute;
 					content: "\e90c";
 					right: 6px;
-					top: 10px;
+					top: 9px;
 					font-family: 'icomoon' !important;
 					speak: none;
 					font-style: normal;
@@ -1829,7 +1829,6 @@ padding: 40px 0;
   			text-transform: uppercase;
   			text-align: center;	
   			padding-bottom: 45px;
-  			cursor: pointer;
 		}			
 			.b-other-content .b-block .show-next i {
 				font-size: 36px;
@@ -1843,6 +1842,8 @@ padding: 40px 0;
 			.b-other-content .b-block .show-next span{
 				display: inline-block;
 				color: #1f1f1f;
+				cursor: pointer;
+				padding: 10px;
 			}
 
 		.b-other-content .b-block .articles-nav {
@@ -2096,10 +2097,64 @@ padding: 40px 0;
 								position: absolute;
 								bottom: 23px;
 							}
-
-
-
-
+	.b-other-content .b-block .actions {
+		margin-top: 30px;
+	}
+		.b-other-content .b-block .actions li {
+			background-color: #f8f8f8;
+			height: 265px;
+			margin-bottom: 40px;
+			cursor: pointer;
+		}
+			.b-other-content .b-block .actions li .img {
+				width: 365px;
+				height: 100%;
+				background-size: cover;
+				background-position: 50%;
+			}
+				.b-other-content .b-block .actions li .text {
+					position: relative;
+					width: 795px;
+					height: 100%;
+					padding: 30px;
+					box-sizing: border-box;
+				}
+					.b-other-content .b-block .actions li .text >div {
+						max-height: 169px;
+						overflow: hidden;
+					}
+					.b-other-content .b-block .actions li .text h3 {
+						font-family: "Circe-Bold";
+						text-transform: uppercase;
+					}
+					.b-other-content .b-block .actions li .text p {
+						font-family: "Circe-Light";
+						margin-top: 21px;
+					}
+					.b-other-content .b-block .actions li .text .link {
+						position: absolute;
+						bottom: 20px;
+					}
+		.b-other-content .b-block .action-right {
+			width: 368px;
+		}	
+			.b-other-content .b-block .action-right a {
+				font-size: 20px;
+				color: #1f1f1f;
+				display: block;
+    			padding: 12px 13px 7px;
+				text-transform: uppercase;
+				border: 1px solid #fff;
+			}
+				.b-other-content .b-block .action-right a:hover {
+					border-color: #1f1f1f;
+				}
+				.b-other-content .b-block .action-right a.active {
+					cursor: default;
+					color: #fff;
+					border-color: #dfc480;
+					background-color: #dfc480;
+				}
 
 .doctors-slider {
 	margin-top: 45px;
