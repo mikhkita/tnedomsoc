@@ -381,6 +381,10 @@ b {
 	.b-text p + ul {
 		margin-top: -18px;
 	}
+	.b-text .sign {
+		text-align: right;
+		font-family: "Circe-Light";
+	}
 
 
 .title {
@@ -1828,7 +1832,8 @@ padding: 40px 0;
 		.b-other-content .b-block .show-next {
   			text-transform: uppercase;
   			text-align: center;	
-  			padding-bottom: 45px;
+  			padding-bottom: 25px;
+  			height: 50px;
 		}			
 			.b-other-content .b-block .show-next i {
 				font-size: 36px;
@@ -1843,7 +1848,7 @@ padding: 40px 0;
 				display: inline-block;
 				color: #1f1f1f;
 				cursor: pointer;
-				padding: 10px;
+				/*padding: 10px;*/
 			}
 				.b-other-content .b-block .show-next span:hover {
 					text-decoration: underline;
@@ -2136,8 +2141,25 @@ padding: 40px 0;
 					}
 					.b-other-content .b-block .actions li .text .link {
 						position: absolute;
-						bottom: 20px;
+						bottom: 25px;
 					}
+		.b-other-content .b-block .works li{
+			height: 330px;
+		}
+			.b-other-content .b-block .works li .text {
+				padding: 20px 30px;
+			}
+				.b-other-content .b-block .actions li .text p {
+					margin-top: 11px;
+				}
+				.b-other-content .b-block .works li .text h3 {
+					font-size: 36px;
+				}
+				.b-other-content .b-block .works li .text >div {
+					max-height: 233px;
+				}
+
+
 		.b-other-content .b-block .action-right {
 			width: 368px;
 		}	

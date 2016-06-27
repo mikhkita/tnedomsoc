@@ -29,7 +29,6 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/fastclick.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
@@ -64,7 +63,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>
 			<li><a href="reviews.php" class="b-mobile-menu-a">Отзывы</a></li>
 			<li><a href="works.php" class="b-mobile-menu-a">Работы</a></li>
-			<li><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
+			<li class="active"><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
 			<li><a href="contacts.php" class="b-mobile-menu-a">Контакты</a></li>
         </ul>
     </div>
@@ -77,7 +76,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li><a href="actions.php">Акции</a></li>
 				<li><a href="reviews.php">Отзывы</a></li>
 				<li><a href="works.php">Работы</a></li>
-				<li><a href="articles.php">Статьи</a></li>
+				<li class="active"><a href="articles.php">Статьи</a></li>
 				<li><a href="contacts.php">Контакты</a></li>
 			</ul>
 			<div class="phone-cont right">
@@ -92,7 +91,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other" data-parallax="scroll" data-image-src="i/about.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/works.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
@@ -102,7 +101,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<li><a href="actions.php">Акции</a></li>
 					<li><a href="reviews.php">Отзывы</a></li>
 					<li><a href="works.php">Работы</a></li>
-					<li><a href="articles.php">Статьи</a></li>
+					<li class="active"><a href="articles.php">Статьи</a></li>
 					<li><a href="contacts.php">Контакты</a></li>
 				</ul>
 				<div class="phone-cont right">
@@ -122,7 +121,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<div class="b-other-text">
 				<div>
-					<h1>О клинике</h1>
+					<h1>Работы</h1>
 				</div>
 			</div>
 		</div>
@@ -130,46 +129,42 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b b-navigation">
 		<ul class="b-block clearfix">
 			<li><a href="#">Главная</a></li>
-			<li class="active"><a href="#" onclick="return false;">О клинике</a></li>
+			<li class="active"><a href="#" onclick="return false;">Работы</a></li>
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block clearfix">
-			<div class="about-img left">
-				<div class="img"></div>
-				<h3>Хачатрян Гурген<br>Вачикович</h3>
-				<h4>Генеральный директор</h4>
-			</div>
-			<div class="service-text right">
-				<div class="b-text clearfix">
-					<h2>ЧТО ТАКОЕ cosmodent</h2>
-					<h4>Я РАД ПРИВЕТСТВОВАТЬ ВАС В СТОМАТОЛОГИИ COSMODENT</h4>
-					<p>Вся моя жизнь связана со&nbsp;стоматологией. 11 лет назад я&nbsp;открыл в&nbsp;Москве детскую стоматологию Дентал Фэнтези&nbsp;&mdash; мы&nbsp;первыми начали лечить детей по&nbsp;мировым западным протоколам: качественно и&nbsp;надежно, как взрослых. И&nbsp;стали лидерами среди детских стоматологий в&nbsp;России!<br />
-					Родители наших маленьких пациентов просили нас лечить и&nbsp;их&nbsp;самих&nbsp;&mdash; так&nbsp;же нежно и&nbsp;терпеливо, как детей. И&nbsp;мы&nbsp;открыли взрослые стоматологические отделения COSMODENT. Мы&nbsp;предлагаем нашим пациентам все самое лучшее, что есть в&nbsp;стоматологии на&nbsp;сегодня.</p>
-					<h4>ЛЕЧЕНИЕ ЗУБОВ ПО МИРОВЫМ СТАНДАРТАМ</h4>
-					<p>С использованием дентальных микроскопов, коффердама, системы ICON (лечение кариеса без бормашины). Теперь не надо ехать за границу, чтобы получить стоматологическую помощь высочайшего уровня.</p>
-					<h4>БЕЗОПАСНОЕ ОБОРУДОВАНИЕ ДЛЯ ДИАГНОСТИКИ</h4>
-					<p>Визиограф, компьютерная 3D томография с минимальной лучевой нагрузкой и лазерная диагностика DIAGNOcam (без рентген-излучения).</p>
-					<h4>КАЧЕСТВЕННАЯ ИМПЛАНТАЦИЯ</h4>
-					<p>Точнейшее 3D-планирование, установка имплантатов ведущих мировых производителей, без боли и осложнений.</p>
-					<h4>ПРОТЕЗИРОВАНИЕ ЛЮБОЙ СЛОЖНОСТИ</h4>
-					<p>Микропротезирование вкладками, все виды коронок, любые съемные и несъемные протезы, виниры и люминиры, все виды эстетической реставрации зубов.</p>
-					<h4>ПРОФЕССИОНАЛЬНАЯ ГИГИЕНА И ОТБЕЛИВАНИЕ</h4>
-					<p>Мы предлагаем вам только те методы, которые не повредят эмаль зубов. Ведь наш приоритет – безопасность любой процедуры.</p>
-					<h4>КАЖДЫЙ ПАЦИЕНТ – ЭТО В ПЕРВУЮ ОЧЕРЕДЬ НАШ ГОСТЬ!</h4>
-					<p>Гарантируем индивидуальный подход, уважение и внимание абсолютно всех сотрудников клиники.<br>Если у Вас есть желание написать мне лично, буду рад: <a href="mailto:gh@cosmodent.ru">gh@cosmodent.ru</a> – ни одно Ваше сообщение я не оставлю без внимания!</p>
-					<span class="sign right">Искренне,<br>Гурген Хачатрян<br>Генеральный директор Belgravia Dental Studio</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="b b-other-content b-grey">
 		<div class="b-block">
-			<h2 class="title">Тур по клинике</h2>
-			<div class="about-slider">
-				<div style="background-image: url('i/about-1.jpg');"></div>
-				<div style="background-image: url('i/about-1.jpg');"></div>
-				<div style="background-image: url('i/about-1.jpg');"></div>
+			<h2 class="title">результаты нашей работы</h2>
+			<ul class="actions works clearfix ul-ajax">
+				<li class="clearfix">
+					<div class="img left" style='background-image: url("i/work-1.jpg");'></div>
+					<div class="text left">
+						<div>
+							<h3>Виниры</h3>
+							<p>В&nbsp;клинику &laquo;Авторской эстетической стоматологии и&nbsp;косметологии Cosmodent&raquo; обратился пациент 26 лет с&nbsp;жалобами на&nbsp;эстетическую несостоятельность и&nbsp;патологическую стираемость зубов.<br />
+							Объективно было отмечена патологическая стираемость с&nbsp;15&ndash;25 зубы, исходный цвет зубов в&nbsp;полости рта А3,5.<br />
+							После всех предложеных вариантов решиния данных проблем, пациент предпочел остановиться на&nbsp;керамических винирах. Плюсом данного выбора лечения, является то, что решаются одномоментно<br />
+							несколько проблем: изменение формы, изменение цвета, а&nbsp;также немаловажное, что в&nbsp;данном клиническом случае</p>
+						</div>
+						<a href="work_detail.php" class="link">Читать полностью</a>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="img left" style='background-image: url("i/work-1.jpg");'></div>
+					<div class="text left">
+						<div>
+							<h3>Виниры</h3>
+							<p>В&nbsp;клинику &laquo;Авторской эстетической стоматологии и&nbsp;косметологии Cosmodent&raquo; обратился пациент 26 лет с&nbsp;жалобами на&nbsp;эстетическую несостоятельность и&nbsp;патологическую стираемость зубов.<br />
+							Объективно было отмечена патологическая стираемость с&nbsp;15&ndash;25 зубы, исходный цвет зубов в&nbsp;полости рта А3,5.<br />
+							После всех предложеных вариантов решиния данных проблем, пациент предпочел остановиться на&nbsp;керамических винирах. Плюсом данного выбора лечения, является то, что решаются одномоментно<br />
+							несколько проблем: изменение формы, изменение цвета, а&nbsp;также немаловажное, что в&nbsp;данном клиническом случае</p>
+						</div>
+						<a href="work_detail.php" class="link">Читать полностью</a>
+					</div>
+				</li>
+			</ul>
+			<div class="show-next">
+				<i class="icon-refresh"></i><span data-href="work.php">Показать еще</span>
 			</div>
 		</div>
 	</div>
@@ -231,17 +226,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
 						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
 					</div>
-					<input class="input" type="email" name="email" required placeholder="E-mail"/>
-					<select class="input" name="doctor" id="spec-select">
-						<option selected disabled>Выберите специалиста</option>
+					<input class="input" type="text" name="email" required placeholder="E-mail"/>
+					<select class="input" name="doctor">
 						<option value="Ортодонт">Гигиенист стоматологический</option>
 						<option value="Ортодонт">Ортодонт</option>
 						<option value="Ортопед">Ортопед</option>
 						<option value="Стоматолог-терапевт">Стоматолог-терапевт</option>
 						<option value="Хирург-имплантолог">Хирург-имплантолог</option>
 					</select>
-					<select class="input" name="doctor-name" id="name-select">
-						<option selected disabled>Выберите доктора</option>
+					<select class="input" name="doctor-name">
 						<option value="Куркина Алена Евгеньевна">Куркина Алена Евгеньевна</option>
 						<option value="Гурген Хачатрян">Гурген Хачатрян</option>
 					</select>
