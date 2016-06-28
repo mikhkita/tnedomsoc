@@ -143,6 +143,9 @@
 .icon-refresh:before {
     content: "\e90d";
 }
+.icon-zoom:before {
+    content: "\e90e";
+}
 
 html,
 body {
@@ -1535,6 +1538,9 @@ padding: 40px 0;
 		padding-top: 45px;
 		color: #1f1f1f;
 	}
+		.b-other-content .b-block.text-contain {
+			padding-bottom: 55px;
+		}
 		.b-other-content .b-block .title {
 			padding-top: 0;
 			text-align: left;
@@ -1627,10 +1633,11 @@ padding: 40px 0;
 						}
 		.b-other-content .b-block .service-text {
 			width: 765px;
-			padding-bottom: 55px;
+			/*padding-bottom: 55px;*/
 		}
 		.b-other-content .b-block .service-accord {
 			width: 368px;
+
 		}
 			.b-other-content .b-block .service-accord.fixed {
 				position: fixed;
@@ -2183,6 +2190,7 @@ padding: 40px 0;
 		.b-other-content .b-block .about-img {
 			width: 368px;
 			text-align: center;
+			margin-top: 10px;
 		}
 			.b-other-content .b-block .about-img .img{
 				width: 368px;
