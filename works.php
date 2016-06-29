@@ -137,7 +137,10 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<h2 class="title">результаты нашей работы</h2>
 			<ul class="actions works clearfix ul-ajax">
 				<li class="clearfix">
-					<div class="img left" style='background-image: url("i/work-1.jpg");'></div>
+					<div class="img left">
+						<div class="before" style='background-image: url("i/work-before.jpg");'></div>
+						<div class="after" style='background-image: url("i/work-after.jpg");'></div>
+					</div>
 					<div class="text left">
 						<div>
 							<h3>Виниры</h3>
@@ -150,7 +153,10 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</div>
 				</li>
 				<li class="clearfix">
-					<div class="img left" style='background-image: url("i/work-1.jpg");'></div>
+					<div class="img left">
+						<div class="before" style='background-image: url("i/work-before.jpg");'></div>
+						<div class="after" style='background-image: url("i/work-after.jpg");'></div>
+					</div>
 					<div class="text left">
 						<div>
 							<h3>Виниры</h3>

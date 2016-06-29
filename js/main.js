@@ -6,7 +6,7 @@ $(document).ready(function(){
         prevWidth = 0,
         rotation = 0;
 
-    // isMobile = true;
+    isMobile = true;
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -221,12 +221,20 @@ $(document).ready(function(){
             $grid.isotope({ filter: filterValue });
         });
     }
-
-    $(".about-slider").slick({
-        prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
-        nextArrow: "<span class='footer-arrow icon-arrow-right'></span>",
-        dots : true
-    });
+    if( isMobile ){
+        $(".about-slider").slick({
+            prevArrow: "<span class='arrow icon-arrow-left'></span>",
+            nextArrow: "<span class='arrow icon-arrow-right'></span>",
+            arrows : false,
+            dots : true
+        });
+    } else {
+        $(".about-slider").slick({
+            prevArrow: "<span class='footer-arrow icon-arrow-left'></span>",
+            nextArrow: "<span class='footer-arrow icon-arrow-right'></span>",
+            dots : true
+        });
+    }
 
     $.datetimepicker.setLocale('ru');
 
@@ -411,7 +419,7 @@ $(document).ready(function(){
         window.location.assign($(this).find(".link").attr("href")); 
     });
 
-    if( !isMobile  && $('.stick,.doctor-img').length) {
+    if( !isMobile && $('.stick,.doctor-img').length) {
         $(".stick").stick_in_parent({offset_top: $(".b-header-fixed").outerHeight() + 10});  
         $(".doctor-img").stick_in_parent({offset_top: myHeight - $(".doctor-img").height()}); 
     }

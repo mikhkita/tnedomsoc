@@ -2157,10 +2157,39 @@ padding: 40px 0;
 		.b-other-content .b-block .works li{
 			height: 330px;
 		}
+			.b-other-content .b-block .works li .img .before,.b-other-content .b-block .works li .img .after{
+				position: relative;
+				height: 50%;
+				background-size: cover;
+				background-position: 50%;
+			}
+				.b-other-content .b-block .works li .img .before:after,.b-other-content .b-block .works li .img .after:after{
+					position: absolute;
+					font-size: 24px;
+					font-family: "Circe-Bold";
+					bottom: 0;
+					left: 0;
+					padding: 9px 20px 5px;
+					background-color: #dfc480;
+					color: #fff;
+				}
+				.b-other-content .b-block .works li .img .before:after {
+					content: "ДО";
+
+				}
+			.b-other-content .b-block .works li .img .after{
+				position: relative;
+			}
+				.b-other-content .b-block .works li .img .after:after{
+					content: "ПОСЛЕ";
+				}
+			.b-other-content .b-block .works li .img .after.big {
+				height: 100%;
+			}	
 			.b-other-content .b-block .works li .text {
 				padding: 20px 30px;
 			}
-				.b-other-content .b-block .actions li .text p {
+				.b-other-content .b-block .works li .text p {
 					margin-top: 11px;
 				}
 				.b-other-content .b-block .works li .text h3 {
@@ -2198,6 +2227,7 @@ padding: 40px 0;
 		}
 			.b-other-content .b-block .about-img .img{
 				width: 368px;
+				display: inline-block;
 				height: 368px;
 				border-radius: 50%;
 				background-image: url("../i/about-man.jpg");
@@ -2217,7 +2247,7 @@ padding: 40px 0;
 				}
 		.b-other-content .b-block .about-slider {
 			margin-top: 45px;
-			margin-bottom: 60px;
+			margin-bottom: 40px;
 		}
 			.b-other-content .b-block .about-slider {
 				background-color: rgba(99, 99, 99,0.5);

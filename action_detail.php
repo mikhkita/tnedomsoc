@@ -191,8 +191,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
 							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
@@ -204,8 +204,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
 							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
@@ -217,8 +217,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
 							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
@@ -230,8 +230,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
 							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
@@ -243,8 +243,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
 							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
@@ -256,8 +256,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
 							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
