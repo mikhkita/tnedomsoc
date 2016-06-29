@@ -139,7 +139,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block">
+		<div class="b-block doctor-desc">
 			<div class="doctor-detail clearfix">
 				<img class="left doctor-img" src="i/doctor-11.jpg">
 				<div class="text right">

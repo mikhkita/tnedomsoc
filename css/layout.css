@@ -1536,6 +1536,7 @@ padding: 40px 0;
 }
 	.b-other-content .b-block {
 		padding-top: 45px;
+		padding-bottom: 25px;
 		color: #1f1f1f;
 	}
 		.b-other-content .b-block.text-contain {
@@ -1792,7 +1793,7 @@ padding: 40px 0;
 			transition: all 500ms ease-out;
 		}
 		.b-other-content .b-block .articles-all {
-			margin-bottom: 	20px;
+			margin-bottom:	20px;
 		}
 			.b-other-content .b-block .articles-all li {
 				width: 370px;
@@ -1840,7 +1841,6 @@ padding: 40px 0;
 		.b-other-content .b-block .show-next {
   			text-transform: uppercase;
   			text-align: center;	
-  			padding-bottom: 25px;
   			height: 50px;
 		}			
 			.b-other-content .b-block .show-next i {
@@ -1970,6 +1970,9 @@ padding: 40px 0;
 		.b-other-content .b-block .doctor-detail {
 			position: relative;
 		}
+			.b-other-content .doctor-desc {
+				padding-bottom: 0;
+			}
 			.b-other-content .b-block .doctor-detail img {
 				/*position: absolute;
 				bottom: 0;
@@ -2008,7 +2011,7 @@ padding: 40px 0;
 			.b-other-content .b-block .contacts-cont .time {
 				font-size: 24px;
 				text-align: center;
-				margin: 5px 0 75px;
+				margin: 5px 0 50px;
 				position: relative;
 			}
 			.b-other-content .b-block .contacts-cont .time:after,.b-other-content .b-block .contacts-cont .time:before {

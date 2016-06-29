@@ -378,7 +378,7 @@ $(document).ready(function(){
                 if(msg.next) {
                     obj.attr("data-href",msg.next);
                     obj.show();
-                }
+                } else $(".show-next").hide();
                 
                 
             }
