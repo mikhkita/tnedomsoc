@@ -252,7 +252,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other-content b-grey">
+	<div class="b b-other-content doctor-desc b-grey">
 		<div class="b-block">
 			<h2 class="title">Лечащие врачи</h2>
 			<div class="doctors-slider">

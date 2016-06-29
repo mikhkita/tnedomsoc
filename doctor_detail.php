@@ -167,7 +167,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</div>
 	</div>
 	<div class="b b-other-content b-grey">
-		<div class="b-block">
+		<div class="b-block doctor-desc">
 			<h2 class="title">ВРАЧИ МОЕЙ СПЕЦИАЛЬНОСТИ</h2>
 			<div class="doctors-slider">
 				<div style="background-image: url('i/doctor-1.jpg');">	
