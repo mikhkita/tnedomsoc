@@ -15,5 +15,5 @@
 		<a href="article_detail.php" class="link">Читать полностью</a>
 	</div>
 </li>';
-	echo json_encode(array("data" => $msg,"next" => 'article.php'));
+	echo json_encode(array("data" => $msg,"next" => null));
 ?>
