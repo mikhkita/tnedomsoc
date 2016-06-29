@@ -1658,6 +1658,7 @@ padding: 40px 0;
 				position: relative;
 				margin: 0;
 				border-radius: 0;
+				cursor: pointer;
 			}
 				.b-other-content .b-block .service-accord h3 i,.b-other-content .b-block .service-accord h3:after {
 					font-family: 'icomoon' !important;
@@ -1970,9 +1971,9 @@ padding: 40px 0;
 			position: relative;
 		}
 			.b-other-content .b-block .doctor-detail img {
-				position: absolute;
+				/*position: absolute;
 				bottom: 0;
-				left: 0;
+				left: 0;*/
 				max-width: 370px;
 				max-height: 100%;
 			}
@@ -2190,7 +2191,7 @@ padding: 40px 0;
 		.b-other-content .b-block .about-img {
 			width: 368px;
 			text-align: center;
-			margin-top: 10px;
+			/*margin-top: 10px;*/
 		}
 			.b-other-content .b-block .about-img .img{
 				width: 368px;

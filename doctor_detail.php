@@ -37,6 +37,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -140,7 +141,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b-other-content">
 		<div class="b-block">
 			<div class="doctor-detail clearfix">
-				<img class="left" src="i/doctor-11.jpg">
+				<img class="left doctor-img" src="i/doctor-11.jpg">
 				<div class="text right">
 					<h2 class="title">Куркина Алена Евгеньевна</h2>
 					<h3>CТОМАТОЛОГ-ТЕРАПЕВТ</h3>
@@ -150,6 +151,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<p><nobr>Стоматолог-терапевт</nobr>, эндодонтист (специалист по&nbsp;лечению корневых каналов), пародонтолог.</p>
 						<p><b>Профессиональные навыки:</b> лечение кариеса, пульпита, периодонтита, сложная эндодонтия, перелечивание каналов, эстетическая реставрация зубов.</p>
 						<p><b>Специализация доктора:</b> применение операционного микроскопа. Лечение пациентов в&nbsp;седации (закись азота), работа в&nbsp;условиях общего обезболивания (в&nbsp;наркозе).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
+						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
 						<p><b>Основное образование:</b> Сибирский Государственный Медицинский Университет (СИБГМУ).</p>
 					</div>
 				</div>

@@ -38,6 +38,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -139,7 +140,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block clearfix">
+		<div class="b-block text-contain clearfix">
 			<div class="service-text left">
 				<div class="b-text">
 					<h2>WHITE WEDDING – ZOOM4 ОТБЕЛИВАНИЕ К СВАДЬБЕ!</h2>
@@ -172,7 +173,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<a href="#">Прайс-лист на услуги Belgravia Dental Studio</a>
 				</div>
 			</div>
-			<div class="action-right right">
+			<div class="action-right stick right">
 				<a class="active" href="#" onclick="return false;">WHITE WEDDING – ОТБЕЛИВАНИЕ ZOOM 4 К СВАДЬБЕ!</a>
 				<a href="#">ОТБЕЛИВАНИЕ ZOOM4 НА ДВОИХ ВСЕГО 44 990 РУБЛЕЙ</a>
 				<a href="#">YOUR IN THE ARMY – ОТБЕЛИВАНИЕ ЗУБОВ К АРМИИ!</a>

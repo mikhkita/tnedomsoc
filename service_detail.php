@@ -183,7 +183,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<a href="#">Прайс-лист на услуги COSMODENT</a>
 				</div>
 			</div>
-			<div class="service-accord right">
+			<div class="service-accord stick right">
 				<h3 data-href="http://google.ru"><i class="diag"></i><span>ДИАГНОСТИКА</span></h3>
 				<div>
 					<a href="#">Компьютерная томография зубов</a>
