@@ -451,13 +451,13 @@ b {
 	background-image: url("../i/popup-close.png");
 }*/
 .fancybox-wrap {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	overflow: visible !important;
 }
 .b-popup {
 	width: 650px;
 	padding: 60px 70px 70px;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 }
 	.b-popup h3 {
 		line-height: 1.35;
