@@ -37,6 +37,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -138,9 +139,9 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block">
+		<div class="b-block doctor-desc">
 			<div class="doctor-detail clearfix">
-				<img class="left" src="i/doctor-11.jpg">
+				<img class="left doctor-img" src="i/doctor-11.jpg">
 				<div class="text right">
 					<h2 class="title">Куркина Алена Евгеньевна</h2>
 					<h3>CТОМАТОЛОГ-ТЕРАПЕВТ</h3>
@@ -211,7 +212,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</div>
 	</div>
 	<div class="b b-other-content b-grey">
-		<div class="b-block">
+		<div class="b-block doctor-desc">
 			<h2 class="title">ВРАЧИ МОЕЙ СПЕЦИАЛЬНОСТИ</h2>
 			<div class="doctors-slider">
 				<div style="background-image: url('i/doctor-1.jpg');">	

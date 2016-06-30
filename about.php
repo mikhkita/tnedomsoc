@@ -29,15 +29,16 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/fastclick.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
 	<script type="text/javascript" src="js/parallax.min.js"></script>
-	<script type="text/javascript" src="js/parallax.min.js"></script>
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -92,7 +93,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other" data-parallax="scroll" data-image-src="i/contacts.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/about.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
@@ -122,11 +123,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<div class="b-other-text">
 				<div>
-					<h1>Контакты</h1>
-					<form action="#" method="POST">
-						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
-						<button class="search-btn"></button>
-					</form>
+					<h1>О клинике</h1>
 				</div>
 			</div>
 		</div>
@@ -134,33 +131,49 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b b-navigation">
 		<ul class="b-block clearfix">
 			<li><a href="#">Главная</a></li>
-			<li class="active"><a href="#" onclick="return false;">Контакты</a></li>
+			<li class="active"><a href="#" onclick="return false;">О клинике</a></li>
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block">
-			<div class="contacts-cont">
-				<h2 class="title">кЛИНИКА COSMODENT В ТОМСКЕ</h2>
-				<div class="b-text">
-					<p>К&nbsp;вашим услугам клиника COSMODENT в&nbsp;Томске. Мы&nbsp;предлагаем высочайший уровень лечения: отличные врачи, передовые и<br />
-					проверенные методики, высокотехнологичное оборудование. Мы&nbsp;делаем все, чтобы каждый гость чувствовал себя в&nbsp;нашей клинике уютно. COSMODENT&nbsp;&mdash; это просторные зоны ожидания, уютные интерьеры и, конечно&nbsp;же, кабинеты, оборудованные по&nbsp;современным стандартам. Все продумано для комфортного<br />
-					стоматологического приема.</p>
-					<p>Добро пожаловать!</p>
+		<div class="b-block text-contain clearfix">
+			<div class="about-img stick left">
+				<div class="img"></div>
+				<h3>Хачатрян Гурген<br>Вачикович</h3>
+				<h4>Генеральный директор</h4>
+			</div>
+			<div class="service-text right">
+				<div class="b-text clearfix">
+					<h2>ЧТО ТАКОЕ cosmodent</h2>
+					<h4>Я РАД ПРИВЕТСТВОВАТЬ ВАС В СТОМАТОЛОГИИ COSMODENT</h4>
+					<p>Вся моя жизнь связана со&nbsp;стоматологией. 11 лет назад я&nbsp;открыл в&nbsp;Москве детскую стоматологию Дентал Фэнтези&nbsp;&mdash; мы&nbsp;первыми начали лечить детей по&nbsp;мировым западным протоколам: качественно и&nbsp;надежно, как взрослых. И&nbsp;стали лидерами среди детских стоматологий в&nbsp;России!<br />
+					Родители наших маленьких пациентов просили нас лечить и&nbsp;их&nbsp;самих&nbsp;&mdash; так&nbsp;же нежно и&nbsp;терпеливо, как детей. И&nbsp;мы&nbsp;открыли взрослые стоматологические отделения COSMODENT. Мы&nbsp;предлагаем нашим пациентам все самое лучшее, что есть в&nbsp;стоматологии на&nbsp;сегодня.</p>
+					<h4>ЛЕЧЕНИЕ ЗУБОВ ПО МИРОВЫМ СТАНДАРТАМ</h4>
+					<p>С использованием дентальных микроскопов, коффердама, системы ICON (лечение кариеса без бормашины). Теперь не надо ехать за границу, чтобы получить стоматологическую помощь высочайшего уровня.</p>
+					<h4>БЕЗОПАСНОЕ ОБОРУДОВАНИЕ ДЛЯ ДИАГНОСТИКИ</h4>
+					<p>Визиограф, компьютерная 3D томография с минимальной лучевой нагрузкой и лазерная диагностика DIAGNOcam (без рентген-излучения).</p>
+					<h4>КАЧЕСТВЕННАЯ ИМПЛАНТАЦИЯ</h4>
+					<p>Точнейшее 3D-планирование, установка имплантатов ведущих мировых производителей, без боли и осложнений.</p>
+					<h4>ПРОТЕЗИРОВАНИЕ ЛЮБОЙ СЛОЖНОСТИ</h4>
+					<p>Микропротезирование вкладками, все виды коронок, любые съемные и несъемные протезы, виниры и люминиры, все виды эстетической реставрации зубов.</p>
+					<h4>ПРОФЕССИОНАЛЬНАЯ ГИГИЕНА И ОТБЕЛИВАНИЕ</h4>
+					<p>Мы предлагаем вам только те методы, которые не повредят эмаль зубов. Ведь наш приоритет – безопасность любой процедуры.</p>
+					<h4>КАЖДЫЙ ПАЦИЕНТ – ЭТО В ПЕРВУЮ ОЧЕРЕДЬ НАШ ГОСТЬ!</h4>
+					<p>Гарантируем индивидуальный подход, уважение и внимание абсолютно всех сотрудников клиники.<br>Если у Вас есть желание написать мне лично, буду рад: <a href="mailto:gh@cosmodent.ru">gh@cosmodent.ru</a> – ни одно Ваше сообщение я не оставлю без внимания!</p>
+					<span class="sign right">Искренне,<br>Гурген Хачатрян<br>Генеральный директор Belgravia Dental Studio</span>
 				</div>
-				<div class="contacts-gallery clearfix">
-					<a <?=(($mobile)?"":"href='i/gallery-1.jpg'")?> style="background-image: url('i/gallery-1.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a <?=(($mobile)?"":"href='i/gallery-2.jpg'")?> style="background-image: url('i/gallery-2.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a <?=(($mobile)?"":"href='i/gallery-3.jpg'")?> style="background-image: url('i/gallery-3.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-				</div> 
-				<h2 class="title contacts-title">COSMODENT НА КАРТЕ</h2>
-				<h3 class="time">
-					Ждем вас по будням с <b>9:00</b> до <b>20:00</b><br>
-					и в субботу с <b>10:00</b> до <b>18:00</b>
-				</h3>
 			</div>
 		</div>
 	</div>
-	<div id="map_canvas"></div>
+	<div class="b b-other-content b-grey">
+		<div class="b-block">
+			<h2 class="title">Тур по клинике</h2>
+			<div class="about-slider">
+				<div style="background-image: url('i/about-1.jpg');"></div>
+				<div style="background-image: url('i/about-1.jpg');"></div>
+				<div style="background-image: url('i/about-1.jpg');"></div>
+			</div>
+		</div>
+	</div>
 	<div class="b b-callback">
 		<div class="b-callback-i">
 			<div class="b-block">
@@ -219,15 +232,17 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
 						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
 					</div>
-					<input class="input" type="text" name="email" required placeholder="E-mail"/>
-					<select class="input" name="doctor">
+					<input class="input" type="email" name="email" required placeholder="E-mail"/>
+					<select class="input" name="doctor" id="spec-select">
+						<option selected disabled>Выберите специалиста</option>
 						<option value="Ортодонт">Гигиенист стоматологический</option>
 						<option value="Ортодонт">Ортодонт</option>
 						<option value="Ортопед">Ортопед</option>
 						<option value="Стоматолог-терапевт">Стоматолог-терапевт</option>
 						<option value="Хирург-имплантолог">Хирург-имплантолог</option>
 					</select>
-					<select class="input" name="doctor-name">
+					<select class="input" name="doctor-name" id="name-select">
+						<option selected disabled>Выберите доктора</option>
 						<option value="Куркина Алена Евгеньевна">Куркина Алена Евгеньевна</option>
 						<option value="Гурген Хачатрян">Гурген Хачатрян</option>
 					</select>

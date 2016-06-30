@@ -34,7 +34,6 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
 	<script type="text/javascript" src="js/parallax.min.js"></script>
-	<script type="text/javascript" src="js/parallax.min.js"></script>
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
@@ -64,7 +63,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>
 			<li><a href="reviews.php" class="b-mobile-menu-a">Отзывы</a></li>
 			<li><a href="works.php" class="b-mobile-menu-a">Работы</a></li>
-			<li><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
+			<li class="active"><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
 			<li><a href="contacts.php" class="b-mobile-menu-a">Контакты</a></li>
         </ul>
     </div>
@@ -77,7 +76,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li><a href="actions.php">Акции</a></li>
 				<li><a href="reviews.php">Отзывы</a></li>
 				<li><a href="works.php">Работы</a></li>
-				<li><a href="articles.php">Статьи</a></li>
+				<li class="active"><a href="articles.php">Статьи</a></li>
 				<li><a href="contacts.php">Контакты</a></li>
 			</ul>
 			<div class="phone-cont right">
@@ -92,7 +91,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other" data-parallax="scroll" data-image-src="i/contacts.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/works.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
@@ -102,7 +101,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<li><a href="actions.php">Акции</a></li>
 					<li><a href="reviews.php">Отзывы</a></li>
 					<li><a href="works.php">Работы</a></li>
-					<li><a href="articles.php">Статьи</a></li>
+					<li class="active"><a href="articles.php">Статьи</a></li>
 					<li><a href="contacts.php">Контакты</a></li>
 				</ul>
 				<div class="phone-cont right">
@@ -122,11 +121,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<div class="b-other-text">
 				<div>
-					<h1>Контакты</h1>
-					<form action="#" method="POST">
-						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
-						<button class="search-btn"></button>
-					</form>
+					<h1>Работы</h1>
 				</div>
 			</div>
 		</div>
@@ -134,33 +129,51 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b b-navigation">
 		<ul class="b-block clearfix">
 			<li><a href="#">Главная</a></li>
-			<li class="active"><a href="#" onclick="return false;">Контакты</a></li>
+			<li class="active"><a href="#" onclick="return false;">Работы</a></li>
 		</ul>
 	</div>
 	<div class="b-other-content">
 		<div class="b-block">
-			<div class="contacts-cont">
-				<h2 class="title">кЛИНИКА COSMODENT В ТОМСКЕ</h2>
-				<div class="b-text">
-					<p>К&nbsp;вашим услугам клиника COSMODENT в&nbsp;Томске. Мы&nbsp;предлагаем высочайший уровень лечения: отличные врачи, передовые и<br />
-					проверенные методики, высокотехнологичное оборудование. Мы&nbsp;делаем все, чтобы каждый гость чувствовал себя в&nbsp;нашей клинике уютно. COSMODENT&nbsp;&mdash; это просторные зоны ожидания, уютные интерьеры и, конечно&nbsp;же, кабинеты, оборудованные по&nbsp;современным стандартам. Все продумано для комфортного<br />
-					стоматологического приема.</p>
-					<p>Добро пожаловать!</p>
-				</div>
-				<div class="contacts-gallery clearfix">
-					<a <?=(($mobile)?"":"href='i/gallery-1.jpg'")?> style="background-image: url('i/gallery-1.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a <?=(($mobile)?"":"href='i/gallery-2.jpg'")?> style="background-image: url('i/gallery-2.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a <?=(($mobile)?"":"href='i/gallery-3.jpg'")?> style="background-image: url('i/gallery-3.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-				</div> 
-				<h2 class="title contacts-title">COSMODENT НА КАРТЕ</h2>
-				<h3 class="time">
-					Ждем вас по будням с <b>9:00</b> до <b>20:00</b><br>
-					и в субботу с <b>10:00</b> до <b>18:00</b>
-				</h3>
+			<h2 class="title">результаты нашей работы</h2>
+			<ul class="actions works clearfix ul-ajax">
+				<li class="clearfix">
+					<div class="img left">
+						<div class="before" style='background-image: url("i/work-before.jpg");'></div>
+						<div class="after" style='background-image: url("i/work-after.jpg");'></div>
+					</div>
+					<div class="text left">
+						<div>
+							<h3>Виниры</h3>
+							<p>В&nbsp;клинику &laquo;Авторской эстетической стоматологии и&nbsp;косметологии Cosmodent&raquo; обратился пациент 26 лет с&nbsp;жалобами на&nbsp;эстетическую несостоятельность и&nbsp;патологическую стираемость зубов.<br />
+							Объективно было отмечена патологическая стираемость с&nbsp;15&ndash;25 зубы, исходный цвет зубов в&nbsp;полости рта А3,5.<br />
+							После всех предложеных вариантов решиния данных проблем, пациент предпочел остановиться на&nbsp;керамических винирах. Плюсом данного выбора лечения, является то, что решаются одномоментно<br />
+							несколько проблем: изменение формы, изменение цвета, а&nbsp;также немаловажное, что в&nbsp;данном клиническом случае</p>
+						</div>
+						<a href="work_detail.php" class="link">Читать полностью</a>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="img left">
+						<div class="before" style='background-image: url("i/work-before.jpg");'></div>
+						<div class="after" style='background-image: url("i/work-after.jpg");'></div>
+					</div>
+					<div class="text left">
+						<div>
+							<h3>Виниры</h3>
+							<p>В&nbsp;клинику &laquo;Авторской эстетической стоматологии и&nbsp;косметологии Cosmodent&raquo; обратился пациент 26 лет с&nbsp;жалобами на&nbsp;эстетическую несостоятельность и&nbsp;патологическую стираемость зубов.<br />
+							Объективно было отмечена патологическая стираемость с&nbsp;15&ndash;25 зубы, исходный цвет зубов в&nbsp;полости рта А3,5.<br />
+							После всех предложеных вариантов решиния данных проблем, пациент предпочел остановиться на&nbsp;керамических винирах. Плюсом данного выбора лечения, является то, что решаются одномоментно<br />
+							несколько проблем: изменение формы, изменение цвета, а&nbsp;также немаловажное, что в&nbsp;данном клиническом случае</p>
+						</div>
+						<a href="work_detail.php" class="link">Читать полностью</a>
+					</div>
+				</li>
+			</ul>
+			<div class="show-next">
+				<i class="icon-refresh"></i><span data-href="work.php">Показать еще</span>
 			</div>
 		</div>
 	</div>
-	<div id="map_canvas"></div>
 	<div class="b b-callback">
 		<div class="b-callback-i">
 			<div class="b-block">

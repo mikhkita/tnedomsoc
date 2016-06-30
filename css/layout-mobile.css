@@ -210,7 +210,7 @@ a.link,.b-text a {
 	a.link:hover,.b-text a:hover {
 		text-decoration: underline;
 	}
-	a.link:after,.b-text a:after {
+	a.link:after {
 		position: absolute;
 		content: ">";
 		right: -28px;
@@ -1033,12 +1033,19 @@ a.link,.b-text a {
 					line-height: 1.3;
 					margin-bottom: 26px;
 					font-family: "Circe-Light";
+					max-height: 72px;
+					overflow: hidden;
 				}
 				.b-doctors .b-block .doctors li .desc-cont h5{
 					font-size: 28px;
 					position: relative;
 					display: inline-block;
 					font-family: "Circe-Regular";
+					bottom: 0;
+					text-decoration: underline;
+				}
+				.b-doctors .b-block .doctors li .desc-cont h5:before,.b-doctors .b-block .doctors li .desc-cont h5:after {
+					display: none;
 				}
 					.b-doctors .b-block .doctors li .desc-cont h5:hover {
 						text-decoration: underline;
@@ -1102,7 +1109,7 @@ a.link,.b-text a {
 				.b-reviews .b-block .reviews-slider .slick-slide p {
 					font-family: "Circe-Light";
 					margin-top: 21px;
-					margin-bottom: 40px;
+					margin-bottom: 20px;
 				}
 				.b-reviews .b-block .reviews-slider .slick-slide a {
 					margin-top: 10px;
@@ -1148,6 +1155,9 @@ a.link,.b-text a {
 				position: relative;
 				background-color: #FFF;
 			}
+				.articles-slider .slick-slide .text > div {
+					max-height: 278px;
+				}
 				.articles-slider .slick-slide .text h3 {
 					font-size: 32px;
 					font-family: "Circe-Bold";
@@ -1155,7 +1165,6 @@ a.link,.b-text a {
 				}
 				.articles-slider .slick-slide .text p {
 					font-family: "Circe-Light";
-				    max-height: 120px;
 				    overflow: hidden;
 				}
 				.articles-slider .slick-slide .text a {
@@ -1233,7 +1242,10 @@ a.link,.b-text a {
 	.b-other .b-block .search-btn{
 		opacity: 0.8;
 	}
-.b-navigation {background: #FFF;margin-bottom: -40px;}
+.b-navigation {
+	background: #FFF;
+	margin-bottom: -30px;
+}
 	.b-navigation ul {padding: 55px 0 0px;}
 		.b-navigation li {
 			float: left;
@@ -1480,7 +1492,7 @@ a.link,.b-text a {
 		}
 			.b-other-content .b-block .articles-all li {
 				width: 680px;
-				height: 735px;
+				height: auto;
 				float: 	left;
 				margin: 25px 0;
 				margin-right: 25px;
@@ -1498,7 +1510,7 @@ a.link,.b-text a {
 				}
 				.b-other-content .b-block .articles-all li .text{
 					padding: 34px 20px 0 35px;
-					height: 382px;
+					height: auto;
 					position: relative;
 				}
 					.b-other-content .b-block .articles-all li .text h3 {
@@ -1508,21 +1520,25 @@ a.link,.b-text a {
 					}
 					.b-other-content .b-block .articles-all li .text p {
 						font-family: "Circe-Light";
-						max-height: 125px;
 						overflow: hidden;
 					}
+						.b-other-content .b-block .articles-all li .text > div {
+							max-height: 278px;
+						}
 					.b-other-content .b-block .articles-all li .text a {
-						position: absolute;
-						bottom: 30px;
+						position: relative;
+					    bottom: 0;
+					    display: inline-block;
+					    margin-top: 20px;
+					    margin-bottom: 20px;
 					}
 		.b-other-content .b-block .show-next {
   			text-align: center;	
-  			padding-bottom: 45px;
+  			padding-bottom: 20px;
 		}			
-			.b-other-content .b-block .show-next a{
-				display: inline-block;	
-			}
-
+		.b-other-content .b-block .show-next i {
+			font-size: 50px;	
+		}  
 		.b-other-content .b-block .articles-nav {
 			width: 680px;
 			background-color: #f8f8f8;
@@ -1554,10 +1570,10 @@ a.link,.b-text a {
 		}
 			.b-other-content .b-block .doctors li {
 				width: 680px;
-				height: 680px;
+				height: auto;
 				float: left;
 				margin-right: 21px;
-				margin-bottom: 200px;
+				margin-bottom: 40px;
 			}
 				.b-other-content .b-block .doctors li:nth-child(4n) {
 					margin-right: 0;
@@ -1612,8 +1628,7 @@ a.link,.b-text a {
 					.b-other-content .b-block .doctors li h4 {
 						font-size: 28px;
 						font-family: "Circe-Light";
-						max-height: 81px;
-						overflow: hidden;
+						max-height: none;
 					}
 		.b-other-content .b-block .doctor-detail {
 			position: relative;
@@ -1657,7 +1672,7 @@ a.link,.b-text a {
 			.b-other-content .b-block .contacts-cont .time {
 				font-size: 28px;
 				text-align: center;
-				margin: 0px 0 85px;
+				margin: 0px 0 65px;
 				position: relative;
 			}
 			.b-other-content .b-block .contacts-cont .time:after,.b-other-content .b-block .contacts-cont .time:before {
@@ -1719,6 +1734,67 @@ a.link,.b-text a {
 				.b-other-content .b-block .contacts-cont .contacts-gallery a:nth-child(3) {
 					background-image: url("../i/gallery-3.jpg");
 				}
+.b-other-content .b-block .about-img {
+	width: 100%;
+	margin-bottom: 40px;
+}
+	.b-other-content .b-block .about-img h3 {
+		font-size: 40px;
+	}
+.b-other-content .b-block .action-right {
+	width: 100%;
+	margin-top: 30px;
+}
+	.b-other-content .b-block .action-right a {
+		font-size: 32px;
+		margin-bottom: 20px;
+		text-decoration: underline;
+	}
+	.b-other-content .b-block .action-right a.active {
+		text-decoration: none;
+	}
+.b-other-content .b-block .about-slider {
+	width: 750px;
+	margin-left: -35px;
+}
+	.b-other-content .b-block .about-slider .slick-dots {
+		bottom: 0px;
+	    position: absolute;
+	    left: 0px;
+	    width: 100%;
+	    padding-bottom: 60px;
+	}
+		.b-other-content .b-block .about-slider .slick-dots li button {
+			background-color: rgba(255,255,255,0.7);
+		}
+			.b-other-content .b-block .about-slider .slick-dots li.slick-active button {
+				background-color: #dfc480;
+			}
+.b-other-content .b-block .actions li {
+	height: auto;
+	margin-bottom: 50px;
+}
+.b-other-content .b-block .actions li .img {
+	width: 100%;
+	height: 352px;
+}  
+	.b-other-content .b-block .actions li .text {
+		width: 100%;
+		background-color: #f8f8f8;
+	}
+		.b-other-content .b-block .actions li .text > div {
+		    max-height: 347px;
+		}
+	.b-other-content .b-block .actions li .text h3 {
+		font-size: 28px;
+	}
+	.b-other-content .b-block .actions li .text .link {
+		position: relative;
+		bottom: 0;
+		margin-top: 20px;
+		display: inline-block;
+	}
+
 .doctors-slider {
 	margin-top: 45px;
 	width: 750px;
@@ -1767,17 +1843,22 @@ a.link,.b-text a {
 		line-height: 1.3;
 		margin-bottom: 26px;
 		font-family: "Circe-Light";
+		max-height: 72px;
+		overflow: hidden;
 	}
 	.doctors-slider .slick-slide .desc-cont h5{
 		font-size: 28px;
 		position: relative;
 		display: inline-block;
 		font-family: "Circe-Regular";
+		bottom: 0;
+		text-decoration: underline;
 	}
 		.doctors-slider .slick-slide .desc-cont h5:hover {
 			text-decoration: underline;
 		}
 		.doctors-slider .slick-slide .desc-cont h5:before {
+			display: none;
 			position: absolute;
 			font-size: 0;
 			width: 32px;
@@ -1788,6 +1869,7 @@ a.link,.b-text a {
 			background-color: #FFF;
 		}
 		.doctors-slider .slick-slide .desc-cont h5:after {
+			display: none;
 			position: absolute;
 			font-size: 28px;
 			content: ">";

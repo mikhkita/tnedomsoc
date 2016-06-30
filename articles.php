@@ -37,6 +37,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -140,21 +141,21 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div class="b-block">
 			<h2 class="title">РУБРИКИ</h2>
 			<ul class="articles-filter">
-				<li class="active">Все</li>
-				<li>Имплантация</li>
-				<li>Лечение в седации и под наркозом</li>
-				<li>Общие вопросы</li>
-				<li>Ортодонтия (исправление прикуса)</li>
-				<li>Протезирование (ортопедия)</li>
-				<li>Хирургия</li>
-				<li>Профилактика, гигиена и отбеливание</li>
-				<li>Кариес, пульпит, болезни десен</li>
+				<li data-href="article.php" class="active">Все</li>
+				<li data-href="article.php">Имплантация</li>
+				<li data-href="article.php">Лечение в седации и под наркозом</li>
+				<li data-href="article.php">Общие вопросы</li>
+				<li data-href="article.php">Ортодонтия (исправление прикуса)</li>
+				<li data-href="article.php">Протезирование (ортопедия)</li>
+				<li data-href="article.php">Хирургия</li>
+				<li data-href="article.php">Профилактика, гигиена и отбеливание</li>
+				<li data-href="article.php">Кариес, пульпит, болезни десен</li>
 			</ul>
 		</div>
 	</div>
 	<div class="b-other-content b-grey">
 		<div class="b-block">
-			<ul class="articles-all clearfix">
+			<ul class="articles-all clearfix ul-ajax">
 				<li>
 					<div class="img" style='background-image: url("i/article-1.jpg");'></div>
 					<div class="text">
@@ -205,7 +206,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				</li>
 			</ul>
 			<div class="show-next">
-					<a href="#">Показать еще</a>
+				<i class="icon-refresh"></i><span data-href="article.php">Показать еще</span>
 			</div>
 		</div>
 	</div>

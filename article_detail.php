@@ -37,6 +37,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -137,7 +138,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block clearfix">
+		<div class="b-block text-contain clearfix">
 			<div class="service-text left">
 				<div class="b-text">
 					<h2>ЧТО ТАКОЕ НАРУШЕНИЕ ПРИКУСА?</h2>
@@ -159,7 +160,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<p>Преждевременные контакты между зубами чреваты повышенной стираемостью и, как следствие, появлением повышенной чувствительности от&nbsp;кислых, сладких и&nbsp;температурных раздражителей. Отклонение верхних зубов вперёд увеличивает вероятность травм; травмирующая глубокая окклюзия, при которой нижние передние зубы соприкасаются с&nbsp;небом, и&nbsp;/или верхние зубы касаются десны противоположной челюсти, могут привести к&nbsp;значительным дефектам ткани.</p>
 				</div>
 			</div>
-			<div class="articles-nav right">
+			<div class="articles-nav stick right">
 				<div class="rubrics">	
 					<h3>Рубрики</h3>
 					<a href="#">Общие темы</a>

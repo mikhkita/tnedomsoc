@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="js/jssor.slider.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/parallax.min.js"></script>
 	<script type="text/javascript" src="js/carousel.lite.js"></script>
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
@@ -68,7 +69,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="b b-other">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/reviews.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="#" class="logo left"><img src="i/logo.png"></a>
@@ -115,6 +116,107 @@
 					<p>Мы&nbsp;будем рады узнать ваше мнение!</p>
 				</div>
 				<button class="btn btn-brown fancy" data-block="#b-popup-auth">Оставить отзыв</button>
+			</div>
+			<ul class="reviews-full clearfix ul-ajax">
+				<li>
+					<div class="photo-cont clearfix">
+						<div class="left img" style="background-image: url('i/review.jpg');"></div>
+						<div class="review-title left">
+							<h3>Валентина Комарова</h3>
+							<h4>08.06.2016</h4>
+						</div>	
+					</div>
+					<div class="text">
+						<p>В&nbsp;очередной раз спасибо. Хожу раз в<br />
+						полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся<br />
+						клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
+						Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование&hellip;</p>
+						<span class="link fancy-ajax" data-fancybox-href="review.php">Читать дальше</span>
+					</div>
+				</li>
+				<li>
+					<div class="photo-cont clearfix">
+						<div class="left img" style="background-image: url('i/review.jpg');"></div>
+						<div class="review-title left">
+							<h3>Валентина Комарова</h3>
+							<h4>08.06.2016</h4>
+						</div>	
+					</div>
+					<div class="text">
+						<p>В&nbsp;очередной раз спасибо. Хожу раз в<br />
+						полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся<br />
+						клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
+						Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование&hellip;</p>
+						<span class="link fancy-ajax" data-fancybox-href="review.php">Читать дальше</span>
+					</div>
+				</li>
+				<li>
+					<div class="photo-cont clearfix">
+						<div class="left img" style="background-image: url('i/review.jpg');"></div>
+						<div class="review-title left">
+							<h3>Валентина Комарова</h3>
+							<h4>08.06.2016</h4>
+						</div>	
+					</div>
+					<div class="text">
+						<p>В&nbsp;очередной раз спасибо. Хожу раз в<br />
+						полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся<br />
+						клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
+						Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование&hellip;</p>
+						<span class="link fancy-ajax" data-fancybox-href="review.php">Читать дальше</span>
+					</div>
+				</li>
+				<li>
+					<div class="photo-cont clearfix">
+						<div class="left img" style="background-image: url('i/review.jpg');"></div>
+						<div class="review-title left">
+							<h3>Валентина Комарова</h3>
+							<h4>08.06.2016</h4>
+						</div>	
+					</div>
+					<div class="text">
+						<p>В&nbsp;очередной раз спасибо. Хожу раз в<br />
+						полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся<br />
+						клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
+						Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование&hellip;</p>
+						<span class="link fancy-ajax" data-fancybox-href="review.php">Читать дальше</span>
+					</div>
+				</li>
+				<li>
+					<div class="photo-cont clearfix">
+						<div class="left img" style="background-image: url('i/review.jpg');"></div>
+						<div class="review-title left">
+							<h3>Валентина Комарова</h3>
+							<h4>08.06.2016</h4>
+						</div>	
+					</div>
+					<div class="text">
+						<p>В&nbsp;очередной раз спасибо. Хожу раз в<br />
+						полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся<br />
+						клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
+						Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование&hellip;</p>
+						<span class="link fancy-ajax" data-fancybox-href="review.php">Читать дальше</span>
+					</div>
+				</li>
+				<li>
+					<div class="photo-cont clearfix">
+						<div class="left img" style="background-image: url('i/review.jpg');"></div>
+						<div class="review-title left">
+							<h3>Валентина Комарова</h3>
+							<h4>08.06.2016</h4>
+						</div>	
+					</div>
+					<div class="text">
+						<p>В&nbsp;очередной раз спасибо. Хожу раз в<br />
+						полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся<br />
+						клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
+						Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование&hellip;</p>
+						<span class="link fancy-ajax" data-fancybox-href="review.php">Читать дальше</span>
+					</div>
+				</li>
+			</ul>
+			<div class="show-next">
+				<i class="icon-refresh"></i><span data-href="reviews_next.php">Показать еще</span>
 			</div>
 		</div>
 	</div>
@@ -206,20 +308,6 @@
 					<input type="hidden" name="subject" value="Отзыв"/>
 					<button class="ajax btn btn-brown">Отправить</button>
 				</form>
-			</div>
-		</div>
-		<div id="b-popup-full">
-			<div class="b-popup full-review">
-				<div class="photo-cont clearfix">
-					<div style="background-image: url('i/review.jpg');" class="img left"></div>
-					<div class="text left">
-						<h3>Алена водонаева</h3>
-						<h4>27.05.2016</h4>
-					</div>
-				</div>
-					<p>В&nbsp;очередной раз спасибо.<br />
-					Хожу раз в&nbsp;полгода на&nbsp;профессиональную гигиену к&nbsp;Татьяне Степановне Гузун на&nbsp;Проспект Мира. И&nbsp;у&nbsp;нее&nbsp;же мой <nobr>15-летний</nobr> сын лечит зубы. Доктор замечательная, как и&nbsp;вся клиника, впрочем. Уже с&nbsp;порога чувствуешь себя, как в&nbsp;гостях у&nbsp;хороших друзей&nbsp;&mdash; так тебе рады.<br />
-					Ну&nbsp;и&nbsp;подход к&nbsp;лечению, оборудование, атмосфера&nbsp;&mdash; все на&nbsp;высшем уровне. Спасибо за&nbsp;лечение, консультации и&nbsp;советы!</p>
 			</div>
 		</div>
 		<div id="b-popup-auth">

@@ -38,6 +38,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -139,7 +140,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block clearfix">
+		<div class="b-block text-contain clearfix">
 			<div class="service-text left">
 				<div class="b-text">
 					<h2>ДИАГНОСТИКА</h2>
@@ -182,7 +183,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<a href="#">Прайс-лист на услуги COSMODENT</a>
 				</div>
 			</div>
-			<div class="service-accord right">
+			<div class="service-accord stick right">
 				<h3 data-href="http://google.ru"><i class="diag"></i><span>ДИАГНОСТИКА</span></h3>
 				<div>
 					<a href="#">Компьютерная томография зубов</a>
@@ -251,7 +252,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other-content b-grey">
+	<div class="b b-other-content doctor-desc b-grey">
 		<div class="b-block">
 			<h2 class="title">Лечащие врачи</h2>
 			<div class="doctors-slider">
