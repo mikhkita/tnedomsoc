@@ -576,19 +576,19 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
 						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
 					</div>
-					<input class="input" type="email" name="email" required placeholder="E-mail"/>
-					<select class="input" name="doctor" id="spec-select">
+					<input class="input" type="text" name="email" required placeholder="E-mail"/>
+					<select class="input" name="spec" id="spec-select">
 						<option selected disabled>Выберите специалиста</option>
-						<option value="Ортодонт">Гигиенист стоматологический</option>
-						<option value="Ортодонт">Ортодонт</option>
-						<option value="Ортопед">Ортопед</option>
-						<option value="Стоматолог-терапевт">Стоматолог-терапевт</option>
-						<option value="Хирург-имплантолог">Хирург-имплантолог</option>
+						<option value="1">Гигиенист стоматологический</option>
+						<option value="2">Ортодонт</option>
+						<option value="3">Ортопед</option>
+						<option value="4">Стоматолог-терапевт</option>
+						<option value="5">Хирург-имплантолог</option>
 					</select>
 					<select class="input" name="doctor-name" id="name-select">
 						<option selected disabled>Выберите доктора</option>
-						<option value="Куркина Алена Евгеньевна">Куркина Алена Евгеньевна</option>
-						<option value="Гурген Хачатрян">Гурген Хачатрян</option>
+						<option value="1">Куркина Алена Евгеньевна</option>
+						<option value="2">Гурген Хачатрян</option>
 					</select>
 					<input class="input" type="text" name="date" id="datepicker" required placeholder="Дата и время записи"/>
 					<input type="hidden" name="subject" value="Запись на прием"/>

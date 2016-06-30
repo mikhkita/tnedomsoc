@@ -145,7 +145,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div class="text right">
 					<h2 class="title">Куркина Алена Евгеньевна</h2>
 					<h3>CТОМАТОЛОГ-ТЕРАПЕВТ</h3>
-					<button class="btn btn-brown fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</button>
+					<button class="btn btn-brown fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</button>
 					<img class="b-mobile-image" src="i/doctor-1.jpg">
 					<div class="b-text">
 						<p>
@@ -224,7 +224,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeshow="doctor_rec">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -237,7 +237,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeshow="doctor_rec">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -250,7 +250,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeshow="doctor_rec">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" >Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
