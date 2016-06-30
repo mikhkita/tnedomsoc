@@ -52,9 +52,9 @@ $(document).ready(function(){
         TweenLite.to($(".b-mobile-menu li,.b-mobile-menu .btn"), 0, { y : 150, opacity: 0, ease : Cubic.easeOut } );
         $(".b-mobile-menu").fadeIn(200);
         $(".b-mobile-menu li").each(function(){
-            TweenLite.to($(this), 0.4, { y : 0, opacity: 1, delay: 0.08*$(this).index()+0.1, ease : Cubic.easeOut } );
+            TweenLite.to($(this), 0.2+$(this).index()/20, { y : 0, opacity: 1, delay: (0.02+$(this).index()/500)*$(this).index()+0.1, ease : Cubic.easeOut } );
         });
-        TweenLite.to($(".b-mobile-menu .btn"), 0.4, { y : 0, opacity: 1, delay: 0.08*($(".b-mobile-menu li").length+1)+0.1, ease : Cubic.easeOut } );
+        TweenLite.to($(".b-mobile-menu .btn"), 0.2+($(".b-mobile-menu li").length+1)/20, { y : 0, opacity: 1, delay: (0.02+($(".b-mobile-menu li").length+1)/500)*($(".b-mobile-menu li").length+1)+0.1, ease : Cubic.easeOut } );
         return false;
     }
 
