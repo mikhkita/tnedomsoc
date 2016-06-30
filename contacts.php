@@ -123,10 +123,10 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<div class="b-other-text">
 				<div>
 					<h1>Контакты</h1>
-					<form action="#" method="POST">
+					<!-- <form action="#" method="POST">
 						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
 						<button class="search-btn"></button>
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>
@@ -148,9 +148,9 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<p>Добро пожаловать!</p>
 				</div>
 				<div class="contacts-gallery clearfix">
-					<a <?=(($mobile)?"":"href='i/gallery-1.jpg'")?> style="background-image: url('i/gallery-1.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a <?=(($mobile)?"":"href='i/gallery-2.jpg'")?> style="background-image: url('i/gallery-2.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
-					<a <?=(($mobile)?"":"href='i/gallery-3.jpg'")?> style="background-image: url('i/gallery-3.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" rel="fancy-img"></a>
+					<span <?=(($mobile)?"":"data-fancybox-href='i/gallery-1.jpg'")?> style="background-image: url('i/gallery-1.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" data-fancybox-group="contacts"></span>
+					<span <?=(($mobile)?"":"data-fancybox-href='i/gallery-2.jpg'")?> style="background-image: url('i/gallery-2.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" data-fancybox-group="contacts"></span>
+					<span <?=(($mobile)?"":"data-fancybox-href='i/gallery-3.jpg'")?> style="background-image: url('i/gallery-3.jpg');" class="<?=(($mobile)?"":"fancy-img")?>" data-fancybox-group="contacts"></span>
 				</div> 
 				<h2 class="title contacts-title">COSMODENT НА КАРТЕ</h2>
 				<h3 class="time">

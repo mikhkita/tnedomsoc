@@ -124,7 +124,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div>
 					<h1>Статьи</h1>
 					<form action="#" method="POST">
-						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
+						<input class="input" type="text" name="search" placeholder="Поиск статьи" required>
 						<button class="search-btn"></button>
 					</form>
 				</div>
@@ -180,33 +180,41 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div>
 					<div class="img" style='background-image: url("i/article-1.jpg");'></div>
 					<div class="text">
-						<h3>4 мифа о стоматологии</h3>
-						<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия). Дозы излучения снижены настолько, что безопасно.</p>
-						<a href="#" class="link">Читать полностью</a>
+						<div>
+							<h3>4 мифа о стоматологии</h3>
+							<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия). Дозы излучения снижены настолько, что безопасно.</p>
+							<a href="#" class="link">Читать полностью</a>
+						</div>
 					</div>
 				</div>
 				<div>
 					<div class="img" style='background-image: url("i/article-2.jpg");'></div>
 					<div class="text">
-						<h3>Передовое и уникальное оборудование</h3>
-						<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex.</p>
-						<a href="#" class="link">Читать полностью</a>
+						<div>
+							<h3>Передовое и уникальное оборудование</h3>
+							<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex.</p>
+							<a href="#" class="link">Читать полностью</a>
+						</div>
 					</div>
 				</div>
 				<div>
 					<div class="img" style='background-image: url("i/article-3.jpg");'></div>
 					<div class="text">
-						<h3>имплантация сразу после удаления зуба</h3>
-						<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия).</p>
-						<a href="#" class="link">Читать полностью</a>
+						<div>
+							<h3>имплантация сразу после удаления зуба</h3>
+							<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия).</p>
+							<a href="#" class="link">Читать полностью</a>
+						</div>
 					</div>
 				</div>
 				<div>
 					<div class="img" style='background-image: url("i/article-1.jpg");'></div>
 					<div class="text">
-						<h3>4 мифа о стоматологии</h3>
-						<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия). Дозы излучения снижены настолько, что безопасно.</p>
-						<a href="#" class="link">Читать полностью</a>
+						<div>
+							<h3>4 мифа о стоматологии</h3>
+							<p>Современный стоматологический рентген не&nbsp;нанесет здоровью никакого вреда! В&nbsp;клинике COSMODENT установлены <nobr>рентген-аппараты</nobr> фирмы Gendex (Германия). Дозы излучения снижены настолько, что безопасно.</p>
+							<a href="#" class="link">Читать полностью</a>
+						</div>
 					</div>
 				</div>
 			</div>

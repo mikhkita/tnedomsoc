@@ -124,7 +124,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div>
 					<h1>Врачи и сотрудники</h1>
 					<form action="#" method="POST">
-						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
+						<input class="input" type="text" name="search" placeholder="Поиск врачей и сотрудников" required>
 						<button class="search-btn"></button>
 					</form>
 				</div>

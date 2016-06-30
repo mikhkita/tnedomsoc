@@ -6,7 +6,7 @@ $(document).ready(function(){
         prevWidth = 0,
         rotation = 0;
 
-    isMobile = true;
+    // isMobile = true;
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;

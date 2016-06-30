@@ -123,7 +123,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div>
 					<h1>Врачи и сотрудники</h1>
 					<form action="#" method="POST">
-						<input class="input" type="text" name="search" placeholder="Поиск услуги" required>
+						<input class="input" type="text" name="search" placeholder="Поиск врачей и сотрудников" required>
 						<button class="search-btn"></button>
 					</form>
 				</div>
@@ -149,7 +149,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</ul>
 			<ul class="doctors clearfix" id="doctors">
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -159,7 +159,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -169,7 +169,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -180,7 +180,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -191,7 +191,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -202,7 +202,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -213,7 +213,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -224,7 +224,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -235,7 +235,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -246,7 +246,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li class="gigienist">
-					<a href="doctor_detail.php" class="doctor-cont">
+					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
 					<a class="doctor-link" href="doctor_detail.php">Куркина Алена Евгеньевна</a>
@@ -260,9 +260,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<h2 class="title second-title">Сотрудники</h2>
 			<ul class="doctors clearfix">
 				<li>
-					<a href="#" class="doctor-cont">
-						
-					</a>
+					<a href="#" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 					<a class="doctor-link" href="#">Куркина Алена Евгеньевна</a>
 					<h4>
 						Хирург-стоматолог,<br>
@@ -270,9 +268,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li>
-					<a href="#" class="doctor-cont">
-						
-					</a>
+					<a href="#" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 					<a class="doctor-link" href="#">Куркина Алена Евгеньевна</a>
 					<h4>
 						Хирург-стоматолог,<br>
@@ -280,9 +276,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</h4>
 				</li>
 				<li>
-					<a href="#" class="doctor-cont">
-					
-					</a>
+					<a href="#" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 					<a class="doctor-link" href="#">Куркина Алена Евгеньевна</a>
 					<h4>
 						Хирург-стоматолог,<br>
