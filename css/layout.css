@@ -1044,7 +1044,7 @@ a.link,.b-text a {
 			display: table;
 			height: 100%;
 			box-sizing: border-box;
-			min-height: 550px;
+			min-height: 600px;
 		}
 			.b-slider .b-block .slick-slide div{
 				display: table-cell;
@@ -2204,6 +2204,7 @@ padding: 40px 0;
 			.b-footer .b-block .top ul {
 				width: 25%;
 				text-align: left;
+				float: left;
 			}
 				.b-footer .b-block .top ul li {
 					margin-bottom: 12px;
