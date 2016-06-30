@@ -252,8 +252,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other-content doctor-desc b-grey">
-		<div class="b-block">
+	<div class="b b-other-content b-grey">
+		<div class="b-block doctor-desc">
 			<h2 class="title">Лечащие врачи</h2>
 			<div class="doctors-slider">
 				<div style="background-image: url('i/doctor-1.jpg');">	
