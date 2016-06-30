@@ -323,54 +323,6 @@ $(document).ready(function(){
         $("#spec-select option[value='"+spec+"'").prop("selected",true);
     }
 
-    if( $("#map_canvas").length ){
-        var myPlace = new google.maps.LatLng(56.501057, 85.001960);
-        var myOptions = {
-            zoom: 17,
-            center: ( isMobile ) ? new google.maps.LatLng(56.501278, 85.003651) : new google.maps.LatLng(56.501157, 85.001960),
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            disableDefaultUI: true,
-            scrollwheel: false,
-            zoomControl: true
-        }
-        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-
-        var marker = new google.maps.Marker({
-            position: myPlace,
-            icon: {
-            url: "i/pin.png", // url
-            scaledSize: new google.maps.Size(38, 58), // scaled size
-            origin: new google.maps.Point(0,0), // origin
-            anchor: new google.maps.Point(19,58) // anchor
-            },
-            animation: google.maps.Animation.DROP,
-            map: map,
-            title: "COSMODENT"
-        });
-
-        var contentString = '<div class="gmap-bubble-marker-cont"><div class="gmap-bubble-marker"><div class="gmap-close-button icon-close"></div><p class="gmap-cont gmap-cont-1">Авторская клиника эстетической<br>стоматологии и косметологии «COSMODENT»<br><strong>Иркутсктий тракт, 5<br>+7 (382) 220-23-32</strong></p></div></div>';
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
-            if( $(".gmap-bubble-marker").hasClass("gmap-bubble-marker-hide") ){
-                $(".gmap-bubble-marker").removeClass("gmap-bubble-marker-hide");
-            }else{
-                $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
-            }
-        });
-
-        google.maps.event.addListenerOnce(map, 'idle', function(){
-            infowindow.open(map,marker);
-        });
-
-        $("body").on("click",".gmap-close-button",function(){
-            $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
-        });
-    }
-
     $(".show-next span").click(function(){
         var obj = $(this);
         obj.hide();
@@ -422,5 +374,53 @@ $(document).ready(function(){
     if( !isMobile && $('.stick,.doctor-img').length) {
         $(".stick").stick_in_parent({offset_top: $(".b-header-fixed").outerHeight() + 10});  
         $(".doctor-img").stick_in_parent({offset_top: myHeight - $(".doctor-img").height()}); 
+    }
+
+    if( $("#map_canvas").length ){
+        var myPlace = new google.maps.LatLng(56.501057, 85.001960);
+        var myOptions = {
+            zoom: 17,
+            center: ( isMobile ) ? new google.maps.LatLng(56.501278, 85.003651) : new google.maps.LatLng(56.501157, 85.001960),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            zoomControl: true
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+
+        var marker = new google.maps.Marker({
+            position: myPlace,
+            icon: {
+            url: "i/pin.png", // url
+            scaledSize: new google.maps.Size(38, 58), // scaled size
+            origin: new google.maps.Point(0,0), // origin
+            anchor: new google.maps.Point(19,58) // anchor
+            },
+            animation: google.maps.Animation.DROP,
+            map: map,
+            title: "COSMODENT"
+        });
+
+        var contentString = '<div class="gmap-bubble-marker-cont"><div class="gmap-bubble-marker"><div class="gmap-close-button icon-close"></div><p class="gmap-cont gmap-cont-1">Авторская клиника эстетической<br>стоматологии и косметологии «COSMODENT»<br><strong>Иркутсктий тракт, 5<br>+7 (382) 220-23-32</strong></p></div></div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+            if( $(".gmap-bubble-marker").hasClass("gmap-bubble-marker-hide") ){
+                $(".gmap-bubble-marker").removeClass("gmap-bubble-marker-hide");
+            }else{
+                $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+            }
+        });
+
+        google.maps.event.addListenerOnce(map, 'idle', function(){
+            infowindow.open(map,marker);
+        });
+
+        $("body").on("click",".gmap-close-button",function(){
+            $(".gmap-bubble-marker").addClass("gmap-bubble-marker-hide");
+        });
     }
 });
