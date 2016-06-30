@@ -827,6 +827,18 @@ b {
 			padding: 100px 20px 80px;
 			text-align: left;
 			text-align: center;
+			min-height: 0px;
+		}
+		.b-slider .b-block .slick-slide li{
+			font-size: 28px;
+			text-align: left;
+			margin-left: 35px;
+		}
+		.b-slider .b-block .slick-slide li:before{
+			width: 10px;
+			top: 15px;
+			height: 10px;
+			left: -33px;
 		}
 			.b-slider .b-block .slick-slide h3 {
 				font-size: 40px;

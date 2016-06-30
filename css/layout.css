@@ -1037,7 +1037,8 @@ b {
 			background-color: rgba(95, 74, 53, 0.75);
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
-			/* background-image: url('../i/callback.png'); */
+			background-image: url('../i/callback-1.png'); 
+			background-size: cover;
 		}
 		.b-slider .slider-back .slick-list{
 			width: inherit;
@@ -1055,24 +1056,47 @@ b {
 
 	}
 		.b-slider .b-block .slick-slide {
-			padding: 105px 220px 80px;
+			padding: 50px 150px 20px;
 			text-align: left;
+			display: table;
+			height: 100%;
+			box-sizing: border-box;
+			min-height: 600px;
 		}
-			.b-slider .b-block .slick-slide h3 {
-				font-size: 36px;
-				font-family: "Circe-Bold";
-				text-transform: uppercase;
-				line-height: 1.35;
-				margin-bottom: 42px;
+			.b-slider .b-block .slick-slide div{
+				display: table-cell;
+				vertical-align: middle;
 			}
-			.b-slider .b-block .slick-slide p {
-				font-size: 18px;
-				margin-bottom: 21px;
-				font-family: "Circe-Light";
-				font-family: "Circe-Light";
-			}
-				.b-slider .b-block .slick-slide p.last {
-					margin-bottom: 57px;
+				.b-slider .b-block .slick-slide h3 {
+					font-size: 36px;
+					font-family: "Circe-Bold";
+					text-transform: uppercase;
+					line-height: 1.35;
+					margin-bottom: 42px;
+				}
+				.b-slider .b-block .slick-slide p,
+				.b-slider .b-block .slick-slide li {
+					font-size: 18px;
+					margin-bottom: 21px;
+					font-family: "Circe-Light";
+				}
+				.b-slider .b-block .slick-slide li{
+					position: relative;
+					margin-left: 25px;
+				}	
+					.b-slider .b-block .slick-slide li:before{
+						position: absolute;
+						content: "";
+						font-size: 0;
+						top: 8px;
+						left: -25px;
+						width: 8px;
+						height: 8px;
+						border-radius: 50%;
+						background-color: #FFF;	
+					}
+				.b-slider .btn{
+					margin-top: 57px;
 				}
 .b-services {
 
@@ -2388,6 +2412,7 @@ padding: 40px 0;
 			.b-footer .b-block .top ul {
 				width: 25%;
 				text-align: left;
+				float: left;
 			}
 				.b-footer .b-block .top ul li {
 					margin-bottom: 12px;
@@ -2478,7 +2503,9 @@ padding: 40px 0;
 		opacity: 1;
 		background-position: 50% 100%;
 	}
-
+.bxcompprop-content {
+    overflow-y: scroll;
+}
 
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
