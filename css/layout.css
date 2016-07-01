@@ -2463,6 +2463,35 @@ padding: 40px 0;
 						font-family: "Circe-Light";
 						margin-bottom: 15px;
 					}
+		.b-other-content .b-block .price {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+			.b-other-content .b-block .price th {
+				font-size: 18px;
+				padding: 10px 10px 8px;
+				border-bottom: 2px solid #ebebeb;
+				font-family: "Circe-Bold";
+				text-transform: uppercase;
+			}
+
+			.b-other-content .b-block .price td {
+				padding: 11px 10px 8px;
+				border-bottom: 1px solid #ebebeb;
+				font-family: "Circe-Light";
+			}
+				.b-other-content .b-block .price th:nth-child(2),
+				.b-other-content .b-block .price td:nth-child(2) {
+					text-align: right;
+				}
+				.b-other-content .b-block .price th a,
+				.b-other-content .b-block .price td a {
+					display: block;
+				}
+					.b-other-content .b-block .price th a:hover,
+					.b-other-content .b-block .price td a:hover {
+						text-decoration: underline;
+					}
 .doctors-slider {
 	margin-top: 45px;
 }
