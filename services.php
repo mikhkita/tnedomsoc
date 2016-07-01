@@ -247,7 +247,6 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</ul>
 				</li>
 			</ul>
-			</div>
 		</div>
 	</div>
 	<div class="b b-about-cosm b-grey">
