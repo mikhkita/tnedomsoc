@@ -1611,7 +1611,6 @@ padding: 40px 0;
 					line-height: 1.222;
 					font-size: 36px;
 					color: #383838;
-					text-transform: uppercase;
 					vertical-align: middle;
 					padding-left: 23px;
 				}
@@ -2349,6 +2348,7 @@ padding: 40px 0;
 
 .b-about-cosm {
 	padding: 65px 0;
+	margin-bottom: -24px;
 }		
 
 
