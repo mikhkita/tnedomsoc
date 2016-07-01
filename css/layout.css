@@ -1697,6 +1697,9 @@ padding: 40px 0;
 					content: "ПОСЛЕ";
 				}
 
+		.b-other-content .b-block .service-accord-cont {
+			margin-bottom: 10px;
+		}
 		.b-other-content .b-block .service-accord {
 			width: 368px;
 
@@ -2470,7 +2473,7 @@ padding: 40px 0;
 			.b-other-content .b-block .price th {
 				font-size: 18px;
 				padding: 10px 10px 8px;
-				border-bottom: 2px solid #ebebeb;
+				/*border-bottom: 2px solid #ebebeb;*/
 				font-family: "Circe-Bold";
 				text-transform: uppercase;
 			}
@@ -2480,13 +2483,24 @@ padding: 40px 0;
 				border-bottom: 1px solid #ebebeb;
 				font-family: "Circe-Light";
 			}
+				.b-other-content .b-block .price td:nth-child(2n+1) {
+					padding-left: 30px;
+				}
+				.b-other-content .b-block .price tr.section td {
+					font-family: "Circe-Regular";
+					padding-left: 10px;
+					background-color: #dfc480;
+				}
+					.b-other-content .b-block .price tr.section td a {
+						color: #fff;
+					}
 				.b-other-content .b-block .price th:nth-child(2),
 				.b-other-content .b-block .price td:nth-child(2) {
 					text-align: right;
 				}
 				.b-other-content .b-block .price th a,
 				.b-other-content .b-block .price td a {
-					display: block;
+					/*display: block;*/
 				}
 					.b-other-content .b-block .price th a:hover,
 					.b-other-content .b-block .price td a:hover {

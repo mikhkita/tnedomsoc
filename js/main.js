@@ -371,7 +371,7 @@ $(document).ready(function(){
     if( !isMobile && $('.stick,.doctor-img').length) {
         $(window).load(function(){
             $(".stick").stick_in_parent({offset_top: $(".b-header-fixed").outerHeight() + 10});  
-            $(".doctor-img").stick_in_parent({offset_top: myHeight - $(".doctor-img").height()}); 
+            $(".doctor-img").stick_in_parent({offset_top: myHeight - $(".doctor-img").height()});
         });
        
     }

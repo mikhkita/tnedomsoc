@@ -183,7 +183,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<a href="price.php">Прайс-лист на услуги COSMODENT</a>
 				</div>
 			</div>
-			<div class="service-accord stick right">
+			<div class="right service-accord-cont stick">
+			<div class="service-accord">
 				<h3 data-href="http://google.ru"><i class="diag"></i><span>ДИАГНОСТИКА</span></h3>
 				<div>
 					<a href="#">Компьютерная томография зубов</a>
@@ -249,6 +250,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<a href="#">Композитные виниры</a>
 					<a href="#">Стоматология Anti-Age</a>
 				</div>
+			</div>
 			</div>
 		</div>
 	</div>

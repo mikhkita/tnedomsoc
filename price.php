@@ -143,12 +143,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td><a href="#"><b>ДИАГНОСТИКА</b></a></td>
-						<td></td>
+					<tr class="section">
+						<td colspan="2"><a href="#">ДИАГНОСТИКА</a></td>
 					</tr>
 					<tr>
-						<td>Лазерная диагностика кариеса ДИАГНОКАМ (DIAGNOcam)</td>
+						<td><a href="#">Лазерная диагностика кариеса ДИАГНОКАМ (DIAGNOcam)</a></td>
 						<td>1 290</td>
 					</tr>
 					<tr>
@@ -159,16 +158,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<td>Рентген-диагностика состояния зубов</td>
 						<td>1 290</td>
 					</tr>
-					<tr>	
-						<td><a href="#"><b>ТЕРАПЕВТИЧЕСКАЯ СТОМАТОЛОГИЯ</b></a></td>
-						<td></td>
+					<tr class="section">	
+						<td colspan="2"><a href="#">ТЕРАПЕВТИЧЕСКАЯ СТОМАТОЛОГИЯ</a></td>
 					</tr>
 					<tr>
 						<td>Лечение кариеса</td>
 						<td>1 290</td>
 					</tr>
 					<tr>
-						<td>Лечение зубов без бормашины</td>
+						<td><a href="#">Лечение зубов без бормашины</a></td>
 						<td>1 290</td>
 					</tr>
 					<tr>
