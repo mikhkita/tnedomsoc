@@ -291,7 +291,10 @@ $(document).ready(function(){
     if($(".service-accord").length) {
         $( ".service-accord" ).accordion({
             icons: false,
-            heightStyle: "content"
+            heightStyle: "content",
+            activate: function( event, ui ) {
+                $(document.body).trigger("sticky_kit:recalc");
+            }
         });
         var active = $(".service-accord .ui-state-active").index();
         $(".service-accord h3").click(function(e){
