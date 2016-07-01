@@ -1660,6 +1660,43 @@ padding: 40px 0;
 			width: 765px;
 			/*padding-bottom: 55px;*/
 		}
+		.b-other-content .b-block .service-text .work-detail{
+			display: inline-block;
+			text-align: center;
+			height: 176px;
+			font-size: 0;
+			margin-bottom: 30px;
+			width: 100%;
+		}
+		.b-other-content .b-block .service-text .work-detail > div {
+			width: 382px;
+			font-size: 0;
+			height: 100%;
+			position: relative;
+			background-size: cover;
+			background-position: 50%;
+			display: inline-block;
+			cursor: pointer;
+		}
+				.b-other-content .b-block .service-text .work-detail > div:after,
+				.b-other-content .b-block .service-text .work-detail > div:before{
+					position: absolute;
+					font-size: 24px;
+					font-family: "Circe-Bold";
+					bottom: 0;
+					left: 0;
+					padding: 9px 20px 5px;
+					background-color: #dfc480;
+					color: #fff;
+				}
+				.b-other-content .b-block .service-text .work-detail > div.before:after {
+					content: "ДО";
+
+				}
+				.b-other-content .b-block .service-text .work-detail > div.after:after{
+					content: "ПОСЛЕ";
+				}
+
 		.b-other-content .b-block .service-accord {
 			width: 368px;
 
