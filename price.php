@@ -64,7 +64,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<li><a href="actions.php" class="b-mobile-menu-a">Акции</a></li>
 			<li><a href="reviews.php" class="b-mobile-menu-a">Отзывы</a></li>
 			<li><a href="works.php" class="b-mobile-menu-a">Работы</a></li>
-			<li><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
+			<li class="active"><a href="articles.php" class="b-mobile-menu-a">Статьи</a></li>
 			<li><a href="contacts.php" class="b-mobile-menu-a">Контакты</a></li>
         </ul>
     </div>
@@ -77,7 +77,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li><a href="actions.php">Акции</a></li>
 				<li><a href="reviews.php">Отзывы</a></li>
 				<li><a href="works.php">Работы</a></li>
-				<li><a href="articles.php">Статьи</a></li>
+				<li class="active"><a href="articles.php">Статьи</a></li>
 				<li><a href="contacts.php">Контакты</a></li>
 			</ul>
 			<div class="phone-cont right">
@@ -92,7 +92,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other" data-parallax="scroll" data-image-src="i/doctors.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/doctors1.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
@@ -102,7 +102,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<li><a href="actions.php">Акции</a></li>
 					<li><a href="reviews.php">Отзывы</a></li>
 					<li><a href="works.php">Работы</a></li>
-					<li><a href="articles.php">Статьи</a></li>
+					<li class="active"><a href="articles.php">Статьи</a></li>
 					<li><a href="contacts.php">Контакты</a></li>
 				</ul>
 				<div class="phone-cont right">
@@ -122,11 +122,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<div class="b-other-text">
 				<div>
-					<h1>Врачи и сотрудники</h1>
-					<form action="#" method="POST">
-						<input class="input" type="text" name="search" placeholder="Поиск врачей и сотрудников" required>
-						<button class="search-btn"></button>
-					</form>
+					<h1>Прайс-лист</h1>
 				</div>
 			</div>
 		</div>
@@ -134,127 +130,61 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b b-navigation">
 		<ul class="b-block clearfix">
 			<li><a href="#">Главная</a></li>
-			<li><a href="#">Врачи и сотрудники</a></li>
-			<li class="active"><a href="#" onclick="return false;">Куркина Алена Евгеньевна</a></li>
+			<li class="active"><a href="#" onclick="return false;">Прайс-лист</a></li>
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block doctor-desc">
-			<div class="doctor-detail clearfix">
-				<img class="left doctor-img" src="i/doctor-11.jpg">
-				<div class="text right">
-					<h2 class="title">Куркина Алена Евгеньевна</h2>
-					<h3>CТОМАТОЛОГ-ТЕРАПЕВТ</h3>
-					<button class="btn btn-brown fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</button>
-					<img class="b-mobile-image" src="i/doctor-1.jpg">
-					<div class="b-text">
-						<p>
-							 Доктор наук.&nbsp;Степень получена при Центре пластической и реконструктивной хирургии (PhD University of Manchester, Великобритания).
-						</p>
-						<p>
-							 Профессиональные навыки:&nbsp;&nbsp;имплантация, костная пластика, простые и сложные удаления зубов, консервативное и хирургической лечение тканей пародонта, лечение воспалительных заболеваний челюстно-лицевой области.&nbsp;Клинический опыт – 6 лет
-						</p>
-						<p>
-							 Специализация доктора:&nbsp;лечение пациентов под локальной анестезией, седацией (закись азота) и в наркозе, амбулаторное и стационарное ведение пациентов с комплексной историей болезни.
-						</p>
-						<p>
-							 Основное образование:
-						</p>
-						<p>
-						</p>
-						<p>
-						</p>
-						<ul>
-							<li>
-								 МГМСУ им. Евдокимова
-						 </li>
-							<li>
-								 Интернатура - МГМСУ по стоматологии общей практики и анестезиологии.
-						 </li>
-							<li>
-								 Ординатура - Манчестерский Университет (Великобритания), специализация «Хирургическая стоматология и челюстно-лицевая хирургия»
-						 </li>
-						</ul>
-						<p>
-						</p>
-						<p>
-						</p>
-						<p>
-							 Дополнительное образование/курсы:
-						</p>
-						<p>
-						</p>
-						<ul>
-							<li>Базовый курс по имплантации системой Astra Tech</li>
-							<li>Курс по стоматологическому лицензированию Королевского Колледжа Хирургов (Англия)</li>
-							<li>Анатомия полости рта, Корлевский Коллелдж Хирургов (Англия)</li>
-						</ul>
-						<p>
-						</p>
-						<p>
-							 Членство в профессиональных организациях:&nbsp;Международная ассоциация стоматологических исследований (International Association of Dental Research - IADR)<br>
-						</p>
-						<p>
-							 Научная деятельность:
-						</p>
-						<p>
-							 Евгений Александрович получил грант от Университета Манчестера на поездку в Кейптаун (Южная Африка) и Бостон (США) для презентации научной работы на международной конференции в 2014 и 2015 годах (International Association of Dental Research IADR).
-						</p>
-						<p>
-							 Преподавательская деятельность:&nbsp;читает лекции по инновационным методам лечения в хирургии и регенеративной терапии.
-						</p>
-						<p>
-							 Автор 7 публикаций, посвященных микрохирургии тройничного нерва и реконструктивной терапии с использованием стволовых клеток.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="b b-other-content b-grey">
-		<div class="b-block doctor-desc">
-			<h2 class="title">ВРАЧИ МОЕЙ СПЕЦИАЛЬНОСТИ</h2>
-			<div class="doctors-slider">
-				<div style="background-image: url('i/doctor-1.jpg');">	
-					<a class="desc-cont" href="#">
-						<div class="b-mobile-bottom">
-							<h3>Куркина Алена Евгеньевна</h3>
-							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
-								пародонтолог
-							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</h5>
-						</div>
-					</a>
-				</div>
-				<div style="background-image: url('i/doctor-1.jpg');">	
-					<a class="desc-cont" href="#">
-						<div class="b-mobile-bottom">
-							<h3>Куркина Алена Евгеньевна</h3>
-							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
-								пародонтолог
-							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</h5>
-						</div>
-					</a>
-				</div>
-				<div style="background-image: url('i/doctor-1.jpg');">	
-					<a class="desc-cont" href="#">
-						<div class="b-mobile-bottom">
-							<h3>Куркина Алена Евгеньевна</h3>
-							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
-								пародонтолог
-							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" >Записаться на прием</h5>
-						</div>
-					</a>
-				</div>
-			</div>
+		<div class="b-block">
+			<table class="price">
+				<thead>
+					<tr>
+						<th>НАЗВАНИЕ УСЛУГИ</th>
+						<th>ЦЕНА,&nbsp;РУБ.</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="#"><b>ДИАГНОСТИКА</b></a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Лазерная диагностика кариеса ДИАГНОКАМ (DIAGNOcam)</td>
+						<td>1 290</td>
+					</tr>
+					<tr>
+						<td>Визиограф</td>
+						<td>1 290</td>
+					</tr>
+					<tr>
+						<td>Рентген-диагностика состояния зубов</td>
+						<td>1 290</td>
+					</tr>
+					<tr>	
+						<td><a href="#"><b>ТЕРАПЕВТИЧЕСКАЯ СТОМАТОЛОГИЯ</b></a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Лечение кариеса</td>
+						<td>1 290</td>
+					</tr>
+					<tr>
+						<td>Лечение зубов без бормашины</td>
+						<td>1 290</td>
+					</tr>
+					<tr>
+						<td>Лечение кариеса методом ICON</td>
+						<td>1 290</td>
+					</tr>
+					<tr>
+						<td>Лечение пульпита</td>
+						<td>1 290</td>
+					</tr>
+					<tr>
+						<td>Лечение корневых каналов зaубов (эндодонтия)</td>
+						<td>1 290</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 	<div class="b b-callback">
@@ -316,18 +246,16 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
 					</div>
 					<input class="input" type="text" name="email" required placeholder="E-mail"/>
-					<select class="input" name="spec" id="spec-select">
-						<option selected disabled>Выберите специалиста</option>
-						<option value="1">Гигиенист стоматологический</option>
-						<option value="2">Ортодонт</option>
-						<option value="3">Ортопед</option>
-						<option value="4">Стоматолог-терапевт</option>
-						<option value="5">Хирург-имплантолог</option>
+					<select class="input" name="doctor">
+						<option value="Ортодонт">Гигиенист стоматологический</option>
+						<option value="Ортодонт">Ортодонт</option>
+						<option value="Ортопед">Ортопед</option>
+						<option value="Стоматолог-терапевт">Стоматолог-терапевт</option>
+						<option value="Хирург-имплантолог">Хирург-имплантолог</option>
 					</select>
-					<select class="input" name="doctor-name" id="name-select">
-						<option selected disabled>Выберите доктора</option>
-						<option value="1">Куркина Алена Евгеньевна</option>
-						<option value="2">Гурген Хачатрян</option>
+					<select class="input" name="doctor-name">
+						<option value="Куркина Алена Евгеньевна">Куркина Алена Евгеньевна</option>
+						<option value="Гурген Хачатрян">Гурген Хачатрян</option>
 					</select>
 					<input class="input" type="text" name="date" id="datepicker" required placeholder="Дата и время записи"/>
 					<input type="hidden" name="subject" value="Запись на прием"/>

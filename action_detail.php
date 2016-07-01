@@ -195,7 +195,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -208,7 +208,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -221,7 +221,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -234,7 +234,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -247,7 +247,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>

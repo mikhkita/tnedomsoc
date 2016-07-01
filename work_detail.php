@@ -29,6 +29,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/fastclick.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
@@ -92,7 +93,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 		</div>
 	</div>
-	<div class="b b-other" data-parallax="scroll" data-image-src="i/doctors.jpg">
+	<div class="b b-other" data-parallax="scroll" data-image-src="i/action-detail.jpg">
 		<div class="b-block">
 			<div class="b-header clearfix">
 				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
@@ -122,9 +123,9 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			</div>
 			<div class="b-other-text">
 				<div>
-					<h1>Врачи и сотрудники</h1>
+					<h1>Работы</h1>
 					<form action="#" method="POST">
-						<input class="input" type="text" name="search" placeholder="Поиск врачей и сотрудников" required>
+						<input class="input" type="text" name="search" placeholder="Поиск работ" required>
 						<button class="search-btn"></button>
 					</form>
 				</div>
@@ -134,97 +135,71 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<div class="b b-navigation">
 		<ul class="b-block clearfix">
 			<li><a href="#">Главная</a></li>
-			<li><a href="#">Врачи и сотрудники</a></li>
-			<li class="active"><a href="#" onclick="return false;">Куркина Алена Евгеньевна</a></li>
+			<li><a href="#">Работы</a></li>
+			<li class="active"><a href="#" onclick="return false;">Виниры</a></li>
 		</ul>
 	</div>
 	<div class="b-other-content">
-		<div class="b-block doctor-desc">
-			<div class="doctor-detail clearfix">
-				<img class="left doctor-img" src="i/doctor-11.jpg">
-				<div class="text right">
-					<h2 class="title">Куркина Алена Евгеньевна</h2>
-					<h3>CТОМАТОЛОГ-ТЕРАПЕВТ</h3>
-					<button class="btn btn-brown fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</button>
-					<img class="b-mobile-image" src="i/doctor-1.jpg">
-					<div class="b-text">
-						<p>
-							 Доктор наук.&nbsp;Степень получена при Центре пластической и реконструктивной хирургии (PhD University of Manchester, Великобритания).
-						</p>
-						<p>
-							 Профессиональные навыки:&nbsp;&nbsp;имплантация, костная пластика, простые и сложные удаления зубов, консервативное и хирургической лечение тканей пародонта, лечение воспалительных заболеваний челюстно-лицевой области.&nbsp;Клинический опыт – 6 лет
-						</p>
-						<p>
-							 Специализация доктора:&nbsp;лечение пациентов под локальной анестезией, седацией (закись азота) и в наркозе, амбулаторное и стационарное ведение пациентов с комплексной историей болезни.
-						</p>
-						<p>
-							 Основное образование:
-						</p>
-						<p>
-						</p>
-						<p>
-						</p>
-						<ul>
-							<li>
-								 МГМСУ им. Евдокимова
-						 </li>
-							<li>
-								 Интернатура - МГМСУ по стоматологии общей практики и анестезиологии.
-						 </li>
-							<li>
-								 Ординатура - Манчестерский Университет (Великобритания), специализация «Хирургическая стоматология и челюстно-лицевая хирургия»
-						 </li>
-						</ul>
-						<p>
-						</p>
-						<p>
-						</p>
-						<p>
-							 Дополнительное образование/курсы:
-						</p>
-						<p>
-						</p>
-						<ul>
-							<li>Базовый курс по имплантации системой Astra Tech</li>
-							<li>Курс по стоматологическому лицензированию Королевского Колледжа Хирургов (Англия)</li>
-							<li>Анатомия полости рта, Корлевский Коллелдж Хирургов (Англия)</li>
-						</ul>
-						<p>
-						</p>
-						<p>
-							 Членство в профессиональных организациях:&nbsp;Международная ассоциация стоматологических исследований (International Association of Dental Research - IADR)<br>
-						</p>
-						<p>
-							 Научная деятельность:
-						</p>
-						<p>
-							 Евгений Александрович получил грант от Университета Манчестера на поездку в Кейптаун (Южная Африка) и Бостон (США) для презентации научной работы на международной конференции в 2014 и 2015 годах (International Association of Dental Research IADR).
-						</p>
-						<p>
-							 Преподавательская деятельность:&nbsp;читает лекции по инновационным методам лечения в хирургии и регенеративной терапии.
-						</p>
-						<p>
-							 Автор 7 публикаций, посвященных микрохирургии тройничного нерва и реконструктивной терапии с использованием стволовых клеток.
-						</p>
+		<div class="b-block text-contain clearfix">
+			<div class="service-text left">
+				<div class="b-text">
+					<h2>Виниры</h2>
+					<div class="work-detail">
+						<div class="before fancy-img" data-fancybox-href="i/work-before.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-before.jpg');"></div>
+						<div class="after fancy-img" data-fancybox-href="i/work-after.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-after.jpg');"></div>
 					</div>
+					<p>Программа подготовки к главному событию: профессиональная гигиена + ремотерапия + суперсовременное безопасное отбеливание ZOOM4. Специальная цена: 29 990 рублей за одного и 44 990 рублей за двоих (невеста и жених).</p>
+					<h4>1 ЭТАП</h4>
+					<ul>
+						<li>Профессиональная гигиена - снятие зубного камня, удаление налета (AIR FLOW), полировка зубов</li>
+						<li>Ремотерапия или фторирование – укрепление и защита эмали зубов минералами.</li>
+						<li>Набор для домашнего укрепления зубов перед отбеливанием (входит в стоимость программы)</li>
+					</ul>
+					<h4>2 ЭТАП - ЧЕРЕЗ НЕДЕЛЮ ПОСЛЕ ПЕРВОГО</h4>
+					<p><b>Отбеливание ZOOM4:</b></p>
+					<ul>
+						<li>передовая технология холодного света</li>
+						<li>зубы светлее до 10 тонов всего за один визит (1.5 часа)</li>
+						<li>без неприятных ощущений</li>
+						<li>безопасно – используется неагрессивный гель</li>
+						<li>эффект сохраняется до 5 лет (или даже дольше – при поддерживающем курсе домашнего отбеливания).</li>
+					</ul>
+					<h4>РЕЗУЛЬТАТ ПРОГРАММЫ:</h4>
+					<ul>
+						<li>Жемчужно-белые зубы</li>
+						<li>Крепкая эмаль</li>
+						<li>Профилактика кариеса</li>
+						<li>Чистые обновленные зубы</li>
+					</ul>
+					<h4>СТОИМОСТЬ ПРОГРАММЫ WHITE WEDDING</h4>
+					<p>Специальная цена программы на одного – <b>29 990 рублей.</b><br/>Если придете сразу вдвоем (невеста + жених), общая цена на всю программу – <b>44 990 рублей!</b><br/><b>Комфортная оплата: 50% на 1 этапе профгигиены и 50% на 2 этапе отбеливания ZOOM4</b></p>
+					<p><b>Важно:</b> в течение 1 недели после отбеливания ZOOM4 рекомендуем отказаться от приема красящих продуктов и напитков. Несмотря на высокий профиль безопасности системы ZOOM4, отбеливание противопоказано беременным, в период грудного вскармливания, в период обострения заболеваний пародонта, пациентам с онкологическими заболеваниями, пациентам с реставрациями на передних зубах.</p>
+					<a href="#">Прайс-лист на услуги Belgravia Dental Studio</a>
 				</div>
+			</div>
+			<div class="action-right stick right">
+				<a class="active" href="#" onclick="return false;">WHITE WEDDING – ОТБЕЛИВАНИЕ ZOOM 4 К СВАДЬБЕ!</a>
+				<a href="#">ОТБЕЛИВАНИЕ ZOOM4 НА ДВОИХ ВСЕГО 44 990 РУБЛЕЙ</a>
+				<a href="#">YOUR IN THE ARMY – ОТБЕЛИВАНИЕ ЗУБОВ К АРМИИ!</a>
+				<a href="#">«ЗДОРОВАЯ МАМА»</a>
+				<a href="#">DENTAL CARE FOR SMOKERS</a>
 			</div>
 		</div>
 	</div>
 	<div class="b b-other-content b-grey">
 		<div class="b-block doctor-desc">
-			<h2 class="title">ВРАЧИ МОЕЙ СПЕЦИАЛЬНОСТИ</h2>
+			<h2 class="title">Лечащие врачи</h2>
 			<div class="doctors-slider">
 				<div style="background-image: url('i/doctor-1.jpg');">	
 					<a class="desc-cont" href="#">
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -233,11 +208,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1">Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -246,11 +221,50 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<div class="b-mobile-bottom">
 							<h3>Куркина Алена Евгеньевна</h3>
 							<h4>
-								Хирург-стоматолог,<br>
-								имплантолог,<br>
+								Хирург-стоматолог,
+								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" >Записаться на прием</h5>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
+						</div>
+					</a>
+				</div>
+				<div style="background-image: url('i/doctor-1.jpg');">	
+					<a class="desc-cont" href="#">
+						<div class="b-mobile-bottom">
+							<h3>Куркина Алена Евгеньевна</h3>
+							<h4>
+								Хирург-стоматолог,
+								имплантолог,
+								пародонтолог
+							</h4>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
+						</div>
+					</a>
+				</div>
+				<div style="background-image: url('i/doctor-1.jpg');">	
+					<a class="desc-cont" href="#">
+						<div class="b-mobile-bottom">
+							<h3>Куркина Алена Евгеньевна</h3>
+							<h4>
+								Хирург-стоматолог,
+								имплантолог,
+								пародонтолог
+							</h4>
+							<h5 class="fancy" data-block="#b-popup-rec">Записаться на прием</h5>
+						</div>
+					</a>
+				</div>
+				<div style="background-image: url('i/doctor-1.jpg');">	
+					<a class="desc-cont" href="#">
+						<div class="b-mobile-bottom">
+							<h3>Куркина Алена Евгеньевна</h3>
+							<h4>
+								Хирург-стоматолог,
+								имплантолог,
+								пародонтолог
+							</h4>
+							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -315,19 +329,19 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
 						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
 					</div>
-					<input class="input" type="text" name="email" required placeholder="E-mail"/>
-					<select class="input" name="spec" id="spec-select">
+					<input class="input" type="email" name="email" required placeholder="E-mail"/>
+					<select class="input" name="doctor" id="spec-select">
 						<option selected disabled>Выберите специалиста</option>
-						<option value="1">Гигиенист стоматологический</option>
-						<option value="2">Ортодонт</option>
-						<option value="3">Ортопед</option>
-						<option value="4">Стоматолог-терапевт</option>
-						<option value="5">Хирург-имплантолог</option>
+						<option value="Ортодонт">Гигиенист стоматологический</option>
+						<option value="Ортодонт">Ортодонт</option>
+						<option value="Ортопед">Ортопед</option>
+						<option value="Стоматолог-терапевт">Стоматолог-терапевт</option>
+						<option value="Хирург-имплантолог">Хирург-имплантолог</option>
 					</select>
 					<select class="input" name="doctor-name" id="name-select">
 						<option selected disabled>Выберите доктора</option>
-						<option value="1">Куркина Алена Евгеньевна</option>
-						<option value="2">Гурген Хачатрян</option>
+						<option value="Куркина Алена Евгеньевна">Куркина Алена Евгеньевна</option>
+						<option value="Гурген Хачатрян">Гурген Хачатрян</option>
 					</select>
 					<input class="input" type="text" name="date" id="datepicker" required placeholder="Дата и время записи"/>
 					<input type="hidden" name="subject" value="Запись на прием"/>
