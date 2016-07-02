@@ -292,6 +292,7 @@ $(document).ready(function(){
         $( ".service-accord" ).accordion({
             icons: false,
             heightStyle: "content",
+            active: $(".service-accord h3.active").attr("data-id")*1,
             activate: function( event, ui ) {
                 $(document.body).trigger("sticky_kit:recalc");
             }
@@ -328,16 +329,14 @@ $(document).ready(function(){
         $.ajax({
             type: "GET",
             url: href,
-            success: function(msg){
+            success: function(html){
+                dom = $(html);
                 obj.parent().find('i').hide();
-                var msg = $.parseJSON(msg);
-                $(".ul-ajax").append(msg.data);
-                if(msg.next) {
-                    obj.attr("data-href",msg.next);
+                $(".ul-ajax").append(dom.html());
+                if( dom.attr("data-next") ) {
+                    obj.attr("data-href", dom.attr("data-next"));
                     obj.show();
                 } else $(".show-next").hide();
-                
-                
             }
         });
     });

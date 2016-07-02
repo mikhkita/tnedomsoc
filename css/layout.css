@@ -348,7 +348,13 @@ b {
 		margin-bottom: 24px;
 	}
 	.b-text h3 {
-
+		font-family: "Circe-Bold";
+		text-transform: uppercase;
+		margin-bottom: 6px;
+	}
+	.b-text img{
+		width: 100%;
+		margin-bottom: 24px;
 	}
 	.b-text h4 {
 		font-family: "Circe-Bold";
@@ -412,12 +418,12 @@ b {
 	.link:hover,.b-text a:hover {
 		text-decoration: underline;
 	}
-	.link:after {
+	/*.link:after {
 		position: absolute;
 	    content: ">";
 	    right: -15px;
 	    top: 1px;
-	}
+	}*/
 .input {
 	border: none;
 	border-bottom: 1px solid #7f7f7f;
@@ -640,7 +646,7 @@ b {
 }
 
 .fancybox-wrap {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	overflow: visible !important;
 }
 .b-popup {
@@ -1290,14 +1296,14 @@ b {
 				.b-doctors .b-block .doctors li .desc-cont h5,.doctors-slider .slick-slide .desc-cont h5{
 					font-size: 16px;
 					position: absolute;
-					bottom: 12px;
+					bottom: 14px;
 					display: inline-block;
 					font-family: "Circe-Light";
 				}
 					.b-doctors .b-block .doctors li .desc-cont h5:hover,.doctors-slider .slick-slide .desc-cont h5:hover {
 						text-decoration: underline;
 					}
-					.b-doctors .b-block .doctors li .desc-cont h5:before,.doctors-slider .slick-slide .desc-cont h5:before{
+					/*.b-doctors .b-block .doctors li .desc-cont h5:before,.doctors-slider .slick-slide .desc-cont h5:before{
 						position: absolute;
 						font-size: 0;
 						width: 16px;
@@ -1313,7 +1319,7 @@ b {
 						content: ">";
 						right: -22px;
 						top: 2px;
-					}
+					}*/
 .b-reviews {
 	background-image: url("../i/reviews-back.png");
 	/*background-size: cover;*/
@@ -1528,7 +1534,12 @@ padding: 40px 0;
 				font-family: "Circe-Light";
 				padding-right: 27px;
 			}
-				.b-navigation li a:after {
+				.with-arrow{
+					position: relative;
+				}
+				.b-navigation li a:after,
+				.with-arrow:after,
+				.link:after {
 					font-size: 5px;
 					position: absolute;
 					content: "\e90c";
@@ -1543,6 +1554,14 @@ padding: 40px 0;
 					line-height: 1;
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
+				}
+				.with-arrow:after,
+				.link:after{
+					right: -22px;
+    				top: 9px;
+				}
+				.service-text .b-text .with-arrow:after{
+					top: 8px;
 				}
 				.b-navigation li a:hover {
 					text-decoration: underline;
@@ -1775,7 +1794,7 @@ padding: 40px 0;
 
 						.b-other-content .b-block .service-accord div a {
 							margin-bottom: 11px;
-							display: inline-block;
+							display: block;
 							color: #9b9b9b;
 							line-height: 1.5;
 							font-family: 'Circe-Light';
@@ -1784,6 +1803,11 @@ padding: 40px 0;
 								color: #dfc480;
 								text-decoration: underline;
 							}
+						.b-other-content .b-block .service-accord div a.active{
+							color: #dfc480;
+							text-decoration: none !important;
+							cursor: default;
+						}
 				.ui-accordion .ui-accordion-content {
 					border:none;
 					padding: 21px 30px 14px;
@@ -1792,8 +1816,11 @@ padding: 40px 0;
 					background: #fff;
 					border: 1px solid #fff;
 				}
-					.ui-accordion-header.ui-state-default.ui-state-hover {
-						border-color: #9b9b9b;
+					.b-other-content .b-block .service-accord h3.ui-accordion-header.ui-state-default.ui-state-hover span,
+					.b-other-content .b-block .service-accord h3.ui-accordion-header.ui-state-default.ui-state-hover i,
+					.b-other-content .b-block .service-accord h3.ui-accordion-header.ui-state-default.ui-state-hover:after {
+						/*border-color: #9b9b9b;*/
+						color: #dfc480;
 					}
 					.ui-accordion-header.ui-state-default.ui-accordion-header-active {
 						background: #dfc480;
@@ -2005,6 +2032,9 @@ padding: 40px 0;
 							/*background-color: rgba(191, 158, 77,0.631);*/
 							background-color: rgba(0,0,0,0.5);
 						}
+						.b-other-content .b-block .doctor-cont.without-hover:hover:after{
+							background-color: rgba(0,0,0,0.1);
+						}
 						.b-other-content .b-block .doctor-cont:hover span {
 							opacity: 1;
 							visibility: visible;
@@ -2014,9 +2044,9 @@ padding: 40px 0;
 							}
 				.b-other-content .b-block .doctors li .doctor-link {
 					display: block;
-					font-size: 24px;
+					font-size: 21px;
 					font-family: "Circe-Bold";
-					line-height: 1.25;
+					line-height: 1.35;
 					color: #1f1f1f;
 					text-transform: uppercase;
 					margin-bottom: 15px;
@@ -2040,8 +2070,9 @@ padding: 40px 0;
 				/*position: absolute;
 				bottom: 0;
 				left: 0;*/
-				max-width: 370px;
+				max-width: 390px;
 				max-height: 100%;
+				margin-left: -20px;
 			}
 			.b-other-content .b-block .doctor-detail img.b-mobile-image{
 				display: none;
@@ -2058,12 +2089,14 @@ padding: 40px 0;
 					font-family: "Circe-Bold";
 					color: #dfc480;
 					margin-top: 15px;
+					text-transform: uppercase;
 				}
 				.b-other-content .b-block .doctor-detail .text button {
 					margin-top: 30px;
+					margin-bottom: 45px;
 				}
 				.b-other-content .b-block .doctor-detail .text .b-text {
-					margin-top: 45px;
+					margin-top: 23px;
 				}
 		.b-other-content .b-block .contacts-cont {
 			text-align: center;
@@ -2321,7 +2354,7 @@ padding: 40px 0;
 				border: 1px solid #fff;
 			}
 				.b-other-content .b-block .action-right a:hover {
-					border-color: #1f1f1f;
+					color: #dfc480;
 				}
 				.b-other-content .b-block .action-right a.active {
 					cursor: default;

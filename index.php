@@ -137,7 +137,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<p>Клиника Cosmodent решает множество вопросов по&nbsp;оздоровлению и&nbsp;поддержанию естественной красоты, делая свой акцент на&nbsp;обворожительной улыбке и&nbsp;совершенной коже.</p>
 					<p>Обладая самым современным техническим оснащением (KaVo, Германия), Cosmodent гарантирует качество своей работы и&nbsp;дает своим клиентам годовую страховку на&nbsp;предоставленные услуги. Cosmodent объединяет лучших высококвалифицированных специалистов по&nbsp;всем направления стоматологии и&nbsp;косметологии&nbsp;&mdash; это профессионалы высокой категории и&nbsp;с&nbsp;многолетним стажем усовершенствования человеческой красоты.</p>
 				</div>
-				<a href="#" class="link">Читать полностью</a>
+				<a href="#" class="link with-arrow">Читать полностью</a>
 			</div>
 			<div class="left img"></div>
 		</div>
@@ -299,7 +299,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -312,7 +312,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -325,7 +325,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -338,7 +338,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -351,7 +351,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -364,7 +364,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -377,7 +377,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -390,7 +390,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -403,7 +403,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>
@@ -416,7 +416,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</li>

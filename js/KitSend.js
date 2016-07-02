@@ -160,7 +160,9 @@ $(document).ready(function(){
 			afterClose: function(){
 				$(".fancybox-wrap").removeClass("beforeClose");
 				$(".fancybox-wrap").addClass("afterClose");
-			}
+			},
+			nextEffect: "fade",
+			prevEffect: "fade"
 		});
 	});
 	$(".fancy-ajax").fancybox({

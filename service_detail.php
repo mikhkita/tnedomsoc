@@ -180,7 +180,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<p>В COSMODENT можно провести полную диагностику полости рта перед любой стоматологической манипуляцией. Комфорт и безопасность нашей диагностической аппаратуры, а также большой опыт персонала позволяют провести диагностику даже самым "сложным" пациентам: маленьким детям, беременным или людям с ослабленным здоровьем и хроническими заболеваниями.</p>
 					<h4>СТОИМОСТЬ КАЧЕСТВЕННОЙ ДИАГНОСТИКИ ЗУБОВ В COSMODENT</h4>
 					<p>В COSMODENT стоимость прицельной рентгенографии составляет 990 рублей; компьютерной диагностики зубов – 4 890 рублей (КЛКТ + запись на CD); описание 1 сектора – 1 190 рублей. Первичная консультация стоматолога, включающая тщательный осмотр, сбор анамнеза и составление плана лечения – 1 290 руб.</p>
-					<a href="price.php">Прайс-лист на услуги COSMODENT</a>
+					<a class="with-arrow" href="price.php">Прайс-лист на услуги COSMODENT</a>
 				</div>
 			</div>
 			<div class="right service-accord-cont stick">
@@ -267,7 +267,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -280,7 +280,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -293,7 +293,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -306,7 +306,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -319,7 +319,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
@@ -332,7 +332,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 								имплантолог,<br>
 								пародонтолог
 							</h4>
-							<h5 class="fancy" data-block="#b-popup-record">Записаться на прием</h5>
+							<h5 class="with-arrow fancy" data-block="#b-popup-record">Записаться на прием</h5>
 						</div>
 					</a>
 				</div>
