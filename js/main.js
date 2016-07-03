@@ -5,7 +5,7 @@ $(document).ready(function(){
         firstTog = false,
         prevWidth = 0,
         rotation = 0,
-        heightOrig;
+        heightOrig = 0;
 
     // isMobile = true;
     function resize(){
@@ -27,13 +27,13 @@ $(document).ready(function(){
         prevHeight = myHeight;
         rotation = myWidth/myHeight;
         
-        // if(heightOrig) {
+        if(heightOrig) {
             var docHeight = ((myHeight-$(".b-header-fixed").outerHeight()-10) > heightOrig) ? heightOrig : (myHeight-$(".b-header-fixed").outerHeight()-10);
             $(".doctor-img").height(docHeight);
-            $("#sticky_item").trigger("sticky_kit:detach");
+            $(".doctor-img").trigger("sticky_kit:detach");
             $(".doctor-img").stick_in_parent({offset_top: myHeight - docHeight});
             $(document.body).trigger("sticky_kit:recalc");
-        // }
+        }
     }
 
     function firstRender(){
