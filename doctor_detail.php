@@ -324,10 +324,10 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						<option value="4">Стоматолог-терапевт</option>
 						<option value="5">Хирург-имплантолог</option>
 					</select>
-					<select class="input" name="doctor-name" id="name-select">
-						<option selected disabled>Выберите доктора</option>
-						<option value="1">Куркина Алена Евгеньевна</option>
-						<option value="2">Гурген Хачатрян</option>
+					<select class="input" name="doctor-name" id="name-select" disabled>
+						<option value="default" selected disabled>Выберите доктора</option>
+						<option data-prof="1" value="1">Куркина Алена Евгеньевна</option>
+						<option data-prof="2" value="2">Гурген Хачатрян</option>
 					</select>
 					<input class="input" type="text" name="date" id="datepicker" required placeholder="Дата и время записи"/>
 					<input type="hidden" name="subject" value="Запись на прием"/>

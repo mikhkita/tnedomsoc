@@ -393,6 +393,21 @@ $(document).ready(function(){
        
     }
 
+    $("#spec-select").change(function() {
+        $("#name-select").prop("disabled",false);
+        var prof_id = $("#spec-select").val();
+        $("#name-select").val("default");
+        $("#name-select option").hide();
+        $("#name-select option[data-prof='"+prof_id+"']").show();
+    });
+    
+    customHandlers["doctor_rec"] = function(el){
+        var name = $(el).attr("data-name");
+        var spec =  $(el).attr("data-spec");
+        $("#spec-select").val(spec);
+        $("#spec-select").change();
+        $("#name-select").val(name);
+    }
 
     if( $("#map_canvas").length ){
         var myPlace = new google.maps.LatLng(56.501057, 85.001960);
