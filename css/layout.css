@@ -1521,10 +1521,7 @@ b {
 .b-navigation {
  background-color: #f8f8f8;
 }
-	.b-navigation ul {
-
-padding: 40px 0;
-}
+	.b-navigation ul {padding: 41px 0 39px;}
 		.b-navigation li {
 			float: left;
 		}
@@ -2529,9 +2526,12 @@ padding: 40px 0;
 					font-family: "Circe-Regular";
 					padding-left: 10px;
 					background-color: #dfc480;
+					color: #FFF;
+					text-transform: uppercase;
 				}
 					.b-other-content .b-block .price tr.section td a {
 						color: #fff;
+						text-transform: uppercase;
 					}
 				.b-other-content .b-block .price th:nth-child(2),
 				.b-other-content .b-block .price td:nth-child(2) {
