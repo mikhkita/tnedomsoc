@@ -144,10 +144,6 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<div class="service-text left">
 				<div class="b-text">
 					<h2>Виниры</h2>
-					<div class="work-detail">
-						<div class="before fancy-img" data-fancybox-href="i/work-before.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-before.jpg');"></div>
-						<div class="after fancy-img" data-fancybox-href="i/work-after.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-after.jpg');"></div>
-					</div>
 					<p>Программа подготовки к главному событию: профессиональная гигиена + ремотерапия + суперсовременное безопасное отбеливание ZOOM4. Специальная цена: 29 990 рублей за одного и 44 990 рублей за двоих (невеста и жених).</p>
 					<h4>1 ЭТАП</h4>
 					<ul>
@@ -177,12 +173,9 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<a href="#">Прайс-лист на услуги Belgravia Dental Studio</a>
 				</div>
 			</div>
-			<div class="action-right stick right">
-				<a class="active" href="#" onclick="return false;">WHITE WEDDING – ОТБЕЛИВАНИЕ ZOOM 4 К СВАДЬБЕ!</a>
-				<a href="#">ОТБЕЛИВАНИЕ ZOOM4 НА ДВОИХ ВСЕГО 44 990 РУБЛЕЙ</a>
-				<a href="#">YOUR IN THE ARMY – ОТБЕЛИВАНИЕ ЗУБОВ К АРМИИ!</a>
-				<a href="#">«ЗДОРОВАЯ МАМА»</a>
-				<a href="#">DENTAL CARE FOR SMOKERS</a>
+			<div class="work-detail right">
+				<div class="before fancy-img" data-fancybox-href="i/work-before.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-before.jpg');"></div>
+				<div class="after fancy-img" data-fancybox-href="i/work-after.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-after.jpg');"></div>
 			</div>
 		</div>
 	</div>
