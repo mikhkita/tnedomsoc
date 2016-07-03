@@ -4,7 +4,8 @@ $(document).ready(function(){
         isTablet = device.tablet(),
         firstTog = false,
         prevWidth = 0,
-        rotation = 0;
+        rotation = 0,
+        heightOrig;
 
     // isMobile = true;
     function resize(){
@@ -25,6 +26,13 @@ $(document).ready(function(){
 
         prevHeight = myHeight;
         rotation = myWidth/myHeight;
+        // if(heightOrig) {
+        //     var docHeight = ((myHeight-$(".b-header-fixed").outerHeight()-10) > heightOrig) ? heightOrig : (myHeight-$(".b-header-fixed").outerHeight()-10);
+        //     $(".doctor-img").height(docHeight);
+        //     $("#sticky_item").trigger("sticky_kit:detach");
+        //     $(".doctor-img").stick_in_parent({offset_top: myHeight - docHeight});
+        //     $(document.body).trigger("sticky_kit:recalc");
+        // }
     }
 
     function firstRender(){
@@ -370,10 +378,14 @@ $(document).ready(function(){
     if( !isMobile && $('.stick,.doctor-img').length) {
         $(window).load(function(){
             $(".stick").stick_in_parent({offset_top: $(".b-header-fixed").outerHeight() + 10});  
-            $(".doctor-img").stick_in_parent({offset_top: myHeight - $(".doctor-img").height()});
+            heightOrig = $(".doctor-img").height();
+            var docHeight = ((myHeight-$(".b-header-fixed").outerHeight()-10) > heightOrig) ? heightOrig : (myHeight-$(".b-header-fixed").outerHeight()-10);
+            $(".doctor-img").height(docHeight);
+            $(".doctor-img").stick_in_parent({offset_top: myHeight - docHeight});
         });
        
     }
+
 
     if( $("#map_canvas").length ){
         var myPlace = new google.maps.LatLng(56.501057, 85.001960);
