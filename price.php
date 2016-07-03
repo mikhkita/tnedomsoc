@@ -135,6 +135,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	</div>
 	<div class="b-other-content">
 		<div class="b-block">
+			<h2 class="title">Цены в COSMODENT</h2>
 			<table class="price">
 				<thead>
 					<tr>
