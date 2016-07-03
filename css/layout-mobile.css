@@ -1373,16 +1373,14 @@ b {
 			width: 680px;
 			padding-bottom: 25px;
 		}
-		.b-other-content .b-block .service-text .work-detail{
-			height: auto;
+
+		.b-other-content .b-block .work-detail{
+			height: 614px;
 			margin-bottom: 40px;
+			width: 	100%;
 		}
-		.b-other-content .b-block .service-text .work-detail > div {
-			width: 100%;
-			height: 176px;
-		}
-				.b-other-content .b-block .service-text .work-detail > div:after,
-				.b-other-content .b-block .service-text .work-detail > div:before{
+				.b-other-content .b-block .work-detail > div:after,
+				.b-other-content .b-block .work-detail > div:before{
 					font-size: 28px;
 				}
 		.b-other-content .b-block .service-accord {
