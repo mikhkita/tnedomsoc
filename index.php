@@ -587,7 +587,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					</select>
 					<select class="input" name="doctor-name" id="name-select">
 						<option selected disabled>Выберите доктора</option>
-						<option value="1">Куркина Алена Евгеньевна</option>
+						<option value="1" style="display:none;">Куркина Алена Евгеньевна</option>
 						<option value="2">Гурген Хачатрян</option>
 					</select>
 					<input class="input" type="text" name="date" id="datepicker" required placeholder="Дата и время записи"/>

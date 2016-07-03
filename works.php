@@ -138,7 +138,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<ul class="actions works clearfix ul-ajax">
 				<li class="clearfix">
 					<div class="img left">
-						<div class="before" style='background-image: url("i/work-before.jpg");'></div>
+						<!-- <div class="before" style='background-image: url("i/work-before.jpg");'></div> -->
 						<div class="after" style='background-image: url("i/work-after.jpg");'></div>
 					</div>
 					<div class="text left">

@@ -2325,13 +2325,14 @@ b {
 
 				}
 			.b-other-content .b-block .works li .img .after{
+				height: 100%;
 				position: relative;
 			}
 				.b-other-content .b-block .works li .img .after:after{
 					content: "ПОСЛЕ";
 				}
-			.b-other-content .b-block .works li .img .after.big {
-				height: 100%;
+			.b-other-content .b-block .works li .img .before + .after {
+				height: 50%;
 			}	
 			.b-other-content .b-block .works li .text {
 				padding: 20px 30px;
