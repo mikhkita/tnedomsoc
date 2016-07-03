@@ -173,7 +173,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<a href="#">Прайс-лист на услуги Belgravia Dental Studio</a>
 				</div>
 			</div>
-			<div class="work-detail right">
+			<div class="work-detail stick right">
 				<div class="before fancy-img" data-fancybox-href="i/work-before.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-before.jpg');"></div>
 				<div class="after fancy-img" data-fancybox-href="i/work-after.jpg" data-fancybox-group="fancy-img" style="background-image: url('i/work-after.jpg');"></div>
 			</div>

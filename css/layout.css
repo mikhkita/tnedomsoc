@@ -1681,6 +1681,7 @@ b {
 			width: 	365px;
 			height: 330px;
 			font-size: 0;
+			margin-top: 11px;
 		}
 		.b-other-content .b-block .work-detail > div {
 			width: 100%;
@@ -2347,6 +2348,7 @@ b {
 
 		.b-other-content .b-block .action-right {
 			width: 368px;
+			margin-top: 11px;
 		}	
 			.b-other-content .b-block .action-right a {
 				font-size: 20px;
