@@ -330,7 +330,7 @@ $(document).ready(function(){
             type: "GET",
             url: href,
             success: function(html){
-                dom = $(html);
+                var dom = $(html);
                 obj.parent().find('i').hide();
                 $(".ul-ajax").append(dom.html());
                 if( dom.attr("data-next") ) {
@@ -351,14 +351,14 @@ $(document).ready(function(){
         $.ajax({
             type: "GET",
             url: href,
-            success: function(msg){
-                var msg = $.parseJSON(msg);
-                $(".ul-ajax").html(msg.data);
+            success: function(html){
+                var dom = $(html);
+                $(".ul-ajax").html(dom.html());
                 $(".ul-ajax").css("visibility","visible").css("opacity","1");
-                if(msg.next) {
-                    $(".show-next span").attr("data-href",msg.next);
-                    $(".show-next").show();
-                }   
+                if( dom.attr("data-next") ) {
+                    $(".show-next span").attr("data-href", dom.attr("data-next") );
+                    $(".show-next, .show-next span").show();
+                }
             }
         });
     });
@@ -390,7 +390,7 @@ $(document).ready(function(){
         var marker = new google.maps.Marker({
             position: myPlace,
             icon: {
-            url: "i/pin.png", // url
+            url: "/bitrix/templates/main/i/pin.png", // url
             scaledSize: new google.maps.Size(38, 58), // scaled size
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(19,58) // anchor
