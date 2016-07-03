@@ -26,13 +26,16 @@ $(document).ready(function(){
 
         prevHeight = myHeight;
         rotation = myWidth/myHeight;
-        
-        if(heightOrig) {
+
+        if(heightOrig && !isMobile) {
             var docHeight = ((myHeight-$(".b-header-fixed").outerHeight()-10) > heightOrig) ? heightOrig : (myHeight-$(".b-header-fixed").outerHeight()-10);
             $(".doctor-img").height(docHeight);
             $(".doctor-img").trigger("sticky_kit:detach");
             $(".doctor-img").stick_in_parent({offset_top: myHeight - docHeight});
             $(document.body).trigger("sticky_kit:recalc");
+            $(".doctor-img").css({
+                "margin-left" : (( (390-$(".doctor-img").width())/2 > 0 )?((390-$(".doctor-img").width())/2):0)-20
+            });
         }
     }
 
@@ -383,6 +386,9 @@ $(document).ready(function(){
             var docHeight = ((myHeight-$(".b-header-fixed").outerHeight()-10) > heightOrig) ? heightOrig : (myHeight-$(".b-header-fixed").outerHeight()-10);
             $(".doctor-img").height(docHeight);
             $(".doctor-img").stick_in_parent({offset_top: myHeight - docHeight});
+            $(".doctor-img").css({
+                "margin-left" : (( (390-$(".doctor-img").width())/2 > 0 )?((390-$(".doctor-img").width())/2):0)-20
+            });
         });
        
     }
