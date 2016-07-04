@@ -235,6 +235,15 @@ $(document).ready(function(){
             $grid.isotope({ filter: filterValue });
         });
 
+        $('.doctor-filter').on( 'click', 'li:not(.active)', function() {
+            var str = $(this).attr("data-filter");
+            window.location.hash = "#"+str.substr(1);
+            $('ul.filter li.active').removeClass("active");
+            $(this).addClass("active");
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+
     }
     if( isMobile ){
         $(".about-slider").slick({
@@ -421,7 +430,6 @@ $(document).ready(function(){
     
     customHandlers["doctor_rec"] = function(el){
         var name = $(el).attr("data-name");
-        var spec =  $(el).attr("data-spec");
         $("#spec-select").val(spec);
         $("#spec-select").change();
         $("#name-select").val(name);
