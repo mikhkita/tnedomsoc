@@ -217,6 +217,16 @@ $(document).ready(function(){
     }else{
         var $grid = $('#doctors').isotope({
             itemSelector: '#doctors li',
+            hiddenStyle: {
+                opacity: 0
+            },
+              visibleStyle: {
+                opacity: 1
+            }
+        });
+        
+        var $grid = $('#doctors-detail').isotope({
+            itemSelector: '#doctors-detail li',
             filter: "none",
             hiddenStyle: {
                 opacity: 0
@@ -429,6 +439,7 @@ $(document).ready(function(){
     
     customHandlers["doctor_rec"] = function(el){
         var name = $(el).attr("data-name");
+
         $("#spec-select").val(spec);
         $("#spec-select").change();
         $("#name-select").val(name);

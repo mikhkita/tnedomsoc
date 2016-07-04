@@ -148,7 +148,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<li data-filter=".stomatolog">Стоматолог-терапевт</li>
 				<li data-filter=".hiryrg">Хирург-имплантолог</li>
 			</ul>
-			<ul class="doctors clearfix" id="doctors">
+			<ul class="doctors clearfix" id="doctors-detail">
 				<li class="gigienist">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
