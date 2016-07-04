@@ -145,7 +145,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				<div class="text right">
 					<h2 class="title">Куркина Алена Евгеньевна</h2>
 					<h3>CТОМАТОЛОГ-ТЕРАПЕВТ</h3>
-					<button class="btn btn-brown fancy" data-beforeShow="doctor_rec" data-block="#b-popup-rec" data-name="Куркина Алена Евгеньевна" data-spec="Гигиенист стоматологический">Записаться на прием</button>
+					<button class="btn btn-brown fancy" data-beforeShow="doctor_rec" data-block="#b-popup-rec" data-name="Куркина Алена Евгеньевна">Записаться на прием</button>
 					<img class="b-mobile-image" src="i/doctor-1.jpg">
 					<div class="b-text">
 						<p>

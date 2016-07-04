@@ -433,7 +433,7 @@ $(document).ready(function(){
 			str = str.substr(1);
 			if(str) {
 				str = "."+str;
-			} else str="*";
+			} else str=".all";
 			$('ul.filter li[data-filter="'+str+'"]').click();
 		}
     }
