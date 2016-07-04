@@ -428,7 +428,7 @@ $(document).ready(function(){
     }
 
     function changeDoctors() {
-    	if($('ul.filter').length) {
+    	if($('.doctor-filter').length) {
 			var str = window.location.hash;
 			str = str.substr(1);
 			if(str) {
