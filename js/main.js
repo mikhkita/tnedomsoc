@@ -217,17 +217,7 @@ $(document).ready(function(){
     }else{
         var $grid = $('#doctors').isotope({
             itemSelector: '#doctors li',
-            hiddenStyle: {
-                opacity: 0
-            },
-              visibleStyle: {
-                opacity: 1
-            }
-        });
-        
-        var $grid = $('#doctors-detail').isotope({
-            itemSelector: '#doctors-detail li',
-            filter: "none",
+            filter: ( ($(".b-other-content #doctors").length)?"none":"*" ),
             hiddenStyle: {
                 opacity: 0
             },
