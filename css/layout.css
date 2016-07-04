@@ -424,6 +424,7 @@ b {
 	    right: -15px;
 	    top: 1px;
 	}*/
+
 .input {
 	border: none;
 	border-bottom: 1px solid #7f7f7f;
@@ -434,6 +435,7 @@ b {
 	font-family: 'Circe-Regular';
 	background: none;
 }
+
 .btn{
 	color: #fff;
 	text-transform: uppercase;
@@ -1684,6 +1686,7 @@ b {
 			margin-top: 11px;
 			margin-bottom: 	5px;
 		}
+
 		.b-other-content .b-block .work-detail > div {
 			width: 100%;
 			font-size: 0;
@@ -1718,6 +1721,52 @@ b {
 				.b-other-content .b-block .work-detail > div.after:after{
 					content: "ПОСЛЕ";
 				}
+			.b-other-content .b-block .work-detail > div div {
+				position: absolute;
+				visibility: hidden;
+				z-index: 101;
+				opacity: 0;
+				font-size: 0;
+				content: "";
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: rgba(52, 52, 52,0.5);	
+				-webkit-transition: all 200ms ease-out;
+				-moz-transition: all 200ms ease-out;
+				-ms-transition: all 200ms ease-out;
+				-o-transition: all 200ms ease-out;
+				transition: all 200ms ease-out;	  
+			}
+				.b-other-content .b-block .work-detail > div div:before {
+					position: absolute;
+					top: 50%;
+					margin-top: -15px;
+					left: 50%;
+					margin-left: -15px;
+					content: "\e90e";
+					font-size: 40px;
+					color: #fff;
+					font-family: 'icomoon' !important;
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					-webkit-transition: all 200ms ease-out;
+					-moz-transition: all 200ms ease-out;
+					-ms-transition: all 200ms ease-out;
+					-o-transition: all 200ms ease-out;
+					transition: all 200ms ease-out;
+				}
+					.b-other-content .b-block .work-detail > div:hover div {
+						visibility: visible;
+						opacity: 1;
+					}
 
 		.b-other-content .b-block .service-accord-cont {
 			margin-bottom: 10px;

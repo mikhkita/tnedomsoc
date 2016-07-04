@@ -393,12 +393,25 @@ $(document).ready(function(){
        
     }
 
+    var doctors = [];
+    $("#name-select option").each(function() {
+    	if($(this).val() != 'default') {
+	    	if(doctors[$(this).attr('data-prof')] == undefined) {
+	    		doctors[$(this).attr('data-prof')] = [];
+	    	} 
+	    	doctors[$(this).attr('data-prof')].push( $(this).val() );
+	    }
+    });
+
     $("#spec-select").change(function() {
-        $("#name-select").prop("disabled",false);
-        var prof_id = $("#spec-select").val();
+    	$("#name-select").remove();
+    	var $select = $("#name-clone").clone();
+    	$select.attr("id","name-select");
+    	$.each(doctors[$("#spec-select").val()], function( index, value ) {
+			$select.append("<option value='"+value+"'>"+value+"</option>");
+		});
+    	$("#spec-select").after($select);
         $("#name-select").val("default");
-        $("#name-select option").hide();
-        $("#name-select option[data-prof='"+prof_id+"']").show();
     });
     
     customHandlers["doctor_rec"] = function(el){
