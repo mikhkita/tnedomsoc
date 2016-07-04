@@ -141,15 +141,15 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div class="b-block">
 			<h2 class="title">РУБРИКИ</h2>
 			<ul class="articles-filter">
-				<li data-href="article.php" class="active">Все</li>
-				<li data-href="article.php">Имплантация</li>
-				<li data-href="article.php">Лечение в седации и под наркозом</li>
-				<li data-href="article.php">Общие вопросы</li>
-				<li data-href="article.php">Ортодонтия (исправление прикуса)</li>
-				<li data-href="article.php">Протезирование (ортопедия)</li>
-				<li data-href="article.php">Хирургия</li>
-				<li data-href="article.php">Профилактика, гигиена и отбеливание</li>
-				<li data-href="article.php">Кариес, пульпит, болезни десен</li>
+				<li data-hash="" data-href="article.php" class="active">Все</li>
+				<li data-hash="#implantation" data-href="article.php">Имплантация</li>
+				<li data-hash="#therapy" data-href="article.php">Лечение в седации и под наркозом</li>
+				<li data-hash="#questions" data-href="article.php">Общие вопросы</li>
+				<li data-hash="#orthodontics" data-href="article.php">Ортодонтия (исправление прикуса)</li>
+				<li data-hash="#orthopedics" data-href="article.php">Протезирование (ортопедия)</li>
+				<li data-hash="#surgery" data-href="article.php">Хирургия</li>
+				<li data-hash="#prevention" data-href="article.php">Профилактика, гигиена и отбеливание</li>
+				<li data-hash="#disease" data-href="article.php">Кариес, пульпит, болезни десен</li>
 			</ul>
 		</div>
 	</div>

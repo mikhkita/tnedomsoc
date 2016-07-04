@@ -207,7 +207,6 @@ $(document).ready(function(){
                 $(".doctor-filter li").removeClass("active");
                 $(this).addClass("active");
                 $("#doctors li").hide();
-
                 if( $(this).attr("data-filter") == "*" ){
                     $("#doctors li").show();
                 }else{
@@ -218,6 +217,7 @@ $(document).ready(function(){
     }else{
         var $grid = $('#doctors').isotope({
             itemSelector: '#doctors li',
+            filter: "none",
             hiddenStyle: {
                 opacity: 0
             },
@@ -226,12 +226,15 @@ $(document).ready(function(){
             }
         });
         // filter items on button click
-        $('ul.filter').on( 'click', 'li', function() {
+        $('ul.filter').on( 'click', 'li:not(.active)', function() {
+        	var str = $(this).attr("data-filter");
+            window.location.hash = "#"+str.substr(1);
             $('ul.filter li.active').removeClass("active");
             $(this).addClass("active");
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({ filter: filterValue });
         });
+
     }
     if( isMobile ){
         $(".about-slider").slick({
@@ -359,7 +362,8 @@ $(document).ready(function(){
         obj.addClass("active");
         $(".show-next").hide();
         $(".ul-ajax").css("visibility","hidden").css("opacity","0");
-        href = obj.attr("data-href");
+        var href = obj.attr("data-href");
+        var hash = obj.attr("data-hash");
         $.ajax({
             type: "GET",
             url: href,
@@ -367,6 +371,7 @@ $(document).ready(function(){
                 var dom = $(html);
                 $(".ul-ajax").html(dom.html());
                 $(".ul-ajax").css("visibility","visible").css("opacity","1");
+                window.location.hash = hash;
                 if( dom.attr("data-next") ) {
                     $(".show-next span").attr("data-href", dom.attr("data-next") );
                     $(".show-next, .show-next span").show();
@@ -421,6 +426,33 @@ $(document).ready(function(){
         $("#spec-select").change();
         $("#name-select").val(name);
     }
+
+    function changeDoctors() {
+    	if($('ul.filter').length) {
+			var str = window.location.hash;
+			str = str.substr(1);
+			if(str) {
+				str = "."+str;
+			} else str="*";
+			$('ul.filter li[data-filter="'+str+'"]').click();
+		}
+    }
+
+    function changeArticles() {
+        if($(".articles-filter").length) {
+            if(window.location.hash == "#") window.location.hash == "";
+            $(".articles-filter li[data-hash='"+window.location.hash+"']").click();
+        }
+    }
+
+    changeDoctors();
+    changeArticles();
+    if($(".articles-all").css('opacity') == 0) $(".articles-all").css("visibility","visible").css("opacity","1");
+
+    window.onpopstate = function(event) {
+		changeDoctors();
+		changeArticles();
+	};
 
     if( $("#map_canvas").length ){
         var myPlace = new google.maps.LatLng(56.501057, 85.001960);

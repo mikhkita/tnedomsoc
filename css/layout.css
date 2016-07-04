@@ -1937,6 +1937,8 @@ b {
 		}
 		.b-other-content .b-block .articles-all {
 			margin-bottom:	20px;
+			visibility: hidden;
+			opacity: 0;
 		}
 			.b-other-content .b-block .articles-all li {
 				width: 370px;

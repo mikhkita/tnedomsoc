@@ -37,6 +37,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<!-- <script type="text/javascript" src="js/history.js"></script> -->
 	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
@@ -140,7 +141,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div class="b-block">
 			<h2 class="title">Врачи</h2>
 			<ul class="filter doctor-filter clearfix">
-				<li class="active" data-filter="*">Все</li>
+				<li data-filter="*">Все</li>
 				<li data-filter=".gigienist">Гигиенист стоматологический</li>
 				<li data-filter=".ortodont">Ортодонт</li>
 				<li data-filter=".ortoped">Ортопед</li>
@@ -168,7 +169,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
@@ -179,7 +180,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
@@ -190,7 +191,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						пародонтолог
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
@@ -201,7 +202,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						пародонтолог
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
@@ -212,7 +213,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						пародонтолог
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
@@ -223,7 +224,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						пародонтолог
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
@@ -234,7 +235,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						пародонтолог
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>
@@ -245,7 +246,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						пародонтолог
 					</h4>
 				</li>
-				<li class="gigienist">
+				<li class="">
 					<a href="doctor_detail.php" class="doctor-cont" style="background-image: url('i/doctor-1.jpg');">
 						<span class="fancy" data-block="#b-popup-rec" data-name="1" data-spec="1" data-beforeShow="doctor_rec">Записаться на прием</span>
 					</a>

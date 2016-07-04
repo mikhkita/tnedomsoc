@@ -1,4 +1,4 @@
-<div class="b-popup full-review">
+<div class="b-popup full-review" data-next="0">
 	<div class="photo-cont clearfix">
 		<div style="background-image: url('i/review.jpg');" class="img left"></div>
 		<div class="text left">
