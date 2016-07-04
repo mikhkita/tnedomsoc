@@ -228,7 +228,6 @@ $(document).ready(function(){
         // filter items on button click
         $('ul.filter').on( 'click', 'li:not(.active)', function() {
         	var str = $(this).attr("data-filter");
-            window.location.hash = "#"+str.substr(1);
             $('ul.filter li.active').removeClass("active");
             $(this).addClass("active");
             var filterValue = $(this).attr('data-filter');
