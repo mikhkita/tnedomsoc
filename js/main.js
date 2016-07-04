@@ -224,7 +224,7 @@ $(document).ready(function(){
                 opacity: 1
             }
         });
-        
+
         var $grid = $('#doctors-detail').isotope({
             itemSelector: '#doctors-detail li',
             filter: "none",
@@ -416,30 +416,36 @@ $(document).ready(function(){
        
     }
 
-    var doctors = [];
+    var doctors = new Object();
     $("#name-select option").each(function() {
-    	if($(this).val() != 'default') {
-	    	if(doctors[$(this).attr('data-prof')] == undefined) {
-	    		doctors[$(this).attr('data-prof')] = [];
-	    	} 
-	    	doctors[$(this).attr('data-prof')].push( $(this).val() );
-	    }
+        if($(this).val() != 'default') {
+            if(doctors[$(this).attr('data-prof')] == undefined) {
+                doctors[$(this).attr('data-prof')] = [];
+            } 
+            doctors[$(this).attr('data-prof')].push( $(this).val() );
+        }
     });
 
     $("#spec-select").change(function() {
-    	$("#name-select").remove();
-    	var $select = $("#name-clone").clone();
-    	$select.attr("id","name-select");
-    	$.each(doctors[$("#spec-select").val()], function( index, value ) {
-			$select.append("<option value='"+value+"'>"+value+"</option>");
-		});
-    	$("#spec-select").after($select);
+        $("#name-select").remove();
+        var $select = $("#name-clone").clone();
+        $select.attr("id","name-select");
+        $.each(doctors[$("#spec-select").val()], function( index, value ) {
+            $select.append("<option value='"+value+"'>"+value+"</option>");
+        });
+        $("#spec-select").after($select);
         $("#name-select").val("default");
     });
     
     customHandlers["doctor_rec"] = function(el){
-        var name = $(el).attr("data-name");
 
+        var name = $(el).attr("data-name");
+        var spec;
+        $.each(doctors, function( index, value ) {
+            for (var i = 0; i < doctors[index].length; i++) {
+                if(name == doctors[index][i]) spec = index;
+            }
+        });
         $("#spec-select").val(spec);
         $("#spec-select").change();
         $("#name-select").val(name);
