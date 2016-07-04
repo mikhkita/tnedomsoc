@@ -1922,13 +1922,12 @@ b {
 			width: 112px;
 			height: 112px;
 		}
-
-
-
 			.b-other-content .b-block .price th {
 				font-size: 30px;
 			}
-
+	.b-other-content .b-block .work-detail > div div {
+		display: none;
+	}
 .doctors-slider {
 	margin-top: 45px;
 	width: 750px;
