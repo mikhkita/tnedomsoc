@@ -210,12 +210,6 @@ b {
 	.link:hover,.b-text a:hover {
 		text-decoration: underline;
 	}
-	.link:after {
-		position: absolute;
-		content: ">";
-		right: -28px;
-		top: 3px;
-	}
 .input {
 	border: none;
 	border-bottom: 1px solid #7f7f7f;
@@ -786,7 +780,7 @@ b {
 				font-family: "Circe-Light";
 				margin-bottom: 24px;
 			}
-			.b-what .b-block .text p:nth-child(n+2){
+			.b-what .b-block .text p:nth-child(n+4){
 				display: none;
 			}
 			
@@ -828,6 +822,7 @@ b {
 			text-align: left;
 			text-align: center;
 			min-height: 0px;
+			min-height: 920px;
 		}
 		.b-slider .b-block .slick-slide li{
 			font-size: 28px;
@@ -1005,6 +1000,7 @@ b {
 				width: 100%;
 				box-sizing: border-box;
 				padding: 40px 100px;
+				min-height: 324px;
 			}
 				.b-doctors .b-block .doctors li .desc-cont {
 					display: block;
@@ -1134,7 +1130,7 @@ b {
 		}
 			.articles-slider .slick-slide {
 				width: 327px;
-				height: 700px;
+				height: 720px;
 				margin: 0 11px;
 				text-align: left;
 				padding: 0px 80px;
@@ -1151,7 +1147,7 @@ b {
 			}
 			.articles-slider .slick-slide .text{
 				padding: 38px 30px 0 38px;
-				height: 400px;
+				height: 415px;
 				position: relative;
 				background-color: #FFF;
 			}
@@ -1245,6 +1241,7 @@ b {
 .b-navigation {
 	background: #FFF;
 	margin-bottom: -30px;
+	z-index: 100;
 }
 	.b-navigation ul {padding: 55px 0 0px;}
 		.b-navigation li {
@@ -1377,6 +1374,7 @@ b {
 		.b-other-content .b-block .work-detail{
 			height: 614px;
 			margin-bottom: 40px;
+			margin-top: 0px;
 			width: 	100%;
 		}
 				.b-other-content .b-block .work-detail > div:after,
@@ -1519,14 +1517,14 @@ b {
 					background-position: 50%;
 				}
 				.b-other-content .b-block .articles-all li .text{
-					padding: 34px 20px 0 35px;
+					padding: 36px 34px 10px 34px;
 					height: auto;
 					position: relative;
 				}
 					.b-other-content .b-block .articles-all li .text h3 {
 						font-size: 32px;
 						font-family: "Circe-Bold";
-						margin-bottom: 11px;
+						margin-bottom: 15px;
 					}
 					.b-other-content .b-block .articles-all li .text p {
 						font-family: "Circe-Light";
@@ -1537,10 +1535,10 @@ b {
 						}
 					.b-other-content .b-block .articles-all li .text a {
 						position: relative;
-					    bottom: 0;
-					    display: inline-block;
-					    margin-top: 20px;
-					    margin-bottom: 20px;
+						bottom: 0;
+						display: inline-block;
+						margin-top: 20px;
+						margin-bottom: 20px;
 					}
 		.b-other-content .b-block .show-next {
   			text-align: center;	
@@ -1646,11 +1644,12 @@ b {
 			.b-other-content .b-block .doctor-detail img {
 				position: relative;
 				bottom: 0;
-				margin-top: 60px;
+				margin-top: 5px;
 				left: -35px;
 				max-width: 750px;
 				max-height: 100%;
 				display: none;
+				margin-left: 0px;
 			}
 			.b-other-content .b-block .doctor-detail img.b-mobile-image{
 				display: block;
@@ -1668,7 +1667,7 @@ b {
 					margin-top: 25px;
 				}
 				.b-other-content .b-block .doctor-detail .text button {
-					margin-top: 30px;
+					margin-top: 35px;
 				}
 				.b-other-content .b-block .doctor-detail .text .b-text {
 					margin-top: 45px;
@@ -1835,6 +1834,7 @@ b {
 .b-other-content .b-block .about-img {
 	width: 100%;
 	margin-bottom: 40px;
+	margin-top: 30px;
 }
 	.b-other-content .b-block .about-img h3 {
 		font-size: 40px;
@@ -1876,6 +1876,10 @@ b {
 	width: 100%;
 	height: 352px;
 }  
+.b-other-content .b-block .works li .img {
+    width: 100%;
+    height: 500px;
+}
 	.b-other-content .b-block .actions li .text {
 		width: 100%;
 		background-color: #f8f8f8;
@@ -2018,7 +2022,6 @@ b {
 	.articles-footer-slider .slick-slide {
 		margin-right: 0px 11px;
 		width: 750px;
-
 	}
 
 .b-about-cosm {
@@ -2899,9 +2902,73 @@ b {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f8fa', endColorstr='#FFF',GradientType=0 );
   /* IE6-9 */
 }
+.service-text .b-text .with-arrow:after {
+    top: 14px;
+}
 
+.with-arrow:after, .link:after {
+    right: -40px;
+    top: 17px;
+}
+.b-navigation li a:after, .with-arrow:after, .link:after {
+    font-size: 10px;
+}
+.b-other-content .b-block .price {
+			width: 100%;
+			margin-bottom: 40px;
+			margin-top: 20px;
+		}
+			.b-other-content .b-block .price th {
+				font-size: 32px;
+				padding: 15px 0px 15px;
+				/*border-bottom: 2px solid #ebebeb;*/
+				font-family: "Circe-Bold";
+				text-transform: uppercase;
+				font-weight: 300;
+			}
 
-
+			.b-other-content .b-block .price td {
+				padding: 18px 0px 15px;
+				border-bottom: 1px solid #ebebeb;
+				font-family: "Circe-Regular";
+			}
+				.b-other-content .b-block .price td:nth-child(2n+1) {
+					padding-left: 18px;
+					font-family: "Circe-Light";
+				}
+				.b-other-content .b-block .price tr.section td {
+					font-family: "Circe-Regular";
+					padding: 18px 0px 15px;
+					padding-left: 18px;
+					background-color: #dfc480;
+					color: #FFF;
+					text-transform: uppercase;
+				}
+					.b-other-content .b-block .price tr.section td a {
+						color: #fff;
+						text-transform: uppercase;
+					}
+				.b-other-content .b-block .price th:nth-child(2),
+				.b-other-content .b-block .price td:nth-child(2) {
+					text-align: right;
+				}
+				.b-other-content .b-block .price td:nth-child(2){
+					padding-right: 15px;
+				}
+				.b-other-content .b-block .price th a,
+				.b-other-content .b-block .price td a {
+					/*display: block;*/
+				}
+					.b-other-content .b-block .price th a:hover,
+					.b-other-content .b-block .price td a:hover {
+						text-decoration: underline;
+					}
+.b-mobile-only{
+	display: block !important;
+}
+.b-not-mobile{
+	display: none !important;
+}
 
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {

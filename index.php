@@ -46,6 +46,12 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
+	<meta property="og:url" content="">
+    <meta property="og:title" content="Стоматология и косметология COSMODENT в Томске">
+    <meta property="og:description" content="Авторская клиника эстетической стоматологии и косметологии">
+    <meta property="og:image" content="i/logo-cosmodent.png">
+    <meta property="twitter:image" content="i/logo-cosmodent.png">
+    <link rel="image_src" href="i/logo-cosmodent.png">
 </head>
 <body>
 	<!-- <ul class="ps-lines">
@@ -71,7 +77,14 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div class="b-header b-block clearfix">
 			<a href="index.php" class="logo left"></a>
 			<ul class="left clearfix">
-				<li><a href="services.php">Услуги</a></li>
+				<li>
+					<a href="services.php">Услуги</a>
+					<ul>
+						<li><a href="#">Стоматология</a></li>
+						<li><a href="#">Косметология & SPA</a></li>
+						<li><a href="#">Пластическая хирургия</a></li>
+					</ul>
+				</li>
 				<li><a href="doctors.php">Врачи</a></li>
 				<li><a href="actions.php">Акции</a></li>
 				<li><a href="reviews.php">Отзывы</a></li>
@@ -96,7 +109,14 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 			<div class="b-header clearfix">
 				<a href="index.php" class="logo left"><img src="i/logo.png"></a>
 				<ul class="left clearfix">
-					<li><a href="services.php">Услуги</a></li>
+					<li>
+						<a href="services.php">Услуги</a>
+						<ul>
+							<li><a href="#">Стоматология</a></li>
+							<li><a href="#">Косметология & SPA</a></li>
+							<li><a href="#">Пластическая хирургия</a></li>
+						</ul>
+					</li>
 					<li><a href="doctors.php">Врачи</a></li>
 					<li><a href="actions.php">Акции</a></li>
 					<li><a href="reviews.php">Отзывы</a></li>

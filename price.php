@@ -162,24 +162,28 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 					<tr class="section">	
 						<td colspan="2"><a href="#">ТЕРАПЕВТИЧЕСКАЯ СТОМАТОЛОГИЯ</a></td>
 					</tr>
-					<tr>
+					<tr class="subsection">
 						<td>Лечение кариеса</td>
-						<td>1 290</td>
+						<td></td>
 					</tr>
-					<tr>
+					<tr class="subelement">
 						<td><a href="#">Лечение зубов без бормашины</a></td>
 						<td>1 290</td>
 					</tr>
-					<tr>
+					<tr class="subelement">
 						<td>Лечение кариеса методом ICON</td>
 						<td>1 290</td>
 					</tr>
-					<tr>
+					<tr class="subelement">
 						<td>Лечение пульпита</td>
 						<td>1 290</td>
 					</tr>
-					<tr>
+					<tr class="subelement">
 						<td>Лечение корневых каналов зaубов (эндодонтия)</td>
+						<td>1 290</td>
+					</tr>
+					<tr class="subsection end">
+						<td>Итого:</td>
 						<td>1 290</td>
 					</tr>
 				</tbody>

@@ -1,3 +1,8 @@
+function authCallback(result){
+    if( result )
+        fancyOpen( $("#b-popup-review") );
+}
+
 $(document).ready(function(){	
     var myWidth,myHeight,
         isMobile = device.mobile(),
