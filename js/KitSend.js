@@ -9,7 +9,7 @@ function getNextField($form){
 function fancyOpen(el){
     $.fancybox(el,{
     	padding:0,
-    	fitToView: false,
+    	// fitToView: false,
         scrolling: 'no',
         tpl: {
 			closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
@@ -26,6 +26,7 @@ function fancyOpen(el){
                 });
                 $('.fancybox-inner').css('height','auto');
             },200);
+            el.find("input[type='text'],input[type='number'],textarea").eq(0).focus();
 		},
 		beforeClose: function(){
 			$(".fancybox-wrap").removeClass("afterShow");
@@ -90,6 +91,8 @@ $(document).ready(function(){
 					var name = getNextField($popup.find("form"));
 					$popup.find("form").append("<input type='hidden' class='custom-field' name='"+name+"' value='"+$this.attr("data-value")+"'/><input type='hidden' class='custom-field' name='"+name+"-name' value='"+$this.attr("data-name")+"'/>");
 				}
+				$popup.find("label.error").remove();
+				$popup.find(".error").removeClass("error");
 				if( $this.attr("data-beforeShow") && customHandlers[$this.attr("data-beforeShow")] ){
 					customHandlers[$this.attr("data-beforeShow")]($this);
 				}
@@ -190,6 +193,8 @@ $(document).ready(function(){
   			var $this = $(this),
   				$thanks = $($this.attr("data-block"));
 
+  			$this.find(".ajax").attr("onclick", "return false;");
+
   			if( $this.attr("data-beforeAjax") && customHandlers[$this.attr("data-beforeAjax")] ){
 				customHandlers[$this.attr("data-beforeAjax")]($this);
 			}
@@ -212,8 +217,17 @@ $(document).ready(function(){
 
 					$this.find("input[type=text],textarea").val("");
 					fancyOpen($form);
+				},
+				error: function(){
+					fancyOpen($("#b-popup-error"));	
+					$this.find("input[type=text],textarea").val("");
+				},
+				complete: function(){
+					$this.find(".ajax").removeAttr("onclick");
 				}
 			});
+  		}else{
+  			$(this).find("input.error,select.error,textarea.error").eq(0).focus();
   		}
   		return false;
   	});

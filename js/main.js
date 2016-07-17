@@ -1,6 +1,12 @@
 function authCallback(result){
-    if( result )
+    if( result && result != "false" ){
         fancyOpen( $("#b-popup-review") );
+        $(".b-user-data .b-name").html(result);
+        $(".b-review-auth-butt").hide();
+        $(".b-review-write-butt").show();
+    }else{
+        fancyOpen( $("#b-popup-trouble") );
+    }
 }
 
 $(document).ready(function(){	
@@ -96,6 +102,26 @@ $(document).ready(function(){
     resize();
 
     var prevScroll = 0;
+
+    $("body").on("click", ".b-review-logout", function(){
+        $.fancybox.close();
+
+        $.ajax({
+            type: "GET",
+            url: $(this).attr("href"),
+            success: function(msg){
+                fancyOpen( $("#b-popup-auth") );
+                $(".b-review-auth-butt").show();
+                $(".b-review-write-butt").hide();
+                $(".b-for-auth").html(msg);
+            },
+            error: function(){
+                fancyOpen($("#b-popup-trouble"));
+            }
+        });
+
+        return false;
+    });
 
     $(window).scroll(function(){
         var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop,
