@@ -391,6 +391,7 @@ $(document).ready(function(){
                     obj.attr("data-href", dom.attr("data-next"));
                     obj.show();
                 } else $(".show-next").hide();
+                bindFancy();
             }
         });
     });

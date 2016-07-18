@@ -7,7 +7,6 @@ function getNextField($form){
 }
 
 function fancyOpen(el){
-	isMobile = device.mobile();
     $.fancybox(el,{
     	padding:0,
     	fitToView: false,
@@ -21,14 +20,14 @@ function fancyOpen(el){
 		afterShow: function(){
 			$(".fancybox-wrap").removeClass("beforeShow");
 			$(".fancybox-wrap").addClass("afterShow");
-			if(!isMobile) {
+			if( !device.mobile() ){
 				setTimeout(function(){
 	                $('.fancybox-wrap').css({
 	                    'position':'absolute'
 	                });
 	                $('.fancybox-inner').css('height','auto');
 	            },200);
-	        }
+			}
             el.find("input[type='text'],input[type='number'],textarea").eq(0).focus();
 		},
 		beforeClose: function(){
@@ -40,11 +39,63 @@ function fancyOpen(el){
 			$(".fancybox-wrap").addClass("afterClose");
 		}
     }); 
-    if(!isMobile) {
+    if( !device.mobile() ){
     	$('html').addClass('fancybox-lock'); 
     	$('.fancybox-overlay').html($('.fancybox-wrap')); 
-   	}
+    }
     return false;
+}
+
+function bindFancy(){
+	$(".fancy").each(function(){
+		var $popup = $($(this).attr("data-block")),
+			$this = $(this);
+		$this.fancybox({
+			padding : 0,
+			content : $popup,
+			fitToView: false,
+			scrolling: 'no',
+			tpl: {
+				closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
+			},
+			beforeShow: function(){
+				$(".fancybox-wrap").addClass("beforeShow");
+				$popup.find(".custom-field").remove();
+				if( $this.attr("data-value") ){
+					var name = getNextField($popup.find("form"));
+					$popup.find("form").append("<input type='hidden' class='custom-field' name='"+name+"' value='"+$this.attr("data-value")+"'/><input type='hidden' class='custom-field' name='"+name+"-name' value='"+$this.attr("data-name")+"'/>");
+				}
+				$popup.find("label.error").remove();
+				$popup.find(".error").removeClass("error");
+				if( $this.attr("data-beforeShow") && customHandlers[$this.attr("data-beforeShow")] ){
+					customHandlers[$this.attr("data-beforeShow")]($this);
+				}
+			},
+			afterShow: function(){
+				$(".fancybox-wrap").removeClass("beforeShow");
+				$(".fancybox-wrap").addClass("afterShow");
+				if( $this.attr("data-afterShow") && customHandlers[$this.attr("data-afterShow")] ){
+					customHandlers[$this.attr("data-afterShow")]($this);
+				}
+				$popup.find("input[type='text'],input[type='tel'],input[type='email'],input[type='number'],textarea").eq(0).focus();
+			},
+			beforeClose: function(){
+				$(".fancybox-wrap").removeClass("afterShow");
+				$(".fancybox-wrap").addClass("beforeClose");
+				if( $this.attr("data-beforeClose") && customHandlers[$this.attr("data-beforeClose")] ){
+					customHandlers[$this.attr("data-beforeClose")]($this);
+				}
+			},
+			afterClose: function(){
+				$(".fancybox-wrap").removeClass("beforeClose");
+				$(".fancybox-wrap").addClass("afterClose");
+				if( $this.attr("data-afterClose") && customHandlers[$this.attr("data-afterClose")] ){
+					customHandlers[$this.attr("data-afterClose")]($this);
+				}
+			}
+		});
+		$this.removeClass("fancy");
+	});
 }
 
 var customHandlers = [];
@@ -78,54 +129,7 @@ $(document).ready(function(){
 	$(window).scroll(whenScroll);
 	whenScroll();
 
-	$(".fancy").each(function(){
-		var $popup = $($(this).attr("data-block")),
-			$this = $(this);
-		$this.fancybox({
-			padding : 0,
-			content : $popup,
-			fitToView: false,
-			scrolling: 'no',
-			tpl: {
-				closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
-			},
-			beforeShow: function(){
-				$(".fancybox-wrap").addClass("beforeShow");
-				$popup.find(".custom-field").remove();
-				if( $this.attr("data-value") ){
-					var name = getNextField($popup.find("form"));
-					$popup.find("form").append("<input type='hidden' class='custom-field' name='"+name+"' value='"+$this.attr("data-value")+"'/><input type='hidden' class='custom-field' name='"+name+"-name' value='"+$this.attr("data-name")+"'/>");
-				}
-				$popup.find("label.error").remove();
-				$popup.find(".error").removeClass("error");
-				if( $this.attr("data-beforeShow") && customHandlers[$this.attr("data-beforeShow")] ){
-					customHandlers[$this.attr("data-beforeShow")]($this);
-				}
-			},
-			afterShow: function(){
-				$(".fancybox-wrap").removeClass("beforeShow");
-				$(".fancybox-wrap").addClass("afterShow");
-				if( $this.attr("data-afterShow") && customHandlers[$this.attr("data-afterShow")] ){
-					customHandlers[$this.attr("data-afterShow")]($this);
-				}
-				$popup.find("input[type='text'],input[type='number'],textarea").eq(0).focus();
-			},
-			beforeClose: function(){
-				$(".fancybox-wrap").removeClass("afterShow");
-				$(".fancybox-wrap").addClass("beforeClose");
-				if( $this.attr("data-beforeClose") && customHandlers[$this.attr("data-beforeClose")] ){
-					customHandlers[$this.attr("data-beforeClose")]($this);
-				}
-			},
-			afterClose: function(){
-				$(".fancybox-wrap").removeClass("beforeClose");
-				$(".fancybox-wrap").addClass("afterClose");
-				if( $this.attr("data-afterClose") && customHandlers[$this.attr("data-afterClose")] ){
-					customHandlers[$this.attr("data-afterClose")]($this);
-				}
-			}
-		});
-	});
+	bindFancy();
 
 	$(".b-go").click(function(){
 		var block = $( $(this).attr("data-block") ),
@@ -220,12 +224,12 @@ $(document).ready(function(){
 						customHandlers[$this.attr("data-afterAjax")]($this);
 					}
 
-					$this.find("input[type=text],textarea").val("");
+					$this.find("input[type=text],input[type='tel'],input[type='email'],textarea").val("");
 					fancyOpen($form);
 				},
 				error: function(){
 					fancyOpen($("#b-popup-error"));	
-					$this.find("input[type=text],textarea").val("");
+					$this.find("input[type=text],input[type='tel'],input[type='email'],textarea").val("");
 				},
 				complete: function(){
 					$this.find(".ajax").removeAttr("onclick");
