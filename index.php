@@ -284,7 +284,160 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 						</h4>
 					</a>
 				</li>
-				<li >
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<div class="icon-spa"></div>
+						<h3>SPA</h3>
+						<h4>
+							
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="gigiena"></div>
+						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<h4>
+							Удаление зубного камня<br>
+							Чистка зубов Air Flow<br>
+							Фторирование и&nbsp;ремотерапия 
+						</h4>
+					</a>
+				</li>
+				<li>
 					<a href="#">
 						<div class="gigiena"></div>
 						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
@@ -591,12 +744,12 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div id="b-popup-rec">
 			<div class="b-popup">
 				<h3>записаться на&nbsp;прием</h3>
-				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+				<form action="kitsend.php" method="POST" data-block="#b-popup-2">
 					<div class="clearfix">
 						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
-						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
+						<input class="input right input-half" type="tel" name="phone" required placeholder="Ваш телефон"/>
 					</div>
-					<input class="input" type="text" name="email" required placeholder="E-mail"/>
+					<input class="input" type="email" name="email" required placeholder="E-mail"/>
 					<select class="input" name="spec" id="spec-select">
 						<option selected disabled>Выберите специалиста</option>
 						<option value="Гигиенист стоматологический">Гигиенист стоматологический</option>
@@ -622,12 +775,12 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 		<div id="b-popup-review">
 			<div class="b-popup">
 				<h3>Оставить отзыв</h3>
-				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2">
+				<form action="kitsend.php" method="POST" data-block="#b-popup-2">
 					<div class="clearfix">
 						<input class="input left input-half" type="text" name="name" required placeholder="Вас зовут" />
-						<input class="input right input-half" type="text" name="phone" required placeholder="Ваш телефон"/>
+						<input class="input right input-half" type="tel" name="phone" required placeholder="Ваш телефон"/>
 					</div>
-					<input class="input" type="text" name="email" required placeholder="E-mail"/>
+					<input class="input" type="email" name="email" required placeholder="E-mail"/>
 					<textarea class="input" name="1" placeholder="Текст отзыва"></textarea>
 					<input type="hidden" name="subject" value="Отзыв"/>
 					<button class="ajax btn btn-brown">Отправить</button>

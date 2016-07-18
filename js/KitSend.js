@@ -7,9 +7,10 @@ function getNextField($form){
 }
 
 function fancyOpen(el){
+	isMobile = device.mobile();
     $.fancybox(el,{
     	padding:0,
-    	// fitToView: false,
+    	fitToView: false,
         scrolling: 'no',
         tpl: {
 			closeBtn : '<a title="Закрыть" class="popup-close icon-close" href="javascript:;"></a>'
@@ -20,12 +21,14 @@ function fancyOpen(el){
 		afterShow: function(){
 			$(".fancybox-wrap").removeClass("beforeShow");
 			$(".fancybox-wrap").addClass("afterShow");
-			setTimeout(function(){
-                $('.fancybox-wrap').css({
-                    'position':'absolute'
-                });
-                $('.fancybox-inner').css('height','auto');
-            },200);
+			if(!isMobile) {
+				setTimeout(function(){
+	                $('.fancybox-wrap').css({
+	                    'position':'absolute'
+	                });
+	                $('.fancybox-inner').css('height','auto');
+	            },200);
+	        }
             el.find("input[type='text'],input[type='number'],textarea").eq(0).focus();
 		},
 		beforeClose: function(){
@@ -37,8 +40,10 @@ function fancyOpen(el){
 			$(".fancybox-wrap").addClass("afterClose");
 		}
     }); 
-    $('html').addClass('fancybox-lock'); 
-    $('.fancybox-overlay').html($('.fancybox-wrap')); 
+    if(!isMobile) {
+    	$('html').addClass('fancybox-lock'); 
+    	$('.fancybox-overlay').html($('.fancybox-wrap')); 
+   	}
     return false;
 }
 

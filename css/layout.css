@@ -146,6 +146,36 @@
 .icon-zoom:before {
     content: "\e90e";
 }
+.icon-spa:before {
+    content: "\e90f";
+}
+.icon-lips:before {
+    content: "\e910";
+}
+.icon-lifting:before {
+    content: "\e911";
+}
+.icon-wrinkles:before {
+    content: "\e912";
+}
+.icon-young:before {
+    content: "\e913";
+}
+.icon-spots:before {
+    content: "\e914";
+}
+.icon-acne:before {
+    content: "\e915";
+}
+.icon-cleaning:before {
+    content: "\e916";
+}
+.icon-plasty:before {
+    content: "\e917";
+}
+.icon-ears:before {
+    content: "\e918";
+}
 
 html,
 body {
@@ -1298,6 +1328,7 @@ b {
 					.b-services .b-block li div:before {
 						position: absolute;
 						bottom: 0;
+						font-size: 89px;
 					}
 				.b-services .b-block h3 {
 					font-size: 20px;
@@ -1314,26 +1345,8 @@ b {
 					font-family: "Circe-Light";
 					color: #9b9b9b;
 				}
-					.b-services .b-block .diag:before{
-						font-size: 89px;
-					}
-					.b-services .b-block .terapevt:before{
-						font-size: 89px;
-					}
 					.b-services .b-block .estet:before{
 						font-size: 108px;
-					}
-					.b-services .b-block .implant:before{
-						font-size: 87px;
-					}
-					.b-services .b-block .ortopedia:before{
-						font-size: 89px;
-					}
-					.b-services .b-block .ortodontia:before{
-						font-size: 88px;
-					}
-					.b-services .b-block .hiryrg:before{
-						font-size: 88px;
 					}
 					.b-services .b-block .gigiena:before{
 						font-size: 94px;
