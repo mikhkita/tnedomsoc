@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5,h6{
 label.error{
 	display: none !important;
 }
-input.error,textarea.error{
+input.error,textarea.error,select.error {
 	border-bottom: 1px solid #F00 !important;
 	/*box-shadow: 0 0px 0px 1px #F00;*/
 }
