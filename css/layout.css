@@ -1172,11 +1172,12 @@ b {
 			background-position: 50% 100%;
 			background-size: contain;
 			background-repeat: no-repeat;
-			background-image: url("../i/what-man.jpg");
+			background-image: url("../i/gurgen.jpg");
 			position: absolute;
+			background-size: 390px;
 			bottom: 0;
 			width: 390px;
-			height: 623px;
+			height: 630px;
 		}
 		.b-what .b-block .text {
 			padding: 140px 0;
@@ -2659,7 +2660,7 @@ b {
 				display: inline-block;
 				height: 368px;
 				border-radius: 50%;
-				background-image: url("../i/about-man.jpg");
+				background-image: url("../i/gurgen-about.jpg");
 				background-position: 50%;
 			}
 				.b-other-content .b-block .about-img h3 {
