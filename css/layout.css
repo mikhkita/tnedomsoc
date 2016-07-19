@@ -183,7 +183,7 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1160px;
+	min-width: 1200px;
 	text-align: center;
 	font-family: 'Circe-Regular';
 	line-height: 1.5;
@@ -389,8 +389,8 @@ b {
 		padding-top: 5px;
 	}
 	.b-text img{
-		width: 100%;
-		margin-bottom: 24px;
+		max-width: 100%;
+		margin-bottom: 0px;
 	}
 	.b-text h4 {
 		font-family: "Circe-Bold";
@@ -1300,6 +1300,9 @@ b {
 		.b-services .b-block ul {
 			margin-top: 100px;
 		}
+		.b-kosmetologiya-spa.b-services .b-block ul{
+			margin-top: 60px;
+		}
 			.b-services .b-block li {
 				float: left;
 				width: 25%;
@@ -1356,6 +1359,50 @@ b {
 					}
 					.b-services .b-block .gigiena:before{
 						font-size: 94px;
+					}
+					.b-services .b-block .icon-spa:before {
+						font-size: 105px;
+					}
+					.b-services .b-block .icon-lips:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
+					}
+					.b-services .b-block .icon-lifting:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -19px;
+					}
+					.b-services .b-block .icon-wrinkles:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -18px;
+					}
+					.b-services .b-block .icon-young:before {
+						font-size: 120px;
+						margin-left: -8px;
+						margin-bottom: -11px;
+					}
+					.b-services .b-block .icon-spots:before {
+						font-size: 160px;
+						margin-left: -22px;
+						margin-bottom: -28px;
+					}
+					.b-services .b-block .icon-acne:before {
+						font-size: 137px;
+						margin-left: -20px;
+						margin-bottom: -15px;
+					}
+					.b-services .b-block .icon-cleaning:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
+					}
+					.b-services .b-block .icon-plasty:before {
+						
+					}
+					.b-services .b-block .icon-ears:before {
+						
 					}
 				.b-services .b-block li a:hover {
 					background-color: #f8f8f8;
@@ -2869,20 +2916,35 @@ b {
 				}
 .b-footer {
 	background-color: #333332;
-	padding-top: 70px;
+	padding-top: 50px;
 }
 	.b-footer .b-block {
 		color: #999999;
 	}
 		.b-footer .b-block .top {
-			padding-bottom: 56px;
+			padding-bottom: 40px;
 			border-bottom: 1px solid #999999;
 			font-family: "Circe-Light";
 		}
 			.b-footer .b-block .top ul {
-				width: 25%;
+				width: 18%;
 				text-align: left;
-				float: left;
+				float: right;
+			}
+			.b-footer .b-block .top ul:nth-child(1){
+				width: 17%;
+			}
+			.b-footer .b-block .top ul:nth-child(2){
+				width: 25%;
+			}
+			.b-footer .b-block .top ul:nth-child(3){
+				width: 27%;
+			}
+			.b-footer .b-block .top ul:nth-child(4){
+				width: 8%;
+			}
+			.b-footer .b-block .top ul:nth-child(5){
+				float: right;
 			}
 				.b-footer .b-block .top ul li {
 					margin-bottom: 12px;
