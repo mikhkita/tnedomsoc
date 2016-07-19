@@ -176,7 +176,18 @@
 .icon-ears:before {
     content: "\e918";
 }
-
+.icon-eyes:before {
+    content: "\e919";
+}
+.icon-chest:before {
+    content: "\e91a";
+}
+.icon-stomach:before {
+    content: "\e91b";
+}
+.icon-nose:before {
+    content: "\e91c";
+}
 
 html,
 body {
@@ -728,7 +739,7 @@ b {
 	.b-popup select {
 		-webkit-appearance: none;
 		cursor: pointer;
-		background-image: url("../i/select-arrow.jpg");
+		background-image: url("../i/select-arrow.png");
 		background-size: 14px 8px;
 		background-position: 410px 21px;
 		background-repeat: no-repeat;
@@ -744,7 +755,7 @@ b {
 		border: 1px solid #7f7f7f;
 	}
 	.b-popup #datepicker {
-		background-image: url("../i/date.jpg");
+		background-image: url("../i/date.png");
 		background-size: 16px 16px;
 		padding-right: 35px;
 		background-position: 406px 13px;
@@ -1400,10 +1411,34 @@ b {
 						margin-bottom: -20px;
 					}
 					.b-services .b-block .icon-plasty:before {
-						
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
 					}
 					.b-services .b-block .icon-ears:before {
-						
+						font-size: 145px;
+						margin-left: -20px;
+						margin-bottom: -25px;
+					}
+					.b-services .b-block .icon-eyes:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
+					}
+					.b-services .b-block .icon-chest:before {
+						font-size: 127px;
+						margin-left: -13px;
+						margin-bottom: -13px;
+					}
+					.b-services .b-block .icon-stomach:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
+					}
+					.b-services .b-block .icon-nose:before {
+						font-size: 147px;
+						margin-left: -20px;
+						margin-bottom: -20px;
 					}
 				.b-services .b-block li a:hover {
 					background-color: #f8f8f8;
@@ -3089,6 +3124,12 @@ b {
 	}
 	.b-header-fixed .b-header .logo {
 		background-image: url("../i/logo-fixed@2x.png");
+	}
+	.b-popup select {
+		background-image: url("../i/select-arrow@2x.png");
+	}
+	.b-popup #datepicker {
+		background-image: url("../i/date@2x.png");
 	}
 }	
 @media screen and (min-width: 1900px){
