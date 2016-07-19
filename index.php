@@ -307,100 +307,82 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-lips"></div>
+						<h3>ГУБЫ</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-lifting"></div>
+						<h3>ЛИФТИНГ</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-wrinkles"></div>
+						<h3>МОРЩИНЫ</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-young"></div>
+						<h3>омоложение</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							 
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-spots"></div>
+						<h3>ПЯТНА</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-acne"></div>
+						<h3>УГРИ</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							 
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-cleaning"></div>
+						<h3>ЧИСТКА ЛИЦА</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-plasty"></div>
+						<h3>ПЛАСТИКА ЛИЦА</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-ears"></div>
+						<h3>УШИ</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
