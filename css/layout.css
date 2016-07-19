@@ -176,7 +176,18 @@
 .icon-ears:before {
     content: "\e918";
 }
-
+.icon-eyes:before {
+    content: "\e919";
+}
+.icon-chest:before {
+    content: "\e91a";
+}
+.icon-stomach:before {
+    content: "\e91b";
+}
+.icon-nose:before {
+    content: "\e91c";
+}
 
 html,
 body {
@@ -1399,10 +1410,34 @@ b {
 						margin-bottom: -20px;
 					}
 					.b-services .b-block .icon-plasty:before {
-						
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
 					}
 					.b-services .b-block .icon-ears:before {
-						
+						font-size: 145px;
+						margin-left: -20px;
+						margin-bottom: -25px;
+					}
+					.b-services .b-block .icon-eyes:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
+					}
+					.b-services .b-block .icon-chest:before {
+						font-size: 127px;
+						margin-left: -13px;
+						margin-bottom: -13px;
+					}
+					.b-services .b-block .icon-stomach:before {
+						font-size: 140px;
+						margin-left: -20px;
+						margin-bottom: -20px;
+					}
+					.b-services .b-block .icon-nose:before {
+						font-size: 147px;
+						margin-left: -20px;
+						margin-bottom: -20px;
 					}
 				.b-services .b-block li a:hover {
 					background-color: #f8f8f8;

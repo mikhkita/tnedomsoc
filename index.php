@@ -388,45 +388,37 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-eyes"></div>
+						<h3>Глаза</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-chest"></div>
+						<h3>Грудь</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							 
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-stomach"></div>
+						<h3>Живот</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							 
 						</h4>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<div class="gigiena"></div>
-						<h3>ПРОФГИГИЕНА И ОТБЕЛИВАНИЕ</h3>
+						<div class="icon-nose"></div>
+						<h3>Нос</h3>
 						<h4>
-							Удаление зубного камня<br>
-							Чистка зубов Air Flow<br>
-							Фторирование и&nbsp;ремотерапия 
+							
 						</h4>
 					</a>
 				</li>
