@@ -1,3 +1,6 @@
+var rePhone = /^\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
+	tePhone = '+7 (999) 999-99-99';
+
 function getNextField($form){
 	var j = 1;
 	while( $form.find("input[name="+j+"]").length ){
@@ -7,7 +10,7 @@ function getNextField($form){
 }
 
 function fancyOpen(el){
-    $.fancybox(el,{
+    $.fancybox(el ,{
     	padding:0,
     	fitToView: false,
         scrolling: 'no',
@@ -16,6 +19,10 @@ function fancyOpen(el){
 		},
         beforeShow: function(){
 			$(".fancybox-wrap").addClass("beforeShow");
+			if( !device.mobile() ){
+		    	$('html').addClass('fancybox-lock'); 
+		    	$('.fancybox-overlay').html($('.fancybox-wrap')); 
+		    }
 		},
 		afterShow: function(){
 			$(".fancybox-wrap").removeClass("beforeShow");
@@ -28,7 +35,7 @@ function fancyOpen(el){
 	                $('.fancybox-inner').css('height','auto');
 	            },200);
 			}
-            el.find("input[type='text'],input[type='number'],textarea").eq(0).focus();
+            el.find("input[type='text'],input[type='tel'],input[type='email'],input[type='number'],textarea").eq(0).focus();
 		},
 		beforeClose: function(){
 			$(".fancybox-wrap").removeClass("afterShow");
@@ -37,12 +44,10 @@ function fancyOpen(el){
 		afterClose: function(){
 			$(".fancybox-wrap").removeClass("beforeClose");
 			$(".fancybox-wrap").addClass("afterClose");
+
+			$(".b-popup-container").append(el);
 		}
     }); 
-    if( !device.mobile() ){
-    	$('html').addClass('fancybox-lock'); 
-    	$('.fancybox-overlay').html($('.fancybox-wrap')); 
-    }
     return false;
 }
 
@@ -98,16 +103,7 @@ function bindFancy(){
 	});
 }
 
-var customHandlers = [];
-
-$(document).ready(function(){	
-	var rePhone = /^\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
-		tePhone = '+7 (999) 999-99-99';
-
-	$.validator.addMethod('customPhone', function (value) {
-		return rePhone.test(value);
-	});
-
+function bindAjax(){
 	$(".ajax").parents("form").each(function(){
 		$(this).validate({
 			rules: {
@@ -120,6 +116,59 @@ $(document).ready(function(){
 		}
 	});
 
+	$(".ajax").parents("form").submit(function(){
+  		if( $(this).find("input.error,select.error,textarea.error").length == 0 ){
+  			var $this = $(this),
+  				$thanks = $($this.attr("data-block"));
+
+  			$this.find(".ajax").attr("onclick", "return false;");
+
+  			if( $this.attr("data-beforeAjax") && customHandlers[$this.attr("data-beforeAjax")] ){
+				customHandlers[$this.attr("data-beforeAjax")]($this);
+			}
+
+  			$.ajax({
+			  	type: $(this).attr("method"),
+			  	url: $(this).attr("action"),
+			  	data:  $this.serialize(),
+				success: function(msg){
+					var $form;
+					if( msg == "1" ){
+						$form = $thanks;
+					}else{
+						$form = $("#b-popup-error");
+					}
+
+					if( $this.attr("data-afterAjax") && customHandlers[$this.attr("data-afterAjax")] ){
+						customHandlers[$this.attr("data-afterAjax")]($this);
+					}
+
+					$this.find("input[type=text],input[type='tel'],input[type='email'],textarea").val("");
+					fancyOpen($form);
+				},
+				error: function(){
+					fancyOpen($("#b-popup-error"));	
+					$this.find("input[type=text],input[type='tel'],input[type='email'],textarea").val("");
+				},
+				complete: function(){
+					$this.find(".ajax").removeAttr("onclick");
+				}
+			});
+  		}else{
+  			$(this).find("input.error,select.error,textarea.error").eq(0).focus();
+  		}
+  		return false;
+  	});
+	$(".ajax").removeClass("ajax");
+}
+
+var customHandlers = [];
+
+$(document).ready(function(){	
+	$.validator.addMethod('customPhone', function (value) {
+		return rePhone.test(value);
+	});
+
 	function whenScroll(){
 		var scroll = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
 		if( customHandlers["onScroll"] ){
@@ -130,6 +179,8 @@ $(document).ready(function(){
 	whenScroll();
 
 	bindFancy();
+
+	bindAjax();
 
 	$(".b-go").click(function(){
 		var block = $( $(this).attr("data-block") ),
@@ -197,47 +248,4 @@ $(document).ready(function(){
 		}
 	});
 
-	$(".ajax").parents("form").submit(function(){
-  		if( $(this).find("input.error,select.error,textarea.error").length == 0 ){
-  			var $this = $(this),
-  				$thanks = $($this.attr("data-block"));
-
-  			$this.find(".ajax").attr("onclick", "return false;");
-
-  			if( $this.attr("data-beforeAjax") && customHandlers[$this.attr("data-beforeAjax")] ){
-				customHandlers[$this.attr("data-beforeAjax")]($this);
-			}
-
-  			$.ajax({
-			  	type: $(this).attr("method"),
-			  	url: $(this).attr("action"),
-			  	data:  $this.serialize(),
-				success: function(msg){
-					var $form;
-					if( msg == "1" ){
-						$form = $thanks;
-					}else{
-						$form = $("#b-popup-error");
-					}
-
-					if( $this.attr("data-afterAjax") && customHandlers[$this.attr("data-afterAjax")] ){
-						customHandlers[$this.attr("data-afterAjax")]($this);
-					}
-
-					$this.find("input[type=text],input[type='tel'],input[type='email'],textarea").val("");
-					fancyOpen($form);
-				},
-				error: function(){
-					fancyOpen($("#b-popup-error"));	
-					$this.find("input[type=text],input[type='tel'],input[type='email'],textarea").val("");
-				},
-				complete: function(){
-					$this.find(".ajax").removeAttr("onclick");
-				}
-			});
-  		}else{
-  			$(this).find("input.error,select.error,textarea.error").eq(0).focus();
-  		}
-  		return false;
-  	});
 });

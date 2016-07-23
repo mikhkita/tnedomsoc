@@ -402,7 +402,12 @@ b {
 	.b-text img{
 		max-width: 100%;
 		margin-bottom: 0px;
+		margin-top: 10px;
 	}
+	.b-text img.half{
+		width: 49%;
+	}
+	.b-text img.half:nth-child(2){margin-left: 2%;}
 	.b-text h4 {
 		font-family: "Circe-Bold";
 		text-transform: uppercase;
@@ -467,9 +472,13 @@ b {
 	position: relative;
 	color: #dfc480;
 	cursor: pointer;
+	text-decoration: underline;
+}
+.b-text b a{
+	font-family: "Circe-Bold";
 }
 	.link:hover,.b-text a:hover {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	/*.link:after {
 		position: absolute;
@@ -769,13 +778,33 @@ b {
 		display: inline-block;
 	}
 .b-auth-button{
-
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	background-size: 50px;
+	font-size: 0px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-transition: all 150ms ease-out;
+	   -moz-transition: all 150ms ease-out;
+	    -ms-transition: all 150ms ease-out;
+	   	 -o-transition: all 150ms ease-out;
+			transition: all 150ms ease-out;
 }
+	.b-auth-button:hover{
+		-webkit-transform: scale(1.1);
+		   -moz-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		   	 -o-transform: scale(1.1);
+				transform: scale(1.1);
+	}
 .b-auth-button.b-vkontakte{
-	
+	background-image: url('../i/vk.jpg');
 }
 .b-auth-button.b-odnoklassniki{
-
+	background-image: url('../i/ok.jpg');
+	margin-left: 15px;
 }
 .b-user-block{
 	position: relative;
@@ -1546,9 +1575,10 @@ b {
 					bottom: 16px;
 					display: inline-block;
 					font-family: "Circe-Light";
+					text-decoration: underline;
 				}
 					.b-doctors .b-block .doctors li .desc-cont h5:hover,.doctors-slider .slick-slide .desc-cont h5:hover {
-						text-decoration: underline;
+						text-decoration: none;
 					}
 					/*.b-doctors .b-block .doctors li .desc-cont h5:before,.doctors-slider .slick-slide .desc-cont h5:before{
 						position: absolute;
@@ -1877,10 +1907,13 @@ b {
 					-webkit-font-smoothing: antialiased;
 					-moz-osx-font-smoothing: grayscale;
 				}
+				.b-other-content .service-list .service-cont .service-title i.gigiena{
+					margin-top: 0px;
+				}
 				.b-other-content .service-list .service-cont .service-title span {
 					display: table-cell;
 					line-height: 1.222;
-					font-size: 36px;
+					font-size: 34px;
 					color: #383838;
 					vertical-align: middle;
 					padding-left: 23px;
@@ -1910,6 +1943,38 @@ b {
 			}
 			.b-other-content .service-list .service-cont .gigiena {
 				font-size: 78px;
+			}
+			.b-other-content .service-list .service-cont .icon-spa{
+				font-size: 75px;
+				position: relative;
+				left: -2px;
+				top: -3px;
+			}
+			.b-other-content .service-list .service-cont .icon-lips,
+			.b-other-content .service-list .service-cont .icon-lifting,
+			.b-other-content .service-list .service-cont .icon-wrinkles,
+			.b-other-content .service-list .service-cont .icon-spots,
+			.b-other-content .service-list .service-cont .icon-acne,
+			.b-other-content .service-list .service-cont .icon-cleaning,
+			.b-other-content .service-list .service-cont .icon-plasty,
+			.b-other-content .service-list .service-cont .icon-ears,
+			.b-other-content .service-list .service-cont .icon-eyes,
+			.b-other-content .service-list .service-cont .icon-chest,
+			.b-other-content .service-list .service-cont .icon-stomach,
+			.b-other-content .service-list .service-cont .icon-nose {
+				font-size: 100px;
+				position: relative;
+				left: -15px;
+				top: -5px;
+			}
+			.b-other-content .service-list .service-cont .icon-acne{
+				top: 6px;
+			}
+			.b-other-content .service-list .service-cont .icon-young{
+				font-size: 90px;
+				position: relative;
+    			left: -7px;	
+    			top: -5px;
 			}
 
 			.b-other-content .service-list .service-cont ul {
@@ -2101,6 +2166,52 @@ b {
 				}
 					.b-other-content .b-block .service-accord h3 .estet,.b-other-content .b-block .service-accord h3 .gigiena,.b-other-content .b-block .service-accord h3 .terapevt {
 						font-size: 	42px;
+					}
+					.b-other-content .b-block .service-accord h3 .icon-spa{
+						font-size: 42px;
+					}
+					.b-other-content .b-block .service-accord h3 .icon-lips,
+					.b-other-content .b-block .service-accord h3 .icon-lifting,
+					.b-other-content .b-block .service-accord h3 .icon-wrinkles,
+					.b-other-content .b-block .service-accord h3 .icon-spots,
+					.b-other-content .b-block .service-accord h3 .icon-acne,
+					.b-other-content .b-block .service-accord h3 .icon-cleaning,
+					.b-other-content .b-block .service-accord h3 .icon-plasty,
+					.b-other-content .b-block .service-accord h3 .icon-ears,
+					.b-other-content .b-block .service-accord h3 .icon-eyes,
+					.b-other-content .b-block .service-accord h3 .icon-chest,
+					.b-other-content .b-block .service-accord h3 .icon-stomach,
+					.b-other-content .b-block .service-accord h3 .icon-nose {
+						font-size: 60px;
+					}
+					.b-other-content .b-block .service-accord h3 .icon-young{
+						font-size: 50px;
+					}
+					.b-other-content .b-block .service-accord h3 .icon-spa:before{
+						
+					}
+					.b-other-content .b-block .service-accord h3 .icon-lips:before,
+					.b-other-content .b-block .service-accord h3 .icon-lifting:before,
+					.b-other-content .b-block .service-accord h3 .icon-wrinkles:before,
+					.b-other-content .b-block .service-accord h3 .icon-spots:before,
+					.b-other-content .b-block .service-accord h3 .icon-acne:before,
+					.b-other-content .b-block .service-accord h3 .icon-cleaning:before,
+					.b-other-content .b-block .service-accord h3 .icon-plasty:before,
+					.b-other-content .b-block .service-accord h3 .icon-ears:before,
+					.b-other-content .b-block .service-accord h3 .icon-eyes:before,
+					.b-other-content .b-block .service-accord h3 .icon-chest:before,
+					.b-other-content .b-block .service-accord h3 .icon-stomach:before,
+					.b-other-content .b-block .service-accord h3 .icon-nose:before{
+						display: block;
+						margin: -9px;
+						margin-bottom: -8px;
+					}
+					.b-other-content .b-block .service-accord h3 .icon-acne:before{
+						
+					}
+					.b-other-content .b-block .service-accord h3 .icon-young:before{
+						margin: -7px;
+						display: block;
 					}
 
 						.b-other-content .b-block .service-accord div a {
@@ -3057,7 +3168,7 @@ b {
 	font-size: 0px;
 	background-position: 50% 0%;
 	background-repeat: no-repeat;
-	background-image: url('../i/logo-redder');
+	background-image: url('../i/logo-redder.png');
 	width: 127px;
 	height: 22px;
 	background-size: 127px;
@@ -3065,6 +3176,9 @@ b {
 	margin-top: -1px;
 	margin-bottom: -10px;
 	opacity: 0.6;
+}
+.tablebodytext{
+	display: none !important;
 }
 	.b-redder:active,
 	.b-redder:hover{

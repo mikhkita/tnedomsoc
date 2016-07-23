@@ -1,6 +1,7 @@
 function authCallback(result){
     if( result && result != "false" ){
-        fancyOpen( $("#b-popup-review") );
+        fancyOpen( $("#b-popup-review").clone().find("button").addClass("ajax").parents("#b-popup-review") );
+        bindAjax();
         $(".b-user-data .b-name").html(result);
         $(".b-review-auth-butt").hide();
         $(".b-review-write-butt").show();
@@ -17,6 +18,10 @@ $(document).ready(function(){
         prevWidth = 0,
         rotation = 0,
         heightOrig = 0;
+
+    $("body").on("click", ".b-auth-button", function(){
+        $.fancybox.close();
+    });
 
     // isMobile = true;
     function resize(){
@@ -110,13 +115,19 @@ $(document).ready(function(){
             type: "GET",
             url: $(this).attr("href"),
             success: function(msg){
-                fancyOpen( $("#b-popup-auth") );
+                $.fancybox.close();
+                setTimeout(function(){
+                    fancyOpen( $("#b-popup-auth") );
+                },300);
                 $(".b-review-auth-butt").show();
                 $(".b-review-write-butt").hide();
                 $(".b-for-auth").html(msg);
             },
             error: function(){
-                fancyOpen($("#b-popup-trouble"));
+                $.fancybox.close();
+                setTimeout(function(){
+                    fancyOpen( $("#b-popup-auth") );
+                },300);
             }
         });
 

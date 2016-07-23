@@ -3023,6 +3023,114 @@ b {
 .b-search-result-section a:last-child{
 	display: none;
 }
+.b-other-content .b-block .service-accord h3 .icon-lips, .b-other-content .b-block .service-accord h3 .icon-lifting, .b-other-content .b-block .service-accord h3 .icon-wrinkles, .b-other-content .b-block .service-accord h3 .icon-spots, .b-other-content .b-block .service-accord h3 .icon-acne, .b-other-content .b-block .service-accord h3 .icon-cleaning, .b-other-content .b-block .service-accord h3 .icon-plasty, .b-other-content .b-block .service-accord h3 .icon-ears, .b-other-content .b-block .service-accord h3 .icon-eyes, .b-other-content .b-block .service-accord h3 .icon-chest, .b-other-content .b-block .service-accord h3 .icon-stomach, .b-other-content .b-block .service-accord h3 .icon-nose {
+    font-size: 80px;
+}
+.b-other-content .b-block .service-accord h3 .icon-lips:before,
+.b-other-content .b-block .service-accord h3 .icon-lifting:before,
+.b-other-content .b-block .service-accord h3 .icon-wrinkles:before,
+.b-other-content .b-block .service-accord h3 .icon-spots:before,
+.b-other-content .b-block .service-accord h3 .icon-acne:before,
+.b-other-content .b-block .service-accord h3 .icon-cleaning:before,
+.b-other-content .b-block .service-accord h3 .icon-plasty:before,
+.b-other-content .b-block .service-accord h3 .icon-ears:before,
+.b-other-content .b-block .service-accord h3 .icon-eyes:before,
+.b-other-content .b-block .service-accord h3 .icon-chest:before,
+.b-other-content .b-block .service-accord h3 .icon-stomach:before,
+.b-other-content .b-block .service-accord h3 .icon-nose:before{
+    display: block;
+    margin: -18px;
+    margin-right: -9px;
+    margin-left: -15px;
+}
+.b-other-content .b-block .service-accord h3 .icon-spa{
+    font-size: 64px;
+}
+.b-other-content .b-block .service-accord h3 .icon-spa:before{
+    display: block;
+    margin: -18px;
+    margin-right: -5px;
+    margin-left: -3px;
+}
+.b-other-content .b-block .service-accord h3 .icon-young{
+    font-size: 70px;
+}
+.b-other-content .b-block .service-accord h3 .icon-young:before{
+    display: block;
+    margin: -14px;
+    margin-right: -4px;
+    margin-left: -11px;
+}
+.b-services .b-block .icon-spa:before {
+	font-size: 67px;
+	margin-left: 5px;
+	margin-bottom: -3px;
+}
+.b-services .b-block .icon-lips:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-lifting:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-wrinkles:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-young:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-spots:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-acne:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -12px;
+}
+.b-services .b-block .icon-cleaning:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-plasty:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-ears:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-eyes:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-chest:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-stomach:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
+.b-services .b-block .icon-nose:before {
+	font-size: 85px;
+	margin-left: -6px;
+	margin-bottom: -13px;
+}
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-main .b-block .b-header .logo {
