@@ -188,6 +188,9 @@
 .icon-nose:before {
     content: "\e91c";
 }
+.icon-child:before {
+    content: "\e91d";
+}
 
 html,
 body {
